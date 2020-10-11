@@ -1,6 +1,6 @@
 {
-    "name": "api_demo",
-    "short_name": "api_demo",
+    "name": "cms_flutter_proj",
+    "short_name": "cms_flutter_proj",
     "start_url": ".",
     "display": "minimal-ui",
     "background_color": "#0175C2",

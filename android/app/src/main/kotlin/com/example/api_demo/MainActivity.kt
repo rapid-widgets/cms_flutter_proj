@@ -1,4 +1,4 @@
-package com.example.api_demo
+package com.example.cms_flutter_proj
 
 import io.flutter.embedding.android.FlutterActivity
 
