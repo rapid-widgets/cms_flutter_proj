@@ -45,36 +45,56 @@ flutter:
   uses-material-design: true
 
   fonts:
-      - family:  Roboto
-        fonts:
-          - asset: fonts/Roboto-Regular.ttf
-      - family:  Sansita Swashed
-        fonts:
-          - asset: fonts/SansitaSwashed-VariableFont_wght.ttf
-      - family:  Open Sans
-        fonts:
-          - asset: fonts/OpenSans-Regular.ttf
-      - family:  Piazzolla
-        fonts:
-          - asset: fonts/Piazzolla-VariableFont_opsz,wght.ttf
-      - family:  Meddon
-        fonts:
-          - asset: fonts/Meddon-Regular.ttf
-      - family:  Epilogue
-        fonts:
-          - asset: fonts/Epilogue-VariableFont_wght.ttf
-      - family:  Tulpen One
-        fonts:
-          - asset: fonts/TulpenOne-Regular.ttf
-      - family:  New Rocker
-        fonts:
-          - asset: fonts/NewRocker-Regular.ttf
-      - family:  Ubuntu
-        fonts:
-          - asset: fonts/Ubuntu-MediumItalic.ttf
-      - family:  Segoe Ui
-        fonts:
-          - asset: fonts/segoe-ui.ttf
+    - family:  Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+    - family:  Sansita Swashed
+      fonts:
+        - asset: fonts/SansitaSwashed-VariableFont_wght.ttf
+    - family:  Open Sans
+      fonts:
+        - asset: fonts/OpenSans-Regular.ttf
+    - family:  Piazzolla
+      fonts:
+        - asset: fonts/Piazzolla-VariableFont_opsz,wght.ttf
+    - family:  Meddon
+      fonts:
+        - asset: fonts/Meddon-Regular.ttf
+    - family:  Epilogue
+      fonts:
+        - asset: fonts/Epilogue-VariableFont_wght.ttf
+    - family:  Tulpen One
+      fonts:
+        - asset: fonts/TulpenOne-Regular.ttf
+    - family:  New Rocker
+      fonts:
+        - asset: fonts/NewRocker-Regular.ttf
+    - family:  Ubuntu
+      fonts:
+        - asset: fonts/Ubuntu-MediumItalic.ttf
+    - family:  Segoe Ui
+      fonts:
+        - asset: fonts/segoe-ui.ttf
+    - family:  Chilanka
+      fonts:
+        - asset: fonts/Chilanka-Regular.ttf
+    - family:  Commissioner
+      fonts:
+        - asset: fonts/Commissioner-Regular.ttf
+    - family:  Lato
+      fonts:
+        - asset: fonts/Lato-Regular.ttf
+    - family:  Montserrat
+      fonts:
+        - asset: fonts/Montserrat-Medium.ttf
+
+    - family:  Oswald
+      fonts:
+        - asset: fonts/Oswald-VariableFont_wght.ttf
+
+    - family:  Source Sans
+      fonts:
+        - asset: fonts/SourceSansPro-Black.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
