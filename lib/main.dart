@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
+import 'package:rapid_widgets_library/custom-image.dart';
+import 'package:rapid_widgets_library/custom-text.dart';
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
 @override
@@ -60,6 +62,24 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
+onclick0(String sText) { print(sText); }
+        CustomImageContents ImageObj10 = new CustomImageContents(
+        src:'http://104.40.75.137:9003/assets/cms/image1.png',
+         semanticLabel: 'Random Network', 
+         imageType: 'Network', 
+         height: 200, width: 300);
+         
+
+        TextParameters textparam1 = new TextParameters(
+          data: '',
+          fontSize: 12,
+          color:Color(0xff480000),
+          fontStyle: FontStyle.normal,
+          fontFamily: 'Segoe Ui',
+          fontWeight: FontWeight.normal,
+          textAlign: TextAlign.center
+        );
+         
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
@@ -74,13 +94,13 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.only(top:65.0,left: 25.0,right: 25.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:80),Expanded(flex: 1,child:Container()),
+SizedBox(height:80),Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(top:50.0,left:25.0,right:25.0,bottom:5.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:65),Expanded(flex: 1,child:Container()),
+SizedBox(height:65),Expanded(flex: 1,child:customText(textparam1)),
 ],),
 ),
 Padding(
