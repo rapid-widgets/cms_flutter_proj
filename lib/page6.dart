@@ -110,9 +110,9 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparam4 = new TextParameters(
-          data: 'Order above 80 to save on delivery charges. Free delivery with cart value above USD 100',
+          text: 'Order above 80 to save on delivery charges. Free delivery with cart value above USD 100',
           fontSize: 16,
-          color: Colors.pink,
+          textColor: Colors.pink,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -147,9 +147,9 @@ class _BoilerPlate extends State<BoilerPlate> {
                   
 
         TextParameters textparam7 = new TextParameters(
-          data: 'Add More items',
+          text: 'Add More items',
           fontSize: 16,
-          color: Colors.pink,
+          textColor: Colors.pink,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.bold,
@@ -163,9 +163,9 @@ class _BoilerPlate extends State<BoilerPlate> {
                   
 
         TextParameters textparam9 = new TextParameters(
-          data: 'Total USD 16.75',
+          text: 'Total USD 16.75',
           fontSize: 16,
-          color: Colors.black,
+          textColor: Colors.black,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.bold,

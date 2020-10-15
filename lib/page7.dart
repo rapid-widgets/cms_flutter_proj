@@ -153,9 +153,9 @@ class _BoilerPlate extends State<BoilerPlate> {
                                  
 
         TextParameters textparam12 = new TextParameters(
-          data: 'Amount To be paid',
+          text: 'Amount To be paid',
           fontSize: 14,
-          color: Colors.pink,
+          textColor: Colors.pink,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -164,9 +164,9 @@ class _BoilerPlate extends State<BoilerPlate> {
          
 
         TextParameters textparam13 = new TextParameters(
-          data: 'USD 16.75',
+          text: 'USD 16.75',
           fontSize: 14,
-          color: Colors.pink,
+          textColor: Colors.pink,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -194,9 +194,9 @@ class _BoilerPlate extends State<BoilerPlate> {
           
 
         TextParameters textparam15 = new TextParameters(
-          data: 'Card Number',
+          text: 'Card Number',
           fontSize: 14,
-          color: Colors.pink,
+          textColor: Colors.pink,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -240,9 +240,9 @@ onclick17(String sText) { print(sText); }
          
 
         TextParameters textparam18 = new TextParameters(
-          data: 'Valid Through',
+          text: 'Valid Through',
           fontSize: 14,
-          color: Colors.pink,
+          textColor: Colors.pink,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -251,9 +251,9 @@ onclick17(String sText) { print(sText); }
          
 
         TextParameters textparam19 = new TextParameters(
-          data: 'CVV',
+          text: 'CVV',
           fontSize: 14,
-          color: Colors.pink,
+          textColor: Colors.pink,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -325,9 +325,9 @@ onclick22(String sText) { print(sText); }
          
 
         TextParameters textparam23 = new TextParameters(
-          data: 'Name on card',
+          text: 'Name on card',
           fontSize: 14,
-          color: Colors.pink,
+          textColor: Colors.pink,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -369,9 +369,9 @@ onclick22(String sText) { print(sText); }
                   
 
         TextParameters textparam26 = new TextParameters(
-          data: 'Save this card for future payments',
+          text: 'Save this card for future payments',
           fontSize: 14,
-          color: Colors.pink,
+          textColor: Colors.pink,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -380,9 +380,9 @@ onclick22(String sText) { print(sText); }
          
 
         TextParameters textparam27 = new TextParameters(
-          data: 'We Support :',
+          text: 'We Support :',
           fontSize: 14,
-          color: Colors.pink,
+          textColor: Colors.pink,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -419,9 +419,9 @@ onclick31(String sText) { print(sText); }
          
 
         TextParameters textparam32 = new TextParameters(
-          data: 'Your card details will be stored securely for your convenience. We do not store CVV.',
+          text: 'Your card details will be stored securely for your convenience. We do not store CVV.',
           fontSize: 14,
-          color: Colors.pink,
+          textColor: Colors.pink,
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,

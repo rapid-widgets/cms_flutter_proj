@@ -512,7 +512,7 @@ packages:
       name: rapid_widgets_library
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.0"
+    version: "0.2.4"
   rating_bar:
     dependency: transitive
     description:

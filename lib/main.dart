@@ -71,9 +71,9 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam1 = new TextParameters(
-          data: '',
+          text: 'Testing',
           fontSize: 12,
-          color:Color(0xff480000),
+          textColor:Color(0xff480000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,

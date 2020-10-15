@@ -159,9 +159,9 @@ onclick0(String sText) { print(sText); }
       
 
         TextParameters textparam4 = new TextParameters(
-          data: 'Forgot Password?',
+          text: 'Forgot Password?',
           fontSize: 14,
-          color:Color(0xff000000),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,

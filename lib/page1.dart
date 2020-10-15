@@ -74,9 +74,9 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam1 = new TextParameters(
-          data: 'Teacher learning education',
+          text: 'Teacher learning education',
           fontSize: 26,
-          color:Color(0xff000000),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Sansita Swashed',
           fontWeight: FontWeight.bold,
@@ -85,9 +85,9 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam2 = new TextParameters(
-          data: 'Training teacher for the lesson for online student interaction',
+          text: 'Training teacher for the lesson for online student interaction',
           fontSize: 16,
-          color:Color(0xff000000),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,

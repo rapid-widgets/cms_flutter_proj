@@ -114,9 +114,9 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam1 = new TextParameters(
-          data: 'Module 1 - Introduction',
+          text: 'Module 1 - Introduction',
           fontSize: 28,
-          color:Color(0xff1a9d00),
+          textColor:Color(0xff1a9d00),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
@@ -125,9 +125,9 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam2 = new TextParameters(
-          data: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Maecenas aliquam nisl orci. Proin faucibus odio tellus,  ut tincidunt magna dictum id. Integer porttitor eget magna  sit amet feugiat. Ut at ante lobortis, condimentum purus a,  auctor urna. Sed volutpat velit accumsan dolor ullamcorper,  non condimentum est tristique. Sed sit amet imperdiet ipsum.  Nulla ac ante in lorem hendrerit malesuada. Aliquam imperdiet  felis velit, sed feugiat elit blandit sed. Cras eget sagittis  ante. Maecenas pharetra erat non ullamcorper vestibulum. Cras  varius erat tortor, non cursus magna molestie semper. Maecenas  ullamcorper a nisl non iaculis. Duis nibh ipsum.Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Maecenas aliquam nisl orci.  Proin faucibus odio tellus, ut tincidunt magna dictum id. Integer  porttitor eget magna sit amet feugiat. Ut at ante lobortis, condimentum  purus a, auctor urna. Sed volutpat velit accumsan dolor ullamcorper,  non condimentum est tristique. Sed sit amet imperdiet ipsum. Nulla ac  ante in lorem hendrerit malesuada. Aliquam imperdiet felis velit, sed  feugiat elit blandit sed. Cras eget sagittis ante. Maecenas pharetra  erat non ullamcorper vestibulum. Cras varius erat tortor, non cursus  magna molestie semper. Maecenas ullamcorper a nisl non iaculis. Duis  nibh ipsum.',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Maecenas aliquam nisl orci. Proin faucibus odio tellus,  ut tincidunt magna dictum id. Integer porttitor eget magna  sit amet feugiat. Ut at ante lobortis, condimentum purus a,  auctor urna. Sed volutpat velit accumsan dolor ullamcorper,  non condimentum est tristique. Sed sit amet imperdiet ipsum.  Nulla ac ante in lorem hendrerit malesuada. Aliquam imperdiet  felis velit, sed feugiat elit blandit sed. Cras eget sagittis  ante. Maecenas pharetra erat non ullamcorper vestibulum. Cras  varius erat tortor, non cursus magna molestie semper. Maecenas  ullamcorper a nisl non iaculis. Duis nibh ipsum.Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Maecenas aliquam nisl orci.  Proin faucibus odio tellus, ut tincidunt magna dictum id. Integer  porttitor eget magna sit amet feugiat. Ut at ante lobortis, condimentum  purus a, auctor urna. Sed volutpat velit accumsan dolor ullamcorper,  non condimentum est tristique. Sed sit amet imperdiet ipsum. Nulla ac  ante in lorem hendrerit malesuada. Aliquam imperdiet felis velit, sed  feugiat elit blandit sed. Cras eget sagittis ante. Maecenas pharetra  erat non ullamcorper vestibulum. Cras varius erat tortor, non cursus  magna molestie semper. Maecenas ullamcorper a nisl non iaculis. Duis  nibh ipsum.',
           fontSize: 16,
-          color:Color(0xff000000),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,

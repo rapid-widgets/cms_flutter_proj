@@ -95,9 +95,9 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam1 = new TextParameters(
-          data: 'My Course',
+          text: 'My Course',
           fontSize: 26,
-          color:Color(0xff000000),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
@@ -140,9 +140,9 @@ onclick0(String sText) { print(sText); }
             
 
         TextParameters textparam3 = new TextParameters(
-          data: 'Learning Type',
+          text: 'Learning Type',
           fontSize: 12,
-          color:Color(0xff000000),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
