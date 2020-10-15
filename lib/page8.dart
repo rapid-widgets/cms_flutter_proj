@@ -105,7 +105,7 @@ class _BoilerPlate extends State<BoilerPlate> {
         TextParameters textparam0 = new TextParameters(
           text: 'Testing apk',
           fontSize: 14,
-          color:undefined,
+          textColor:Color(0xff004327),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
