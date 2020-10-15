@@ -103,12 +103,12 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparam0 = new TextParameters(
-          text: 'Testing apk',
-          fontSize: 14,
-          textColor:Color(0xff004327),
+          text: 'Testing',
+          fontSize: 12,
+          textColor:Color(0xff004264),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
-          fontWeight: FontWeight.normal,
+          fontWeight: FontWeight.bold,
           textAlign: TextAlign.center
         );
          
@@ -121,24 +121,24 @@ class _BoilerPlate extends State<BoilerPlate> {
                     height: 41,
                     width: 220,
                     child: FlatButton(
-                      child: Text('Testing apk',
+                      child: Text('Testing ',
                         style: TextStyle(color: Colors.white),),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
                       ),
-                      color: Color(0xff3f4300),
+                      color: Color(0xff4a6400),
                       onPressed: (){},
                     ),
                   ),
                 ),
               ],"",
-              Text('Testing apk', textAlign: TextAlign.center,
+              Text('Testing apk build', textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
             );
             AlertDialogParameters alertobj21 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xff015700),
+              backgroundColor: Color(0xff257300),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
