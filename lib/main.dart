@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
 @override
@@ -61,17 +60,6 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
-
-        TextParameters textparam0 = new TextParameters(
-          data: 'padhy satyabrat',
-          fontSize: 12,
-          color:Color(0xffff5252),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Tulpen One',
-          fontWeight: FontWeight.w900,
-          textAlign: TextAlign.right
-        );
-         
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
@@ -92,7 +80,7 @@ SizedBox(height:80),Expanded(flex: 1,child:Container()),
 Padding(
 padding: const EdgeInsets.only(top:50.0,left:25.0,right:25.0,bottom:5.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:65),Expanded(flex: 1,child:customText(textparam0)),
+SizedBox(height:65),Expanded(flex: 1,child:Container()),
 ],),
 ),
 Padding(
