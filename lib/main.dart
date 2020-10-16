@@ -3,7 +3,6 @@ import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
 @override
@@ -62,28 +61,17 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
-onclick0(String sText) { print(sText); }
-        CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image1.png',
+onclickundefined(String sText) { print(sText); }
+        CustomImageContents ImageObj1undefined = new CustomImageContents(
+        src:'undefined',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 200, width: 300);
-         
-
-        TextParameters textparam1 = new TextParameters(
-          text: 'Testing',
-          fontSize: 12,
-          textColor:Color(0xff480000),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Segoe Ui',
-          fontWeight: FontWeight.normal,
-          textAlign: TextAlign.center
-        );
+         height: undefined, width: undefined);
          
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Colors.white,
+backgroundColor: Color(0xffbd0000),
 body: Padding(
 padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
@@ -94,13 +82,13 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.only(top:65.0,left: 25.0,right: 25.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:80),Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
+SizedBox(height:80),Expanded(flex: 1,child:CustomImage(data: ImageObj1undefined),),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(top:50.0,left:25.0,right:25.0,bottom:5.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:65),Expanded(flex: 1,child:customText(textparam1)),
+SizedBox(height:65),Expanded(flex: 1,child:Container()),
 ],),
 ),
 Padding(
