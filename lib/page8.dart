@@ -105,7 +105,7 @@ class _BoilerPlate extends State<BoilerPlate> {
         TextParameters textparam0 = new TextParameters(
           text: 'Testing apk',
           fontSize: 12,
-          textColor:Color(0xff760000),
+          textColor:Color(0xff007608),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
@@ -138,7 +138,7 @@ class _BoilerPlate extends State<BoilerPlate> {
             AlertDialogParameters alertobj21 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xff750000),
+              backgroundColor: Color(0xffff0000),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
