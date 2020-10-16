@@ -103,9 +103,9 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparam0 = new TextParameters(
-          text: 'Testing codemagic',
+          text: 'CODEMAGIC',
           fontSize: 12,
-          textColor:Color(0xff0d3d00),
+          textColor:Color(0xff410000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
@@ -121,24 +121,24 @@ class _BoilerPlate extends State<BoilerPlate> {
                     height: 41,
                     width: 220,
                     child: FlatButton(
-                      child: Text('Testing codemagic',
+                      child: Text('CODEMAGIC',
                         style: TextStyle(color: Colors.white),),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
                       ),
-                      color: Color(0xff0d3d00),
+                      color: Color(0xff7df200),
                       onPressed: (){},
                     ),
                   ),
                 ),
               ],"",
-              Text('Codemagic Test', textAlign: TextAlign.center,
+              Text('CODEMAGIC', textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
             );
             AlertDialogParameters alertobj21 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xffff0000),
+              backgroundColor: Color(0xffbeffef),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
