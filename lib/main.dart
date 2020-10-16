@@ -61,12 +61,12 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
-onclickundefined(String sText) { print(sText); }
-        CustomImageContents ImageObj1undefined = new CustomImageContents(
-        src:'undefined',
+onclick0(String sText) { print(sText); }
+        CustomImageContents ImageObj10 = new CustomImageContents(
+        src:'http://104.40.75.137:9003/assets/cms/image1.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: undefined, width: undefined);
+         height: 200, width: 300);
          
 return MaterialApp(
 debugShowCheckedModeBanner: false,
@@ -82,7 +82,7 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.only(top:65.0,left: 25.0,right: 25.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:80),Expanded(flex: 1,child:CustomImage(data: ImageObj1undefined),),
+SizedBox(height:80),Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
 ],),
 ),
 Padding(

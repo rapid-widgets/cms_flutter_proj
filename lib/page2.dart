@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
-import 'dart:ui'; 
-import 'package:rapid_widgets_library/custom-textField.dart';
+import 'package:rapid_widgets_library/custom-image.dart';
 void main() => runApp(Page2());
 class Page2 extends StatelessWidget {
 @override
@@ -62,38 +61,17 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
-
-            onTextSubmit0 (String sText) { 
-            print(sText); 
-            }
-            TextFieldParameters finalTextObj0 = new TextFieldParameters( 
-            maxLength: , 
-            obsecureText: true,
-            maxLengthEnforced: false, 
-            decoration: InputDecoration(
-            hintText: '',
-            labelText: '', 
-  
-            filled: false, 
-            fillColor: , 
-            counterText: "", 
-            border: OutlineInputBorder( 
-            borderRadius: BorderRadius.circular(), 
-            borderSide: BorderSide( color: Color(0xff1bff00))), 
-            ), 
-            cursorColor: Color(0xffff4343), 
-            cursorWidth: , 
-            expands: false, 
-            maxLines: , 
-            readOnly: true, 
-            showCursor: true, 
-            style: TextStyle(color: Color(0xff87ff00)),
-            );
-        
+onclick0(String sText) { print(sText); }
+        CustomImageContents ImageObj10 = new CustomImageContents(
+        src:'http://104.40.75.137:9003/assets/cms/image1.png',
+         semanticLabel: 'Random Network', 
+         imageType: 'Network', 
+         height: 150, width: 230);
+         
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Colors.white,
+backgroundColor: Color(0xffccff00),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
@@ -104,13 +82,13 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.all(0.0),
 child: Row(children: [
-Expanded(flex: 1,child:Container()),
+Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(right:60.0,left:60,top:66),
 child: Row(children: [
-Expanded(flex: 1,child:CustomTextField(params: finalTextObj0, callbackTextfield: onTextSubmit0),),
+Expanded(flex: 1,child:Container()),
 ],),
 ),
 Padding(
