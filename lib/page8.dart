@@ -103,13 +103,13 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparamundefined = new TextParameters(
-          text: 'undefined',
-          fontSize: undefined,
-          textColor:undefined,
+          text: 'Testing',
+          fontSize: 12,
+          textColor:Colors.black,
           fontStyle: FontStyle.normal,
-          fontFamily: 'undefined',
-          fontWeight: FontWeight.undefined,
-          textAlign: TextAlign.undefined
+          fontFamily: 'Roboto',
+          fontWeight: FontWeight.normal,
+          textAlign: TextAlign.center
         );
          
 
@@ -126,7 +126,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
                       ),
-                      color: undefined,
+                      color: Colors.white,
                       onPressed: (){},
                     ),
                   ),
@@ -138,7 +138,7 @@ class _BoilerPlate extends State<BoilerPlate> {
             AlertDialogParameters alertobj2undefined = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: undefined,
+              backgroundColor: Colors.white,
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,

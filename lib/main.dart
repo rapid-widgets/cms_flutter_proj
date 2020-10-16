@@ -3,6 +3,8 @@ import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
+import 'package:rapid_widgets_library/custom-text.dart';
+import 'package:rapid_widgets_library/custom-text.dart';
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
 @override
@@ -68,10 +70,32 @@ onclick0(String sText) { print(sText); }
          imageType: 'Network', 
          height: 200, width: 300);
          
+
+        TextParameters textparam1 = new TextParameters(
+          text: 'Final testing',
+          fontSize: 12,
+          textColor:Color(0xff4f0000),
+          fontStyle: FontStyle.normal,
+          fontFamily: 'Segoe Ui',
+          fontWeight: FontWeight.normal,
+          textAlign: TextAlign.center
+        );
+         
+
+        TextParameters textparam2 = new TextParameters(
+          text: 'Final codemagic testing',
+          fontSize: 10,
+          textColor:Color(0xfff80000),
+          fontStyle: FontStyle.normal,
+          fontFamily: 'Open Sans',
+          fontWeight: FontWeight.normal,
+          textAlign: TextAlign.center
+        );
+         
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Color(0xffbd0000),
+backgroundColor: Color(0xffffcfcf),
 body: Padding(
 padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
@@ -88,13 +112,13 @@ SizedBox(height:80),Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
 Padding(
 padding: const EdgeInsets.only(top:50.0,left:25.0,right:25.0,bottom:5.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:65),Expanded(flex: 1,child:Container()),
+SizedBox(height:65),Expanded(flex: 1,child:customText(textparam1)),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.all(15.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:0),Expanded(flex: 1,child:Container()),
+SizedBox(height:0),Expanded(flex: 1,child:customText(textparam2)),
 ],),
 ),
 Padding(
