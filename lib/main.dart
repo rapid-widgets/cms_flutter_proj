@@ -4,7 +4,8 @@ import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
+import 'package:rapid_widgets_library/custom-flatButton.dart';
+import 'page1.dart';
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
 @override
@@ -65,16 +66,16 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image1.png',
+        src:'aaaaaaaaaaaaaa',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
          height: 200, width: 300);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Final testing',
+          text: 'Testing',
           fontSize: 12,
-          textColor:Color(0xff4f0000),
+          textColor:Color(0xffff0000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
@@ -82,20 +83,34 @@ onclick0(String sText) { print(sText); }
         );
          
 
-        TextParameters textparam2 = new TextParameters(
-          text: 'Final codemagic testing',
-          fontSize: 10,
-          textColor:Color(0xfff80000),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Open Sans',
-          fontWeight: FontWeight.normal,
-          textAlign: TextAlign.center
-        );
-         
+          onFlatButtonPress2 (bool b){ 
+          print(b); 
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+                builder: (context) => Page1()));
+
+          } 
+          onFlatButtonLongPress2 (bool b){ 
+          print(b); 
+          } 
+          FlatButtonParameters buttonFlatObject2 = FlatButtonParameters(
+          child:Text('Submit'),
+          color:Color(0xffff0000),
+          textColor:Color(0xffff0000),
+          hoverColor: Color(0xffff0000),
+          width: 300,
+          focusColor: Color(0xffff0000),
+          height: 50,
+          highlightColor: Color(0xffff0000),
+          splashColor: Color(0xffff0000)
+
+          );
+      
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Color(0xffffcfcf),
+backgroundColor: ,
 body: Padding(
 padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
@@ -118,13 +133,13 @@ SizedBox(height:65),Expanded(flex: 1,child:customText(textparam1)),
 Padding(
 padding: const EdgeInsets.all(15.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:0),Expanded(flex: 1,child:customText(textparam2)),
+SizedBox(height:0),Expanded(flex: 1,child:Container()),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.all(2.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
-SizedBox(height:200),Expanded(flex: 1,child:Container()),SizedBox(width:30),
+SizedBox(height:200),Expanded(flex: 1,child:customFlatButton(buttonFlatObject2, onFlatButtonPress2, onFlatButtonLongPress2),),SizedBox(width:30),
 Expanded(flex: 1,child:Container()),
  ],),
 ),
