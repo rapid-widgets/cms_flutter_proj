@@ -69,27 +69,27 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image2.png',
+        src:'http://104.40.75.137:9003/assets/restaurant/restaurant.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 200, width: 300);
+         height: 225, width: 330);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Demo Testing page 1',
-          fontSize: 12,
-          textColor:Color(0xff870000),
+          text: 'Welcome to the restaurant app',
+          fontSize: 14,
+          textColor:Color(0xff0d00ff),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
-          fontWeight: FontWeight.normal,
+          fontWeight: FontWeight.bold,
           textAlign: TextAlign.center
         );
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'Page 1 testing',
-          fontSize: 14,
-          textColor:Color(0xff4a0000),
+          text: 'Login to know more about your favourite food',
+          fontSize: 12,
+          textColor:Color(0xff0009ff),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
@@ -110,14 +110,14 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Skip'),
-          color:Color(0xffc4ff00),
-          textColor:Color(0xff330000),
-          hoverColor: Color(0xff404a00),
-          width: 100,
-          focusColor: Color(0xffc4ff00),
+          color:Color(0xff0056ff),
+          textColor:Color(0xfffffdfd),
+          hoverColor: Color(0xff484eff),
+          width: 90,
+          focusColor: Color(0xff0019ff),
           height: 40,
-          highlightColor: Color(0xffc4ff00),
-          splashColor: Color(0xffcbff00)
+          highlightColor: Color(0xff0011ff),
+          splashColor: Color(0xff0011ff)
 
           );
       
@@ -135,21 +135,21 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
           child:Text('Next'),
-          color:Color(0xffffe600),
-          textColor:Color(0xff332500),
-          hoverColor: Color(0xff004a13),
-          width: 100,
-          focusColor: Color(0xff00ff31),
-          height: 50,
-          highlightColor: Color(0xff8bb500),
-          splashColor: Color(0xff32ff00)
+          color:Color(0xff0055fd),
+          textColor:Color(0xfffff8f8),
+          hoverColor: Color(0xff5748ff),
+          width: 90,
+          focusColor: Color(0xff172eff),
+          height: 40,
+          highlightColor: Color(0xff1524ff),
+          splashColor: Color(0xff1020ff)
 
           );
       
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Color(0xffff0000),
+backgroundColor: ,
 body: Padding(
 padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
