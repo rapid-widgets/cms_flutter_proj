@@ -102,18 +102,18 @@ class _BoilerPlate extends State<BoilerPlate> {
             }
         
 
-        TextParameters textparamundefined = new TextParameters(
-          text: 'Testing',
-          fontSize: 12,
-          textColor:Colors.black,
+        TextParameters textparam0 = new TextParameters(
+          text: 'Demo Testing',
+          fontSize: 14,
+          textColor:Color(0xff00e63b),
           fontStyle: FontStyle.normal,
-          fontFamily: 'Roboto',
+          fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
           textAlign: TextAlign.center
         );
          
 
-            AlertDialogContents alertObj1undefined = new AlertDialogContents(
+            AlertDialogContents alertObj11 = new AlertDialogContents(
               <Widget>[
                 Padding(
                   padding: const EdgeInsets.only(left:30.0, right: 30, top: 25, bottom: 20),
@@ -121,31 +121,31 @@ class _BoilerPlate extends State<BoilerPlate> {
                     height: 41,
                     width: 220,
                     child: FlatButton(
-                      child: Text('undefined',
+                      child: Text('Success',
                         style: TextStyle(color: Colors.white),),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
                       ),
-                      color: Colors.white,
+                      color: Color(0xffe67d00),
                       onPressed: (){},
                     ),
                   ),
                 ),
               ],"",
-              Text('undefined', textAlign: TextAlign.center,
+              Text('Final Page', textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
             );
-            AlertDialogParameters alertobj2undefined = new AlertDialogParameters(
+            AlertDialogParameters alertobj21 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Colors.white,
+              backgroundColor: Color(0xfffcffbd),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
               width: 380,
               titleTextStyle: TextStyle( fontSize: 18.0, color: Colors.white),
             );
-            onAlertButtonTapundefined(String s){
+            onAlertButtonTap1(String s){
               print(s);
             }
           
@@ -153,7 +153,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
 appBar:customAppBar(appBarIcons,paramobject),
-backgroundColor: null,
+backgroundColor: ,
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
@@ -164,11 +164,11 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.all(25.0),
 child: 
-Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),customText(textparamundefined)
+Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),customText(textparam0)
 ],),),
 Padding(
 padding: const EdgeInsets.only(top:30,bottom:30),
-child:CustomAlertDialog(dialogContent: alertObj1undefined, param: alertobj2undefined, callbackAlert: onAlertButtonTapundefined),
+child:CustomAlertDialog(dialogContent: alertObj11, param: alertobj21, callbackAlert: onAlertButtonTap1),
   ),
 ],
 ),
