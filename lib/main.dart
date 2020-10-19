@@ -4,6 +4,9 @@ import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
+import 'package:rapid_widgets_library/custom-text.dart';
+import 'package:rapid_widgets_library/custom-flatButton.dart';
+import 'page1.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page1.dart';
 void main() => runApp(MyApp());
@@ -66,16 +69,16 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'aaaaaaaaaaaaaa',
+        src:'http://104.40.75.137:9003/assets/cms/image2.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
          height: 200, width: 300);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Testing',
+          text: 'Demo Testing page 1',
           fontSize: 12,
-          textColor:Color(0xffff0000),
+          textColor:Color(0xff870000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
@@ -83,7 +86,18 @@ onclick0(String sText) { print(sText); }
         );
          
 
-          onFlatButtonPress2 (bool b){ 
+        TextParameters textparam2 = new TextParameters(
+          text: 'Page 1 testing',
+          fontSize: 14,
+          textColor:Color(0xff4a0000),
+          fontStyle: FontStyle.normal,
+          fontFamily: 'Segoe Ui',
+          fontWeight: FontWeight.normal,
+          textAlign: TextAlign.center
+        );
+         
+
+          onFlatButtonPress3 (bool b){ 
           print(b); 
           Navigator.pushReplacement(
             context,
@@ -91,26 +105,51 @@ onclick0(String sText) { print(sText); }
                 builder: (context) => Page1()));
 
           } 
-          onFlatButtonLongPress2 (bool b){ 
+          onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
-          FlatButtonParameters buttonFlatObject2 = FlatButtonParameters(
-          child:Text('Submit'),
-          color:Color(0xffff0000),
-          textColor:Color(0xffff0000),
-          hoverColor: Color(0xffff0000),
-          width: 300,
-          focusColor: Color(0xffff0000),
+          FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
+          child:Text('Skip'),
+          color:Color(0xffc4ff00),
+          textColor:Color(0xff330000),
+          hoverColor: Color(0xff404a00),
+          width: 100,
+          focusColor: Color(0xffc4ff00),
+          height: 40,
+          highlightColor: Color(0xffc4ff00),
+          splashColor: Color(0xffcbff00)
+
+          );
+      
+
+          onFlatButtonPress4 (bool b){ 
+          print(b); 
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+                builder: (context) => Page1()));
+
+          } 
+          onFlatButtonLongPress4 (bool b){ 
+          print(b); 
+          } 
+          FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
+          child:Text('Next'),
+          color:Color(0xffffe600),
+          textColor:Color(0xff332500),
+          hoverColor: Color(0xff004a13),
+          width: 100,
+          focusColor: Color(0xff00ff31),
           height: 50,
-          highlightColor: Color(0xffff0000),
-          splashColor: Color(0xffff0000)
+          highlightColor: Color(0xff8bb500),
+          splashColor: Color(0xff32ff00)
 
           );
       
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: ,
+backgroundColor: Color(0xffff0000),
 body: Padding(
 padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
@@ -133,14 +172,14 @@ SizedBox(height:65),Expanded(flex: 1,child:customText(textparam1)),
 Padding(
 padding: const EdgeInsets.all(15.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:0),Expanded(flex: 1,child:Container()),
+SizedBox(height:0),Expanded(flex: 1,child:customText(textparam2)),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.all(2.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
-SizedBox(height:200),Expanded(flex: 1,child:customFlatButton(buttonFlatObject2, onFlatButtonPress2, onFlatButtonLongPress2),),SizedBox(width:30),
-Expanded(flex: 1,child:Container()),
+SizedBox(height:200),Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),SizedBox(width:30),
+Expanded(flex: 1,child:customFlatButton(buttonFlatObject4, onFlatButtonPress4, onFlatButtonLongPress4),),
  ],),
 ),
 ], 
