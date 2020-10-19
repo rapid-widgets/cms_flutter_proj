@@ -122,7 +122,7 @@ onclick0(String sText) { print(sText); }
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: ,
+backgroundColor: Colors.white,
 body: Padding(
 padding: const EdgeInsets.only(top:40.0,left:20.0,right:20.0,bottom:0.0),
 child: Padding(
