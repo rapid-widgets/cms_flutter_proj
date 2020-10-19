@@ -6,9 +6,9 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page1.dart';
+import 'page2.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page1.dart';
+import 'page2.dart';
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
 @override
@@ -78,7 +78,7 @@ onclick0(String sText) { print(sText); }
         TextParameters textparam1 = new TextParameters(
           text: 'Welcome to the restaurant app',
           fontSize: 14,
-          textColor:Color(0xff0d00ff),
+          textColor:Color(0xff0011ff),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.bold,
@@ -87,9 +87,9 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'Login to know more about your favourite food',
+          text: 'Log in to know about your favourite food',
           fontSize: 12,
-          textColor:Color(0xff0009ff),
+          textColor:Color(0xff0030ff),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
@@ -102,7 +102,7 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page1()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
@@ -110,14 +110,14 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Skip'),
-          color:Color(0xff0056ff),
-          textColor:Color(0xfffffdfd),
-          hoverColor: Color(0xff484eff),
+          color:Color(0xff0021ff),
+          textColor:Color(0xffffebeb),
+          hoverColor: Color(0xff0038ff),
           width: 90,
-          focusColor: Color(0xff0019ff),
-          height: 40,
-          highlightColor: Color(0xff0011ff),
-          splashColor: Color(0xff0011ff)
+          focusColor: Color(0xff0038ff),
+          height: 50,
+          highlightColor: Color(0xff0047ff),
+          splashColor: Color(0xff004fff)
 
           );
       
@@ -127,7 +127,7 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page1()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
@@ -135,21 +135,21 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
           child:Text('Next'),
-          color:Color(0xff0055fd),
-          textColor:Color(0xfffff8f8),
-          hoverColor: Color(0xff5748ff),
+          color:Color(0xff0030ff),
+          textColor:Color(0xffffffff),
+          hoverColor: Color(0xff2958ff),
           width: 90,
-          focusColor: Color(0xff172eff),
+          focusColor: Color(0xff2756ff),
           height: 40,
-          highlightColor: Color(0xff1524ff),
-          splashColor: Color(0xff1020ff)
+          highlightColor: Color(0xff1c5bff),
+          splashColor: Color(0xff1f64ff)
 
           );
       
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: ,
+backgroundColor: Color(0xffffffff),
 body: Padding(
 padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
