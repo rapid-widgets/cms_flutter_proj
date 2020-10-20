@@ -4,7 +4,6 @@ import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'page3.dart';
 import 'package:rapid_widgets_library/custom-bottomnavbar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
 void main() => runApp(Page8());
 class Page8 extends StatelessWidget {
 @override
@@ -105,17 +104,6 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
-
-        TextParameters textparam0 = new TextParameters(
-          text: 'last page testing',
-          fontSize: ,
-          textColor:Color(0xffff0000),
-          fontStyle: FontStyle.normal,
-          fontFamily: '',
-          fontWeight: FontWeight.,
-          textAlign: TextAlign.
-        );
-         
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
@@ -131,7 +119,7 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.all(25.0),
 child: 
-Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),customText(textparam0)
+Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),Container()
 ],),),
 Padding(
 padding: const EdgeInsets.only(top:30,bottom:30),
