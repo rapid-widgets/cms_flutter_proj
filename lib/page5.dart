@@ -34,13 +34,13 @@ class _BoilerPlate extends State<BoilerPlate> {
                                                  centerTitle: false,
                                                  automaticallyImplyLeading: true,
                                                  leading: IconButton(icon: (Icon(Icons.arrow_back,color: Color(0xff707070))), onPressed: (){
-                                                  Navigator.pushReplacement(
-                                                      context,
-                                                      MaterialPageRoute(
-                                                          builder: (context) => Page4()));
+                                                  // Navigator.pushReplacement(
+                                                  //     context,
+                                                  //     MaterialPageRoute(
+                                                  //         builder: (context) => Page4()));
                                                   
                                                 }),
-                                                 title: Text('React Fullstack with node/express',
+                                                 title: Text('Doctor Details',
                                                  style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
                                              List<Widget> appBarIcons = [
                                                Padding(
