@@ -67,27 +67,27 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:' http://104.40.75.137:9003/assets/cms/image3.png',
+        src:'http://104.40.75.137:9003/assets/medical/image2.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 150, width: 250);
+         height: 282, width: 403);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Welcome',
-          fontSize: 12,
-          textColor:Color(0xff430000),
+          text: 'Medical Content',
+          fontSize: 26,
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
-          fontWeight: FontWeight.normal,
+          fontWeight: FontWeight.bold,
           textAlign: TextAlign.center
         );
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'Welcome page ',
-          fontSize: 12,
-          textColor:Color(0xff310000),
+          text: 'Medical content is the textual, visual, or aural content that is encountered as part of the user experience on websites',
+          fontSize: 16,
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
           fontWeight: FontWeight.normal,
@@ -107,22 +107,22 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Login'),
-          color:Color(0xffc4ff00),
-          textColor:Color(0xff4f0000),
-          hoverColor: Color(0xffc9ff33),
+          child:Text('Get Started'),
+          color:Color(0xffff8282),
+          textColor:Color(0xffffffff),
+          hoverColor: Color(0xffff8a8a),
           width: 150,
-          focusColor: Color(0xff59ff00),
-          height: 50,
-          highlightColor: Color(0xff3aff00),
-          splashColor: Color(0xff3aff00)
+          focusColor: Color(0xffff9494),
+          height: 40,
+          highlightColor: Color(0xffffb3b3),
+          splashColor: Color(0xffff8d8d)
 
           );
       
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Colors.white,
+backgroundColor:Colors.white ,
 body: Padding(
 padding: const EdgeInsets.only(top:40.0,left:20.0,right:20.0,bottom:0.0),
 child: Padding(

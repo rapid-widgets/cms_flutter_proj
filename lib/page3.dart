@@ -138,69 +138,6 @@ class _BoilerPlate extends State<BoilerPlate> {
             }
         
 
-              List<CustomcompositeCardParameters> listcards0 = [];
-                  CustomcompositeCardParameters card10 = new CustomcompositeCardParameters(
-                      flexColumn1: 6,
-                      flexColumn2: 4,
-                      cardColor: Colors.white,
-                      rightHandWidgets: [
-                        Padding(
-                          padding: const EdgeInsets.only(right: 10.0, bottom: 20.5),
-                          child: Column(
-                            children: <Widget>[
-                              Align(
-                                  alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/book1.png',height: 102,width: 65,)
-                              ),
-                              SizedBox(height: 19,),
-                              Container(
-                                height: 41,
-                                width: 123,
-                                child: FlatButton(color: Color(0xffD93954),child: Text('View',
-                                  style: TextStyle(color: Colors.white, fontSize: 13, fontFamily: 'Segoe UI'),),
-                                  onPressed: (){ Navigator.pushReplacement(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Page5()));},
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(21.0)),
-                                  disabledColor: Color(0xffD93954),),
-                              )
-                            ],
-                          ),
-                        ),
-                      ],
-                      leftHandWidgets: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
-                          child: Column(
-                            children: <Widget>[
-                              Text('Programming with Javascript',textAlign: TextAlign.left,
-                              style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
-                              SizedBox(height: 4,),
-                              Align(
-                                alignment: Alignment.centerLeft,
-                                child: Text('By Zak Ruvacaba',
-                                  style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
-                              ),
-                              SizedBox(height: 46,),
-                              Row(
-                                children: <Widget>[
-                                  Text('USD 4.25',
-                                  style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
-                                  SizedBox(width: 10,),
-                                  Text('USD 5.00',
-                                  style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                      ],
-                  );
-                  listcards0.add(card10);
-              
-
               List<CustomcompositeCardParameters> listcards1 = [];
                   CustomcompositeCardParameters card11 = new CustomcompositeCardParameters(
                       flexColumn1: 6,
@@ -213,7 +150,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/book2.png',height: 102,width: 65,)
+                                  child: Image.network('http://104.40.75.137:9003/assets/medical/image41.png ',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -238,21 +175,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('React Fullstack with node/express',textAlign: TextAlign.left,
+                              Text('Dr. Hiranmoy Basu',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('By Mohammad Iqbal',
+                                child: Text('Cardiologist, Chief of Intrevention Cardiology Center - Gold Medalist',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('USD 4.25',
+                                  Text('Rs 500',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('USD 5.00',
+                                  Text('Rs 700',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -276,7 +213,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/book3.png',height: 102,width: 65,)
+                                  child: Image.network('http://104.40.75.137:9003/assets/medical/image42.png',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -301,21 +238,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('React Forms Crash Course',textAlign: TextAlign.left,
+                              Text('Dr. Malabika Ghosh',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('By Elvis Graholskis',
+                                child: Text('Cardiologist, Chief of Intrevention Cardiology Center - Gold Medalist',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('USD 14.25',
+                                  Text('Rs 800',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('USD 50.00',
+                                  Text('Rs 1000',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -339,7 +276,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/book4.png',height: 102,width: 65,)
+                                  child: Image.network('http://104.40.75.137:9003/assets/medical/image43.png',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -364,21 +301,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('React JS Frontend Web Development',textAlign: TextAlign.left,
+                              Text('Dr. Rajat Dutta',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('By Rhyan Dhungel',
+                                child: Text('Cardiologist, Chief of Intrevention Cardiology Center - Gold Medalist',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('USD 14.25',
+                                  Text('Rs 700',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('USD 50.00',
+                                  Text('Rs 800',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -389,13 +326,76 @@ class _BoilerPlate extends State<BoilerPlate> {
                   );
                   listcards3.add(card13);
               
+
+              List<CustomcompositeCardParameters> listcards4 = [];
+                  CustomcompositeCardParameters card14 = new CustomcompositeCardParameters(
+                      flexColumn1: 6,
+                      flexColumn2: 4,
+                      cardColor: Colors.white,
+                      rightHandWidgets: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 10.0, bottom: 20.5),
+                          child: Column(
+                            children: <Widget>[
+                              Align(
+                                  alignment: Alignment.centerRight,
+                                  child: Image.network('http://104.40.75.137:9003/assets/medical/image44.png',height: 102,width: 65,)
+                              ),
+                              SizedBox(height: 19,),
+                              Container(
+                                height: 41,
+                                width: 123,
+                                child: FlatButton(color: Color(0xffD93954),child: Text('View',
+                                  style: TextStyle(color: Colors.white, fontSize: 13, fontFamily: 'Segoe UI'),),
+                                  onPressed: (){ Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Page5()));},
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(21.0)),
+                                  disabledColor: Color(0xffD93954),),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                      leftHandWidgets: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
+                          child: Column(
+                            children: <Widget>[
+                              Text('Dr. S. Smith',textAlign: TextAlign.left,
+                              style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
+                              SizedBox(height: 4,),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text('Cardiologist, Chief of Intrevention Cardiology Center - Gold Medalist',
+                                  style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
+                              ),
+                              SizedBox(height: 46,),
+                              Row(
+                                children: <Widget>[
+                                  Text('Rs 1250',
+                                  style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
+                                  SizedBox(width: 10,),
+                                  Text('Rs 1500',
+                                  style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                  );
+                  listcards4.add(card14);
+              
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
 appBar:customAppBar(appBarIcons,paramobject),
 drawer: CustomDrawer(drawerList,onclickDrawer,user1),
 bottomNavigationBar: BottomNavBar(param),
-backgroundColor: Colors.white,
+backgroundColor:Colors.white ,
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
@@ -411,12 +411,6 @@ child: Row(children: [
 Padding(
 padding: const EdgeInsets.only(bottom:30.0,top:30),
 child: Row(children: [
-Expanded(flex: 1,child:compositeCard(listcards0),),
-],),
-),
-Padding(
-padding: const EdgeInsets.only(bottom:30.0),
-child: Row(children: [
 Expanded(flex: 1,child:compositeCard(listcards1),),
 ],),
 ),
@@ -430,6 +424,12 @@ Padding(
 padding: const EdgeInsets.only(bottom:30.0),
 child: Row(children: [
 Expanded(flex: 1,child:compositeCard(listcards3),),
+],),
+),
+Padding(
+padding: const EdgeInsets.only(bottom:30.0),
+child: Row(children: [
+Expanded(flex: 1,child:compositeCard(listcards4),),
 ],),
 ),
 Padding(

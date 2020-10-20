@@ -164,7 +164,7 @@ class _BoilerPlate extends State<BoilerPlate> {
          
 
         TextParameters textparam13 = new TextParameters(
-          text: 'USD 16.75',
+          text: 'Rs 1700',
           fontSize: 14,
           textColor: Colors.pink,
           fontStyle: FontStyle.normal,

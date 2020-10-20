@@ -8,7 +8,7 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page1.dart';
+import 'page6.dart';
 void main() => runApp(Page5());
 class Page5 extends StatelessWidget {
 @override
@@ -107,26 +107,26 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/Image6.png',
+        src:'http://104.40.75.137:9003/assets/medical/image42.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
          height: 133, width: 237);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Module 1 - Introduction',
-          fontSize: 28,
-          textColor:Color(0xff1a9d00),
+          text: 'Dr. Malabika Ghosh',
+          fontSize: 22,
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
-          fontWeight: FontWeight.normal,
+          fontWeight: FontWeight.bold,
           textAlign: TextAlign.left
         );
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Maecenas aliquam nisl orci. Proin faucibus odio tellus,  ut tincidunt magna dictum id. Integer porttitor eget magna  sit amet feugiat. Ut at ante lobortis, condimentum purus a,  auctor urna. Sed volutpat velit accumsan dolor ullamcorper,  non condimentum est tristique. Sed sit amet imperdiet ipsum.  Nulla ac ante in lorem hendrerit malesuada. Aliquam imperdiet  felis velit, sed feugiat elit blandit sed. Cras eget sagittis  ante. Maecenas pharetra erat non ullamcorper vestibulum. Cras  varius erat tortor, non cursus magna molestie semper. Maecenas  ullamcorper a nisl non iaculis. Duis nibh ipsum.Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Maecenas aliquam nisl orci.  Proin faucibus odio tellus, ut tincidunt magna dictum id. Integer  porttitor eget magna sit amet feugiat. Ut at ante lobortis, condimentum  purus a, auctor urna. Sed volutpat velit accumsan dolor ullamcorper,  non condimentum est tristique. Sed sit amet imperdiet ipsum. Nulla ac  ante in lorem hendrerit malesuada. Aliquam imperdiet felis velit, sed  feugiat elit blandit sed. Cras eget sagittis ante. Maecenas pharetra  erat non ullamcorper vestibulum. Cras varius erat tortor, non cursus  magna molestie semper. Maecenas ullamcorper a nisl non iaculis. Duis  nibh ipsum.',
-          fontSize: 16,
+          text: 'Cardiologist, Chief of Intrevention Cardiology Center - Gold Medalist Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Fusce consectetur elit lectus, non viverra orci placerat ut.  Class aptent taciti sociosqu ad litora torquent per conubia nostra.Cardiologist, Chief of Intrevention Cardiology Center - Gold Medalist Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Fusce consectetur elit lectus, non viverra orci placerat ut.  Class aptent taciti sociosqu ad litora torquent per conubia nostra.',
+          fontSize: 14,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Segoe Ui',
@@ -140,22 +140,22 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page1()));
+                builder: (context) => Page6()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Purchase with USD 4.25 to continue reading.'),
-          color:Color(0xffcc0000),
+          child:Text('Book an appointment'),
+          color:Color(0xffDB536A),
           textColor:Color(0xffffffff),
-          hoverColor: Color(0xffde0000),
-          width: 280,
-          focusColor: Color(0xffde0000),
-          height: 40,
-          highlightColor: Color(0xffe00000),
-          splashColor: Color(0xffd90000)
+          hoverColor: Color(0xffff8080),
+          width: 150,
+          focusColor: Color(0xffff8080),
+          height: 50,
+          highlightColor: Color(0xffff7373),
+          splashColor: Color(0xffff6e6e)
 
           );
       
@@ -163,7 +163,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
 appBar:customAppBar(appBarIcons,paramobject),bottomNavigationBar: BottomNavBar(param),
-backgroundColor: Colors.white,
+backgroundColor:Colors.white ,
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
@@ -180,13 +180,13 @@ Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
 Padding(
 padding: const EdgeInsets.only(top:30,bottom:30),
 child: Row(children: [
-Expanded(flex: 1,child:customText(textparam2)),
+Expanded(flex: 1,child:customText(textparam1)),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(bottom:30),
 child: Row(children: [
-Expanded(flex: 1,child:Container()),
+Expanded(flex: 1,child:customText(textparam2)),
 ],),
 ),
 Padding(
