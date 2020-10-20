@@ -4,11 +4,6 @@ import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
-import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page1.dart';
-import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page1.dart';
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
 @override
@@ -69,87 +64,26 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:' http://104.40.75.137:9003/assets/medical/image1.png',
+        src:'https://files.readme.io/9bdfde0-network_links0.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 225, width: 330);
+         height: 100, width: 200);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Medical content',
-          fontSize: 26,
-          textColor:Color(0xff000000),
+          text: 'hello ',
+          fontSize: 14,
+          textColor:Color(0xffab0000),
           fontStyle: FontStyle.normal,
-          fontFamily: 'Segoe Ui',
-          fontWeight: FontWeight.bold,
-          textAlign: TextAlign.center
-        );
-         
-
-        TextParameters textparam2 = new TextParameters(
-          text: 'Web content is the textual, visual, or aural content that is encountered as part of the user experience on websites',
-          fontSize: 16,
-          textColor:Color(0xff000000),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Segoe Ui',
+          fontFamily: 'Tulpen One',
           fontWeight: FontWeight.normal,
           textAlign: TextAlign.center
         );
          
-
-          onFlatButtonPress3 (bool b){ 
-          print(b); 
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-                builder: (context) => Page1()));
-
-          } 
-          onFlatButtonLongPress3 (bool b){ 
-          print(b); 
-          } 
-          FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Skip'),
-          color:Color(0xffffffff),
-          textColor:Color(0xffff8880),
-          hoverColor: Color(0xffff7b7b),
-          width: 90,
-          focusColor: Color(0xffff8787),
-          height: 50,
-          highlightColor: Color(0xffff7878),
-          splashColor: Color(0xffff9494)
-
-          );
-      
-
-          onFlatButtonPress4 (bool b){ 
-          print(b); 
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-                builder: (context) => Page1()));
-
-          } 
-          onFlatButtonLongPress4 (bool b){ 
-          print(b); 
-          } 
-          FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('Next'),
-          color:Color(0xffffffff),
-          textColor:Color(0xffff8f87),
-          hoverColor: Color(0xffff9999),
-          width: 90,
-          focusColor: Color(0xffff9797),
-          height: 50,
-          highlightColor: Color(0xffff8787),
-          splashColor: Color(0xffff8282)
-
-          );
-      
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Color(0xffffffff),
+backgroundColor: Color(0xffff0000),
 body: Padding(
 padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
@@ -172,14 +106,14 @@ SizedBox(height:65),Expanded(flex: 1,child:customText(textparam1)),
 Padding(
 padding: const EdgeInsets.all(15.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:0),Expanded(flex: 1,child:customText(textparam2)),
+SizedBox(height:0),Expanded(flex: 1,child:Container()),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.all(2.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
-SizedBox(height:200),Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),SizedBox(width:30),
-Expanded(flex: 1,child:customFlatButton(buttonFlatObject4, onFlatButtonPress4, onFlatButtonLongPress4),),
+SizedBox(height:200),Expanded(flex: 1,child:Container()),SizedBox(width:30),
+Expanded(flex: 1,child:Container()),
  ],),
 ),
 ], 
