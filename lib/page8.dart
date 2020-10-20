@@ -35,7 +35,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                                                 builder: (context) => Page3()));
                                         
                                       }),
-                                      title: Text('undefined',
+                                      title: Text('Last Page',
                                       style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
                                   List<Widget> appBarIcons = [
                                     IconButton(
