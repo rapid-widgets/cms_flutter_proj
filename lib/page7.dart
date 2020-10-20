@@ -183,9 +183,9 @@ class _BoilerPlate extends State<BoilerPlate> {
               width: 354,
               textColor: Colors.black,
               itemsBgColor: Colors.white,
-              shadowColor: Colors.black,
-              shadowBlurRadius: 3,
-              shadowSpreadRadius: 3,
+              shadowColor: Colors.white,
+              shadowBlurRadius: 0,
+              shadowSpreadRadius: 0,
               ); 
               onSelect14 (int i,String s){ 
               print(i); 

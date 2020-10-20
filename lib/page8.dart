@@ -4,6 +4,9 @@ import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'page3.dart';
 import 'package:rapid_widgets_library/custom-bottomnavbar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
+import 'package:rapid_widgets_library/custom-text.dart';
+import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
+import 'package:rapid_widgets_library/custom_AlertDialogs.dart';
 void main() => runApp(Page8());
 class Page8 extends StatelessWidget {
 @override
@@ -104,6 +107,54 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
+
+        TextParameters textparam0 = new TextParameters(
+          text: 'Payment Received',
+          fontSize: 12,
+          textColor:Color(0xff000000),
+          fontStyle: FontStyle.normal,
+          fontFamily: 'Segoe Ui',
+          fontWeight: FontWeight.normal,
+          textAlign: TextAlign.right
+        );
+         
+
+            AlertDialogContents alertObj11 = new AlertDialogContents(
+              <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(left:30.0, right: 30, top: 25, bottom: 20),
+                  child: Container(
+                    height: 41,
+                    width: 220,
+                    child: FlatButton(
+                      child: Text('See on your calender',
+                        style: TextStyle(color: Colors.white),),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(21.0),
+                      ),
+                      color: Color(0xffff3d3d),
+                      onPressed: (){},
+                    ),
+                  ),
+                ),
+              ],"",
+              Text('You have successfully booked an Appointment with Dr. Malabika Ghosh on 10 January 2020', textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
+            );
+            AlertDialogParameters alertobj21 = new AlertDialogParameters(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0)),
+              backgroundColor: Color(0xffffffff),
+              elevation: 30,
+              contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
+              height: 254,
+              width: 380,
+              titleTextStyle: TextStyle( fontSize: 18.0, color: Colors.white),
+            );
+            onAlertButtonTap1(String s){
+              print(s);
+            }
+          
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
@@ -119,11 +170,11 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.all(25.0),
 child: 
-Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),Container()
+Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),customText(textparam0)
 ],),),
 Padding(
 padding: const EdgeInsets.only(top:30,bottom:30),
-child:Container()
+child:CustomAlertDialog(dialogContent: alertObj11, param: alertobj21, callbackAlert: onAlertButtonTap1),
   ),
 ],
 ),
