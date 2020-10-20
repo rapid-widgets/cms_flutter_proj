@@ -38,7 +38,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                                                 builder: (context) => Page3()));
                                         
                                       }),
-                                      title: Text('undefined',
+                                      title: Text('Payment Received',
                                       style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
                                   List<Widget> appBarIcons = [
                                     IconButton(
@@ -138,8 +138,8 @@ class _BoilerPlate extends State<BoilerPlate> {
                   ),
                 ),
               ],"",
-              Text('You have successfully booked an Appointment with Dr. Malabika Ghosh on 10 January 2020', textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
+              Text('You have successfully booked an Appointment on 10 January 2020', textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 14, color: Color(0xff707070)),),
             );
             AlertDialogParameters alertobj21 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(

@@ -130,7 +130,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                         imgPath: 'http://104.40.75.137:9003/assets/medical/image42.png ',
                         containerbgColor: Color(0xffffffff),
                         footerText: 'Rs 700',
-                        btnText: 'Book',
+                        btnText: 'Qty',
                       );
                   
 
@@ -143,7 +143,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                         imgPath: 'http://104.40.75.137:9003/assets/medical/image44.png',
                         containerbgColor: Color(0xffffffff),
                         footerText: 'Rs 800',
-                        btnText: 'Book',
+                        btnText: 'Qty',
                       );
                   
 
