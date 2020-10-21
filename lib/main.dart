@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
-void main() => runApp(BoilerPlate());
+import 'package:rapid_widgets_library/custom-image.dart';
+void main() => runApp(MyApp());
+class MyApp extends StatelessWidget {
+@override
+Widget build(BuildContext context) {
+return MaterialApp(
+home: BoilerPlate());
+}}
 class BoilerPlate extends StatefulWidget 
 { 
 @override 
@@ -54,36 +61,46 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
+onclick0(String sText) { print(sText); }
+        CustomImageContents ImageObj10 = new CustomImageContents(
+        src:'https://i.pinimg.com/originals/c8/2a/f9/c82af9c8a818d8dba545fb896b8a6b2c.jpg',
+         semanticLabel: 'Random Network', 
+         imageType: 'Network', 
+         height: 740, width: 320);
+         
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-appBar:customAppBar(appBarIcons,paramobject),
-drawer: CustomDrawer(drawerList,onclickDrawer,user1),
+backgroundColor:Colors.white ,
 body: Padding(
-padding: const EdgeInsets.all(20.0),
+padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
-padding: const EdgeInsets.all(25.0),
+padding: const EdgeInsets.only(top:10.0,left:5.0,right:5.0,bottom:5.0),
 child: SingleChildScrollView(
 child: Column(
 children: <Widget>[
 Padding(
-padding: const EdgeInsets.all(25.0),
-child: Row(children: [
-Expanded(flex: 1,child:Container()),
-Expanded(flex: 1,child:Container()),
+padding: const EdgeInsets.only(top:65.0,left: 25.0,right: 25.0),
+child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
+SizedBox(height:80),Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
 ],),
 ),
 Padding(
-padding: const EdgeInsets.all(25.0),
-child: Row(children: [
-Expanded(flex: 1,child:Container()),
-Expanded(flex: 1,child:Container()),
+padding: const EdgeInsets.only(top:50.0,left:25.0,right:25.0,bottom:5.0),
+child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
+SizedBox(height:65),Expanded(flex: 1,child:Container()),
 ],),
 ),
 Padding(
-padding: const EdgeInsets.all(25.0),
-child: Row(children: [
-Expanded(flex: 1,child:Container()),
+padding: const EdgeInsets.all(15.0),
+child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
+SizedBox(height:0),Expanded(flex: 1,child:Container()),
+],),
+),
+Padding(
+padding: const EdgeInsets.all(2.0),
+child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
+SizedBox(height:200),Expanded(flex: 1,child:Container()),SizedBox(width:30),
 Expanded(flex: 1,child:Container()),
  ],),
 ),
