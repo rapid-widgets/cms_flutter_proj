@@ -4,7 +4,6 @@ import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-bottomnavbar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
 void main() => runApp(Page8());
 class Page8 extends StatelessWidget {
 @override
@@ -99,22 +98,11 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
-
-        TextParameters textparam0 = new TextParameters(
-          text: 'IDGuD',
-          fontSize: 12,
-          textColor:Color(0xff0087a3),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.normal,
-          textAlign: TextAlign.right
-        );
-         
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
 appBar:customAppBar(appBarIcons,paramobject),
-backgroundColor: Color(0xff13ca00),
+backgroundColor: ,
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
@@ -125,7 +113,7 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.all(25.0),
 child: 
-Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),customText(textparam0)
+Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),Container()
 ],),),
 Padding(
 padding: const EdgeInsets.only(top:30,bottom:30),
