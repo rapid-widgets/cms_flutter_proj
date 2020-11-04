@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart';
-import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
 import 'package:rapid_widgets_library/custom-appBar.dart';
+import 'page4.dart';
 import 'package:rapid_widgets_library/custom-bottomnavbar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
@@ -25,30 +25,32 @@ class _BoilerPlate extends State<BoilerPlate> {
  @override
   Widget build(BuildContext context) { 
 
-                                          AppBarParameters paramobject = new AppBarParameters(
-                                            backgroundColor: Colors.white,
-                                            elevation: 0,
-                                            bottomOpacity: 1.0,
-                                            toolbarOpacity: 1.0,
-                                            titleSpacing: 1.0,
-                                            centerTitle: false,
-                                            automaticallyImplyLeading: true,
-                                            leading: Icon(Icons.arrow_back, color: Color(0xff707070),),
-                                            title: Text('Payment Option',
-                                              style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
-                                        List<Widget> appBarIcons = [
-                                          IconButton(
-                                            icon: Image.network('http://104.40.75.137:9003/assets/cms/cart.png',width: 20,height: 14,),
-                                            onPressed: () {},
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(right: 30.0),
-                                            child: IconButton(
-                                              icon: Image.network('http://104.40.75.137:9003/assets/cms/drawer_icon.png',width: 20,height: 14,),
-                                              onPressed: () {},
-                                            ),
-                                          )];
-                                 
+                                         AppBarParameters paramobject = new AppBarParameters(
+                                               backgroundColor: Colors.white,
+                                                 elevation: 0,
+                                                 bottomOpacity: 1.0,
+                                                 toolbarOpacity: 1.0,
+                                                 titleSpacing: 1.0,
+                                                 centerTitle: false,
+                                                 automaticallyImplyLeading: true,
+                                                 leading: IconButton(icon: (Icon(Icons.arrow_back,color: Color(0xff707070))), onPressed: (){
+                                                  Navigator.pushReplacement(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                          builder: (context) => Page4()));
+                                                  
+                                                }),
+                                                 title: Text('React Fullstack with node/express',
+                                                 style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
+                                             List<Widget> appBarIcons = [
+                                               Padding(
+                                                 padding: const EdgeInsets.only(right: 30.0),
+                                                 child: IconButton(
+                                                   icon: Image.network('http://104.40.75.137:9003/assets/cms/drawer_icon.png',width: 20,height: 14,),
+                                                   onPressed: () {},
+                                                 ),
+                                               )];
+                                  
 
                   List<BottomNavigationBarItem> bottomnavitems = [];
                   BottomNavigationBarItem bottomnavitem1= new BottomNavigationBarItem(
