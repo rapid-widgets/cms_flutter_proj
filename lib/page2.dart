@@ -70,7 +70,7 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/medical/image3.png',
+        src:'http://104.40.75.137:9003/assets/cms/image3.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
          height: 302, width: 414);
@@ -91,7 +91,7 @@ onclick0(String sText) { print(sText); }
             fillColor: Color(0xffffffff), 
             counterText: "", 
             border: OutlineInputBorder( 
-            borderRadius: BorderRadius.circular(30), 
+            borderRadius: BorderRadius.circular(20), 
             borderSide: BorderSide( color: Color(0xff000000))), 
             ), 
             cursorColor: Color(0xff000000), 
@@ -119,7 +119,7 @@ onclick0(String sText) { print(sText); }
             fillColor: Color(0xffffffff), 
             counterText: "", 
             border: OutlineInputBorder( 
-            borderRadius: BorderRadius.circular(30), 
+            borderRadius: BorderRadius.circular(20), 
             borderSide: BorderSide( color: Color(0xff000000))), 
             ), 
             cursorColor: Color(0xff000000), 
@@ -145,24 +145,24 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Login'),
-          color:Color(0xffff8080),
+          color:Color(0xffff4848),
           textColor:Color(0xffffffff),
-          hoverColor: Color(0xffff8d8d),
-          width: 150,
-          focusColor: Color(0xffff8080),
-          height: 50,
-          highlightColor: Color(0xffff8a8a),
-          splashColor: Color(0xffff7373)
+          hoverColor: Color(0xffff4d4d),
+          width: 274,
+          focusColor: Color(0xffff3636),
+          height: 45,
+          highlightColor: Color(0xffff3b3b),
+          splashColor: Color(0xffff3838)
 
           );
       
 
         TextParameters textparam4 = new TextParameters(
-          text: 'Forgot Password \n You can register here',
-          fontSize: 12,
+          text: 'Forgot Password?\nYou can Register here',
+          fontSize: 14,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
-          fontFamily: 'Segoe Ui',
+          fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
           textAlign: TextAlign.center
         );
