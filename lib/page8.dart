@@ -4,6 +4,7 @@ import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-bottomnavbar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
+import 'package:rapid_widgets_library/custom-text.dart';
 void main() => runApp(Page8());
 class Page8 extends StatelessWidget {
 @override
@@ -98,11 +99,22 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
+
+        TextParameters textparam0 = new TextParameters(
+          text: 'build test',
+          fontSize: ,
+          textColor:Color(0xffff0000),
+          fontStyle: FontStyle.normal,
+          fontFamily: '',
+          fontWeight: FontWeight.,
+          textAlign: TextAlign.
+        );
+         
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
 appBar:customAppBar(appBarIcons,paramobject),
-backgroundColor: ,
+backgroundColor: Color(0xffffd9d9),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
@@ -113,7 +125,7 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.all(25.0),
 child: 
-Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),Container()
+Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),customText(textparam0)
 ],),),
 Padding(
 padding: const EdgeInsets.only(top:30,bottom:30),
