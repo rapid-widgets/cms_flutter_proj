@@ -8,7 +8,9 @@ import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page1.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page1.dart';
+import 'page2.dart';
+import 'package:rapid_widgets_library/custom-flatButton.dart';
+import 'page.dart';
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
 @override
@@ -69,31 +71,31 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image1.png',
+        src:'https://cdn.mos.cms.futurecdn.net/YLMh9EJRPhmht9GWNhiN7G-1200-80.jpg',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 225, width: 330);
+         height: 350, width: 640);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Web Content',
-          fontSize: 26,
-          textColor:Color(0xff000000),
+          text: 'Planet Earth: Facts About Its Orbit, Atmosphere & Size',
+          fontSize: 18,
+          textColor:Color(0xffffffff),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.bold,
-          textAlign: TextAlign.center
+          fontWeight: FontWeight.w600,
+          textAlign: TextAlign.left
         );
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'Web content is the textual, visual, or aural  content that is encountered as part of  the user experience on websites',
+          text: 'Earth, our home, is the third planet from the sun. It's the only planet known to have an atmosphere containing free oxygen, oceans of water on its surface and, of course, life.',
           fontSize: 16,
-          textColor:Color(0xff000000),
+          textColor:Color(0xffffffff),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
-          textAlign: TextAlign.center
+          textAlign: TextAlign.left
         );
          
 
@@ -109,15 +111,15 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Skip'),
+          child:Text('Earth's orbit'),
           color:Color(0xffffffff),
-          textColor:Color(0xffff4545),
-          hoverColor: Color(0xffff4545),
-          width: 90,
-          focusColor: Color(0xffff4545),
-          height: 40,
-          highlightColor: Color(0xffff4545),
-          splashColor: Color(0xffff4545)
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xffffffff),
+          width: 300,
+          focusColor: Color(0xffff0000),
+          height: 50,
+          highlightColor: Color(0xffff0000),
+          splashColor: Color(0xffff0000)
 
           );
       
@@ -127,29 +129,54 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page1()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('Next'),
+          child:Text('Earth's formation and evolution'),
           color:Color(0xffffffff),
-          textColor:Color(0xffff4545),
-          hoverColor: Color(0xffff4545),
-          width: 90,
-          focusColor: Color(0xffff4545),
-          height: 40,
-          highlightColor: Color(0xffff4545),
-          splashColor: Color(0xffff4545)
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xffffffff),
+          width: 300,
+          focusColor: Color(0xffff0000),
+          height: 50,
+          highlightColor: Color(0xffff0000),
+          splashColor: Color(0xffff0000)
+
+          );
+      
+
+          onFlatButtonPress5 (bool b){ 
+          print(b); 
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+                builder: (context) => Page()));
+
+          } 
+          onFlatButtonLongPress5 (bool b){ 
+          print(b); 
+          } 
+          FlatButtonParameters buttonFlatObject5 = FlatButtonParameters(
+          child:Text(''),
+          color:Color(0xffffffff),
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xffffffff),
+          width: ,
+          focusColor: Color(0xffff0000),
+          height: ,
+          highlightColor: Color(0xffff0000),
+          splashColor: Color(0xffff0000)
 
           );
       
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Color(0xffffffff),
+backgroundColor: Color(0xff000000),
 body: Padding(
 padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
@@ -179,7 +206,7 @@ Padding(
 padding: const EdgeInsets.all(2.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
 SizedBox(height:200),Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),SizedBox(width:30),
-Expanded(flex: 1,child:customFlatButton(buttonFlatObject4, onFlatButtonPress4, onFlatButtonLongPress4),),
+Expanded(flex: 1,child:customFlatButton(buttonFlatObject5, onFlatButtonPress5, onFlatButtonLongPress5),),
  ],),
 ),
 ], 
