@@ -8,7 +8,7 @@ import 'package:rapid_widgets_library/custom-textField.dart';
 import 'dart:ui'; 
 import 'package:rapid_widgets_library/custom-textField.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page3.dart';
+import 'page4.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 void main() => runApp(Page2());
 class Page2 extends StatelessWidget {
@@ -73,34 +73,34 @@ onclick0(String sText) { print(sText); }
         src:'http://104.40.75.137:9003/assets/cms/image3.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 302, width: 414);
+         height: 220, width: 300);
          
 
             onTextSubmit1 (String sText) { 
             print(sText); 
             }
             TextFieldParameters finalTextObj1 = new TextFieldParameters( 
-            maxLength: 100, 
+            maxLength: 15, 
             obsecureText: false,
-            maxLengthEnforced: true, 
+            maxLengthEnforced: false, 
             decoration: InputDecoration(
-            hintText: 'Email',
-            labelText: 'Email', 
+            hintText: 'Username',
+            labelText: 'Username', 
   
             filled: false, 
-            fillColor: Color(0xffffffff), 
+            fillColor: Color(0xffff0000), 
             counterText: "", 
             border: OutlineInputBorder( 
-            borderRadius: BorderRadius.circular(20), 
-            borderSide: BorderSide( color: Color(0xff000000))), 
+            borderRadius: BorderRadius.circular(10), 
+            borderSide: BorderSide( color: Color(0xffff0000))), 
             ), 
-            cursorColor: Color(0xff000000), 
+            cursorColor: Color(0xffff0000), 
             cursorWidth: 1, 
             expands: false, 
             maxLines: 1, 
             readOnly: false, 
             showCursor: true, 
-            style: TextStyle(color: Color(0xff000000)),
+            style: TextStyle(color: Color(0xffff0000)),
             );
         
 
@@ -108,27 +108,27 @@ onclick0(String sText) { print(sText); }
             print(sText); 
             }
             TextFieldParameters finalTextObj2 = new TextFieldParameters( 
-            maxLength: 100, 
-            obsecureText: true,
-            maxLengthEnforced: true, 
+            maxLength: 15, 
+            obsecureText: false,
+            maxLengthEnforced: false, 
             decoration: InputDecoration(
             hintText: 'Password',
             labelText: 'Password', 
   
             filled: false, 
-            fillColor: Color(0xffffffff), 
+            fillColor: Color(0xffff0000), 
             counterText: "", 
             border: OutlineInputBorder( 
-            borderRadius: BorderRadius.circular(20), 
-            borderSide: BorderSide( color: Color(0xff000000))), 
+            borderRadius: BorderRadius.circular(10), 
+            borderSide: BorderSide( color: Color(0xffff0000))), 
             ), 
-            cursorColor: Color(0xff000000), 
+            cursorColor: Color(0xffff0000), 
             cursorWidth: 1, 
             expands: false, 
             maxLines: 1, 
             readOnly: false, 
             showCursor: true, 
-            style: TextStyle(color: Color(0xff000000)),
+            style: TextStyle(color: Color(0xffff0000)),
             );
         
 
@@ -137,7 +137,7 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page3()));
+                builder: (context) => Page4()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
@@ -145,26 +145,26 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Login'),
-          color:Color(0xffff4848),
-          textColor:Color(0xffffffff),
-          hoverColor: Color(0xffff4d4d),
-          width: 274,
-          focusColor: Color(0xffff3636),
-          height: 45,
-          highlightColor: Color(0xffff3b3b),
-          splashColor: Color(0xffff3838)
+          color:Color(0xffff0000),
+          textColor:Color(0xffff0000),
+          hoverColor: Color(0xffff0000),
+          width: 160,
+          focusColor: Color(0xffff0000),
+          height: 50,
+          highlightColor: Color(0xffff0000),
+          splashColor: Color(0xffff0000)
 
           );
       
 
         TextParameters textparam4 = new TextParameters(
-          text: 'Forgot Password?\nYou can Register here',
-          fontSize: 14,
-          textColor:Color(0xff000000),
+          text: 'Forgot Password',
+          fontSize: 16,
+          textColor:Color(0xffff0000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
-          textAlign: TextAlign.center
+          textAlign: TextAlign.left
         );
          
 return MaterialApp(

@@ -6,7 +6,7 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page2.dart';
+import 'page3.dart';
 void main() => runApp(Page1());
 class Page1 extends StatelessWidget {
 @override
@@ -67,27 +67,27 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image5.png',
+        src:'http://104.40.75.137:9003/assets/cms/image2.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 150, width: 300);
+         height: 220, width: 300);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'test',
-          fontSize: 16,
+          text: 'Teacher learning education',
+          fontSize: 26,
           textColor:Color(0xffff0000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.normal,
+          fontWeight: FontWeight.bold,
           textAlign: TextAlign.center
         );
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'test',
+          text: 'Training teacher for the lesson for online student interaction',
           fontSize: 16,
-          textColor:Color(0xffff0000),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -100,17 +100,17 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page2()));
+                builder: (context) => Page3()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('bdhg'),
-          color:Color(0xffff0000),
+          child:Text('Get Stated'),
+          color:Color(0xfffffcfc),
           textColor:Color(0xffff0000),
-          hoverColor: Color(0xffff0000),
+          hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xffff0000),
           height: 50,
@@ -122,7 +122,7 @@ onclick0(String sText) { print(sText); }
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Color(0xffffadad),
+backgroundColor: Color(0xffffffff),
 body: Padding(
 padding: const EdgeInsets.only(top:40.0,left:20.0,right:20.0,bottom:0.0),
 child: Padding(
@@ -139,13 +139,13 @@ SizedBox(height:0),Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
 Padding(
 padding: const EdgeInsets.all(20.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:20),Expanded(flex: 1,child:customText(textparam1)),
+SizedBox(height:20),Expanded(flex: 1,child:customText(textparam2)),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.all(20.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:0),Expanded(flex: 1,child:customText(textparam2)),
+SizedBox(height:0),Expanded(flex: 1,child:Container()),
 ],),
 ),
 Padding(
