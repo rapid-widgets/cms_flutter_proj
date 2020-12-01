@@ -103,11 +103,11 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparam0 = new TextParameters(
-          text: 'Test',
+          text: 'Text',
           fontSize: 16,
           textColor:Color(0xffff0000),
           fontStyle: FontStyle.normal,
-          fontFamily: 'Sansita Swashed',
+          fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
           textAlign: TextAlign.center
         );
@@ -121,7 +121,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                     height: 41,
                     width: 220,
                     child: FlatButton(
-                      child: Text('T',
+                      child: Text('B',
                         style: TextStyle(color: Colors.white),),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
@@ -132,7 +132,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                   ),
                 ),
               ],"",
-              Text('Texttt', textAlign: TextAlign.center,
+              Text('Text', textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
             );
             AlertDialogParameters alertobj21 = new AlertDialogParameters(
@@ -153,7 +153,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
 appBar:customAppBar(appBarIcons,paramobject),
-backgroundColor: Color(0xffffffff),
+backgroundColor: Color(0xffffebeb),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
