@@ -70,13 +70,13 @@ onclick0(String sText) { print(sText); }
         src:'http://104.40.75.137:9003/assets/cms/image2.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 220, width: 300);
+         height: 240, width: 350);
          
 
         TextParameters textparam1 = new TextParameters(
           text: 'Teacher learning education',
           fontSize: 26,
-          textColor:Color(0xffff0000),
+          textColor:Color(0xff090000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.bold,
@@ -86,8 +86,8 @@ onclick0(String sText) { print(sText); }
 
         TextParameters textparam2 = new TextParameters(
           text: 'Training teacher for the lesson for online student interaction',
-          fontSize: 16,
-          textColor:Color(0xff000000),
+          fontSize: 18,
+          textColor:Color(0xff090000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -107,13 +107,13 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Get Stated'),
-          color:Color(0xfffffcfc),
-          textColor:Color(0xffff0000),
-          hoverColor: Color(0xff000000),
-          width: 150,
+          child:Text('Get Started'),
+          color:Color(0xffff81f3),
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xffff5c5c),
+          width: 146,
           focusColor: Color(0xffff0000),
-          height: 50,
+          height: 41,
           highlightColor: Color(0xffff0000),
           splashColor: Color(0xffff0000)
 
@@ -139,13 +139,13 @@ SizedBox(height:0),Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
 Padding(
 padding: const EdgeInsets.all(20.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:20),Expanded(flex: 1,child:customText(textparam2)),
+SizedBox(height:20),Expanded(flex: 1,child:customText(textparam1)),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.all(20.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:0),Expanded(flex: 1,child:Container()),
+SizedBox(height:0),Expanded(flex: 1,child:customText(textparam2)),
 ],),
 ),
 Padding(

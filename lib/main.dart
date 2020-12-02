@@ -6,9 +6,9 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page1.dart';
+import 'page2.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page1.dart';
+import 'page2.dart';
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
 @override
@@ -69,27 +69,27 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image2.png',
+        src:'http://104.40.75.137:9003/assets/cms/image1.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 150, width: 300);
+         height: 220, width: 300);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'hellooooooooo',
-          fontSize: 16,
-          textColor:Color(0xffff0000),
+          text: 'Web content',
+          fontSize: 26,
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.normal,
+          fontWeight: FontWeight.bold,
           textAlign: TextAlign.center
         );
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'abcdsdsf',
+          text: 'Web content is the textual, visual, or aural  content that is encountered as part of  the user experience on websites',
           fontSize: 16,
-          textColor:Color(0xff008f02),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -102,20 +102,20 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page1()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('henmlk'),
-          color:Color(0xffe60000),
-          textColor:Color(0xff00feff),
-          hoverColor: Color(0xff008f02),
-          width: 150,
+          child:Text('Continue'),
+          color:Color(0xfffc93ff),
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xffff5252),
+          width: 140,
           focusColor: Color(0xffff0000),
-          height: 50,
+          height: 40,
           highlightColor: Color(0xffff0000),
           splashColor: Color(0xffff0000)
 
@@ -127,20 +127,20 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page1()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('ubhn'),
-          color:Color(0xffe60000),
-          textColor:Color(0xff00feff),
-          hoverColor: Color(0xff008f02),
-          width: 150,
+          child:Text('SKIP'),
+          color:Color(0xfffc93ff),
+          textColor:Color(0xff130700),
+          hoverColor: Color(0xffff5252),
+          width: 140,
           focusColor: Color(0xffff0000),
-          height: 50,
+          height: 40,
           highlightColor: Color(0xffff0000),
           splashColor: Color(0xffff0000)
 
@@ -149,7 +149,7 @@ onclick0(String sText) { print(sText); }
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Color(0xffe5d1ff),
+backgroundColor: Color(0xffffffff),
 body: Padding(
 padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(

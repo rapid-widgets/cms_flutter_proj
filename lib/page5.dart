@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart';
+import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
 import 'package:rapid_widgets_library/custom-appBar.dart';
-import 'page4.dart';
 import 'package:rapid_widgets_library/custom-bottomnavbar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page1.dart';
+import 'page6.dart';
 void main() => runApp(Page5());
 class Page5 extends StatelessWidget {
 @override
@@ -25,32 +25,30 @@ class _BoilerPlate extends State<BoilerPlate> {
  @override
   Widget build(BuildContext context) { 
 
-                                         AppBarParameters paramobject = new AppBarParameters(
-                                               backgroundColor: Colors.white,
-                                                 elevation: 0,
-                                                 bottomOpacity: 1.0,
-                                                 toolbarOpacity: 1.0,
-                                                 titleSpacing: 1.0,
-                                                 centerTitle: false,
-                                                 automaticallyImplyLeading: true,
-                                                 leading: IconButton(icon: (Icon(Icons.arrow_back,color: Color(0xff707070))), onPressed: (){
-                                                  Navigator.pushReplacement(
-                                                      context,
-                                                      MaterialPageRoute(
-                                                          builder: (context) => Page4()));
-                                                  
-                                                }),
-                                                 title: Text('React Fullstack with node/express',
-                                                 style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
-                                             List<Widget> appBarIcons = [
-                                               Padding(
-                                                 padding: const EdgeInsets.only(right: 30.0),
-                                                 child: IconButton(
-                                                   icon: Image.network('http://104.40.75.137:9003/assets/cms/drawer_icon.png',width: 20,height: 14,),
-                                                   onPressed: () {},
-                                                 ),
-                                               )];
-                                  
+                                          AppBarParameters paramobject = new AppBarParameters(
+                                            backgroundColor: Colors.white,
+                                            elevation: 0,
+                                            bottomOpacity: 1.0,
+                                            toolbarOpacity: 1.0,
+                                            titleSpacing: 1.0,
+                                            centerTitle: false,
+                                            automaticallyImplyLeading: true,
+                                            leading: Icon(Icons.arrow_back, color: Color(0xff707070),),
+                                            title: Text('Payment Option',
+                                              style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
+                                        List<Widget> appBarIcons = [
+                                          IconButton(
+                                            icon: Image.network('http://104.40.75.137:9003/assets/cms/cart.png',width: 20,height: 14,),
+                                            onPressed: () {},
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.only(right: 30.0),
+                                            child: IconButton(
+                                              icon: Image.network('http://104.40.75.137:9003/assets/cms/drawer_icon.png',width: 20,height: 14,),
+                                              onPressed: () {},
+                                            ),
+                                          )];
+                                 
 
                   List<BottomNavigationBarItem> bottomnavitems = [];
                   BottomNavigationBarItem bottomnavitem1= new BottomNavigationBarItem(
@@ -107,15 +105,15 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/Image6.png',
+        src:'http://104.40.75.137:9003/assets/cms/image4.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 133, width: 237);
+         height: 158, width: 235);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Module 1 - Introduction',
-          fontSize: 20,
+          text: 'My Course',
+          fontSize: 26,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
@@ -125,13 +123,13 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Maecenas aliquam nisl orci. Proin faucibus odio tellus,  ut tincidunt magna dictum id. Integer porttitor eget magna  sit amet feugiat. Ut at ante lobortis, condimentum purus a,  auctor urna. Sed volutpat velit accumsan dolor ullamcorper,  non condimentum est tristique. Sed sit amet imperdiet ipsum.  Nulla ac ante in lorem hendrerit malesuada. Aliquam imperdiet  felis velit, sed feugiat elit blandit sed. Cras eget sagittis  ante. Maecenas pharetra erat non ullamcorper vestibulum. Cras  varius erat tortor, non cursus magna molestie semper. Maecenas  ullamcorper a nisl non iaculis. Duis nibh ipsum.Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Maecenas aliquam nisl orci.  Proin faucibus odio tellus, ut tincidunt magna dictum id. Integer  porttitor eget magna sit amet feugiat. Ut at ante lobortis, condimentum  purus a, auctor urna. Sed volutpat velit accumsan dolor ullamcorper,  non condimentum est tristique. Sed sit amet imperdiet ipsum. Nulla ac  ante in lorem hendrerit malesuada. Aliquam imperdiet felis velit, sed  feugiat elit blandit sed. Cras eget sagittis ante. Maecenas pharetra  erat non ullamcorper vestibulum. Cras varius erat tortor, non cursus  magna molestie semper. Maecenas ullamcorper a nisl non iaculis. Duis  nibh ipsum.',
-          fontSize: 16,
+          text: 'Programming with JavaScript Chapter 3 - The Period',
+          fontSize: 18,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
-          textAlign: TextAlign.left
+          textAlign: TextAlign.center
         );
          
 
@@ -140,22 +138,22 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page1()));
+                builder: (context) => Page6()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Purchase with USD 4.25 to continue reading.'),
-          color:Color(0xffff4848),
-          textColor:Color(0xffffffff),
-          hoverColor: Color(0xffff4545),
-          width: 250,
-          focusColor: Color(0xffff7b7b),
-          height: 50,
-          highlightColor: Color(0xffff4040),
-          splashColor: Color(0xffff4d4d)
+          child:Text('Continue Course'),
+          color:Color(0xffff89e0),
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xff000000),
+          width: 140,
+          focusColor: Color(0xffff0000),
+          height: 40,
+          highlightColor: Color(0xffff0000),
+          splashColor: Color(0xffff0000)
 
           );
       

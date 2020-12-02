@@ -10,11 +10,11 @@ import 'package:rapid_widgets_library/custom-borderless-card.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
 import 'package:rapid_widgets_library/custom-borderless-card.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
+import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-icon.dart'; 
 import 'package:rapid_widgets_library/widget-classesUsed.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page7.dart';
+import 'page8.dart';
 void main() => runApp(Page6());
 class Page6 extends StatelessWidget {
 @override
@@ -40,7 +40,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                                             centerTitle: false,
                                             automaticallyImplyLeading: true,
                                             leading: Icon(Icons.arrow_back, color: Color(0xff707070),),
-                                            title: Text('Cart -2 Item',
+                                            title: Text('Payment Option',
                                               style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
                                         List<Widget> appBarIcons = [
                                           IconButton(
@@ -111,90 +111,90 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparam0 = new TextParameters(
-          text: 'Proceed with your order completion',
-          fontSize: 14,
-          textColor:Color(0xffDB536A),
+          text: 'Order above $80 to save on delivery charges. Free delivery with cart value above $100',
+          fontSize: 16,
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
-          fontFamily: 'Segoe Ui',
+          fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
-          textAlign: TextAlign.left
+          textAlign: TextAlign.center
         );
          
 
                       borderlessCallback1(String s, int i){};
                       MaterialCardData borderdata1 = new MaterialCardData(
-                        title: 'Dr. Malabika Ghosh',
-                        subtitle: 'Cardiologist, Chief of Intrevention Cardiology Center - Gold Medalist',
-                        containerHeight: 188,
-                        containerWidth: 380,
-                        imgPath: 'http://104.40.75.137:9003/assets/medical/image42.png ',
-                        containerbgColor: Color(0xffffffff),
-                        footerText: 'Rs 700',
-                        btnText: 'Qty',
+                        title: 'Programming with JavaScript',
+                        subtitle: 'Chapter 3 - The Period',
+                        containerHeight: 100,
+                        containerWidth: 100,
+                        imgPath: 'http://104.40.75.137:9003/assets/cms/image5.png',
+                        containerbgColor: Color(0xffff8585),
+                        footerText: 'USD 5.00',
+                        btnText: 'BUY',
                       );
                   
 
                       borderlessCallback2(String s, int i){};
                       MaterialCardData borderdata2 = new MaterialCardData(
-                        title: 'Dr. S. Smith',
-                        subtitle: 'Cardiologist, Chief of Intrevention Cardiology Center - Gold Medalist',
-                        containerHeight: 188,
-                        containerWidth: 380,
-                        imgPath: 'http://104.40.75.137:9003/assets/medical/image44.png',
-                        containerbgColor: Color(0xffffffff),
-                        footerText: 'Rs 800',
-                        btnText: 'Qty',
+                        title: 'JavaScript is a powerful and versatile scripting',
+                        subtitle: 'language used in web applic...',
+                        containerHeight: 100,
+                        containerWidth: 100,
+                        imgPath: 'http://104.40.75.137:9003/assets/cms/image5.png',
+                        containerbgColor: Color(0xffff8585),
+                        footerText: 'USD 5.00',
+                        btnText: 'BUY',
                       );
                   
 
         TextParameters textparam3 = new TextParameters(
-          text: 'Add more items',
-          fontSize: 14,
-          textColor:Color(0xff000000),
+          text: 'Text',
+          fontSize: 16,
+          textColor:Color(0xffff0000),
           fontStyle: FontStyle.normal,
-          fontFamily: 'Segoe Ui',
+          fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
           textAlign: TextAlign.left
         );
          
 
-                      IconState icon4 =new IconState(icon: Icons.add,
-                        color: Color(0xffff7b7b),
-                        size: 15);
-                  
-
-        TextParameters textparam5 = new TextParameters(
-          text: 'Total Rs 1700',
-          fontSize: 14,
+        TextParameters textparam4 = new TextParameters(
+          text: 'Text',
+          fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
-          fontFamily: 'Segoe Ui',
+          fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
           textAlign: TextAlign.right
         );
          
+
+                      IconState icon5 =new IconState(icon: Icons.back,
+                        color: Color(0xffff0000),
+                        size: 20);
+                  
 
           onFlatButtonPress6 (bool b){ 
           print(b); 
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page7()));
+                builder: (context) => Page8()));
 
           } 
           onFlatButtonLongPress6 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject6 = FlatButtonParameters(
-          child:Text('Proceed to payment'),
-          color:Color(0xffDB536A),
-          textColor:Color(0xffffffff),
-          hoverColor: Color(0xffff8585),
-          width: 250,
-          focusColor: Color(0xffff6666),
+          child:Text('Purchase'),
+          color:Color(0xffff77eb),
+          textColor:Color(0xff010000),
+          hoverColor: Color(0xffff0000),
+          width: 150,
+          focusColor: Color(0xffff0000),
           height: 50,
-          highlightColor: Color(0xffff5454),
-          splashColor: Color(0xffff5f5f)
+          highlightColor: Color(0xffff0000),
+          splashColor: Color(0xffff0000)
 
           );
       
@@ -204,7 +204,7 @@ home: Scaffold(
 appBar:customAppBar(appBarIcons,paramobject),
 drawer: CustomDrawer(drawerList,onclickDrawer,user1),
 bottomNavigationBar: BottomNavBar(param),
-backgroundColor:Colors.white ,
+backgroundColor: Color(0xffffffff),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
@@ -239,8 +239,8 @@ Padding(
 padding: const EdgeInsets.only(bottom:30.0),
 child: Row(children: [
 Expanded(flex: 1,child:customText(textparam3)),
-Expanded(flex: 1,child:customisedIcon(icon4),),
-Expanded(flex: 2,child:Align(alignment: Alignment.centerRight,child:customText(textparam5)),),
+Expanded(flex: 1,child:customisedIcon(icon5),),
+Expanded(flex: 2,child:Align(alignment: Alignment.centerRight,child:customText(textparam4)),),
 ],),
 ),
 Padding(

@@ -73,7 +73,7 @@ onclick0(String sText) { print(sText); }
         src:'http://104.40.75.137:9003/assets/cms/image3.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 220, width: 300);
+         height: 260, width: 350);
          
 
             onTextSubmit1 (String sText) { 
@@ -92,15 +92,15 @@ onclick0(String sText) { print(sText); }
             counterText: "", 
             border: OutlineInputBorder( 
             borderRadius: BorderRadius.circular(10), 
-            borderSide: BorderSide( color: Color(0xffff0000))), 
+            borderSide: BorderSide( color: Color(0xff030000))), 
             ), 
-            cursorColor: Color(0xffff0000), 
+            cursorColor: Color(0xff110000), 
             cursorWidth: 1, 
             expands: false, 
             maxLines: 1, 
             readOnly: false, 
             showCursor: true, 
-            style: TextStyle(color: Color(0xffff0000)),
+            style: TextStyle(color: Color(0xff000000)),
             );
         
 
@@ -109,26 +109,26 @@ onclick0(String sText) { print(sText); }
             }
             TextFieldParameters finalTextObj2 = new TextFieldParameters( 
             maxLength: 15, 
-            obsecureText: false,
+            obsecureText: true,
             maxLengthEnforced: false, 
             decoration: InputDecoration(
             hintText: 'Password',
             labelText: 'Password', 
   
             filled: false, 
-            fillColor: Color(0xffff0000), 
+            fillColor: Color(0xffff3a3a), 
             counterText: "", 
             border: OutlineInputBorder( 
             borderRadius: BorderRadius.circular(10), 
-            borderSide: BorderSide( color: Color(0xffff0000))), 
+            borderSide: BorderSide( color: Color(0xff0d0600))), 
             ), 
-            cursorColor: Color(0xffff0000), 
+            cursorColor: Color(0xff190a00), 
             cursorWidth: 1, 
             expands: false, 
             maxLines: 1, 
             readOnly: false, 
             showCursor: true, 
-            style: TextStyle(color: Color(0xffff0000)),
+            style: TextStyle(color: Color(0xff0b0600)),
             );
         
 
@@ -145,26 +145,26 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Login'),
-          color:Color(0xffff0000),
-          textColor:Color(0xffff0000),
+          color:Color(0xffef8dff),
+          textColor:Color(0xff000000),
           hoverColor: Color(0xffff0000),
-          width: 160,
+          width: 250,
           focusColor: Color(0xffff0000),
-          height: 50,
+          height: 40,
           highlightColor: Color(0xffff0000),
-          splashColor: Color(0xffff0000)
+          splashColor: Color(0xff0d0600)
 
           );
       
 
         TextParameters textparam4 = new TextParameters(
-          text: 'Forgot Password',
+          text: 'Forgot Password?',
           fontSize: 16,
-          textColor:Color(0xffff0000),
+          textColor:Color(0xff070000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
-          textAlign: TextAlign.left
+          textAlign: TextAlign.right
         );
          
 return MaterialApp(

@@ -186,10 +186,10 @@ class _BoilerPlate extends State<BoilerPlate> {
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('USD 4.25',
+                                  Text('$4.00',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('USD 5.00',
+                                  Text('5.00',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -249,10 +249,10 @@ class _BoilerPlate extends State<BoilerPlate> {
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('USD 4.25',
+                                  Text('$4.00',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('USD 5.00',
+                                  Text('$4.00',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -301,21 +301,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('React Forms Crash Course',textAlign: TextAlign.left,
+                              Text('React JS Frontend Web Development',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('By Elvis Graholskis',
+                                child: Text('By Rhyan Dhungel',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('USD 14.25',
+                                  Text('$4.00',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('USD 50.00',
+                                  Text('$5.00',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -339,7 +339,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/book4.png',height: 102,width: 65,)
+                                  child: Image.network('http://104.40.75.137:9003/assets/cms/book3.png',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -364,21 +364,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('React JS Frontend Web Development',textAlign: TextAlign.left,
+                              Text('Book 4',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('By Rhyan Dhungel',
+                                child: Text('Author 4',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('USD 12.25',
+                                  Text('$5.00',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('USD 50.00',
+                                  Text('$6.00',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
