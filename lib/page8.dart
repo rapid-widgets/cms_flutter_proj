@@ -1,179 +1,260 @@
-import 'package:flutter/material.dart';
-import 'package:rapid_widgets_library/widget-classesUsed.dart';
+import 'package:flutter/material.dart'; 
+import 'dart:async'; 
+import 'dart:convert'; 
+import 'package:http/http.dart' as http; 
+import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
+import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
+import 'package:rapid_widgets_library/custom-appBar.dart'; 
+import 'package:rapid_widgets_library/custom-bottomnavbar.dart'; 
+import 'package:rapid_widgets_library/custom-drawer.dart'; 
+import 'package:rapid_widgets_library/custom-image.dart'; 
+import 'package:rapid_widgets_library/custom-text.dart'; 
+import 'package:rapid_widgets_library/custom-text.dart'; 
+import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-bottomnavbar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
+import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
-import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
-import 'package:rapid_widgets_library/custom_AlertDialogs.dart';
-void main() => runApp(Page8());
-class Page8 extends StatelessWidget {
-@override
-Widget build(BuildContext context) {
-return MaterialApp(
-home: BoilerPlate());
-}}
-class BoilerPlate extends StatefulWidget 
-{ 
+import 'package:rapid_widgets_library/custom-text.dart';
+import 'package:rapid_widgets_library/custom-flatButton.dart';
+import 'page11.dart';
+void main() => runApp( 
+Page8(3, 'https://run.mocky.io/v3/e2794ba4-3495-4d0c-bd20-74451ec83b25')); 
+ 
+class Page8 extends StatelessWidget { 
+Page8(this.i, this.endpoint); 
+final int i; 
+final String endpoint; 
+ 
 @override 
-_BoilerPlate createState() => _BoilerPlate();
-}
-class _BoilerPlate extends State<BoilerPlate> {
- @override
-  Widget build(BuildContext context) { 
-
-                                          AppBarParameters paramobject = new AppBarParameters(
-                                            backgroundColor: Colors.white,
-                                            elevation: 0,
-                                            bottomOpacity: 1.0,
-                                            toolbarOpacity: 1.0,
-                                            titleSpacing: 1.0,
-                                            centerTitle: false,
-                                            automaticallyImplyLeading: true,
-                                            leading: Icon(Icons.arrow_back, color: Color(0xff707070),),
-                                            title: Text('Payment Option',
-                                              style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
-                                        List<Widget> appBarIcons = [
-                                          IconButton(
-                                            icon: Image.network('http://104.40.75.137:9003/assets/cms/cart.png',width: 20,height: 14,),
-                                            onPressed: () {},
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(right: 30.0),
-                                            child: IconButton(
-                                              icon: Image.network('http://104.40.75.137:9003/assets/cms/drawer_icon.png',width: 20,height: 14,),
-                                              onPressed: () {},
-                                            ),
-                                          )];
-                                 
-
-                  List<BottomNavigationBarItem> bottomnavitems = [];
-                  BottomNavigationBarItem bottomnavitem1= new BottomNavigationBarItem(
-                    icon: Image.network('http://104.40.75.137:9003/assets/cms/bottomnav_home.png',height: 20,width: 20,),
-                    title: Text('Home',style: TextStyle(fontSize: 14)),
-                  );
-                  BottomNavigationBarItem bottomnavitem2= new BottomNavigationBarItem(
-                    icon: Image.network('http://104.40.75.137:9003/assets/cms/bottomnav_bookmark.png',height: 20,width: 20,),
-                    title: Text('Bookmark',style: TextStyle(fontSize: 14)),
-                  );
-                  BottomNavigationBarItem bottomnavitem3= new BottomNavigationBarItem(
-                    icon: Icon(Icons.search,color: Colors.black,size: 20,),
-                    title: Text('Search',style: TextStyle(fontSize: 14),),
-                  );
-                  BottomNavigationBarItem bottomnavitem4= new BottomNavigationBarItem(
-                    icon: Image.network('http://104.40.75.137:9003/assets/cms/bottomnav_profile.png',height: 20,width: 20,),
-                    title: Text('Profile',style: TextStyle(fontSize: 14),),
-                  );
-                  bottomnavitems.add(bottomnavitem1);
-                  bottomnavitems.add(bottomnavitem2);
-                  bottomnavitems.add(bottomnavitem3);
-                  bottomnavitems.add(bottomnavitem4);
-                  BottomNavBarParameters param = new BottomNavBarParameters(
-                      items: bottomnavitems,
-                      selectedItemColor: Colors.black,
-                      unselectedItemColor: Colors.black,
-                      backgroundColor: Color(0xffF9F9F9),
-                      showUnselectedLabels: true,
-                      showSelectedLabels: true,
-                  );
-            
-
-            List<DrawerListItems> drawerList = [ 
-            DrawerListItems(Icon(Icons.account_circle), 
-            Text("Account details")), 
-            DrawerListItems(Icon(Icons.history), 
-            Text("Order History")), 
-            DrawerListItems(Icon(Icons.account_balance_wallet), 
-            Text("Wallet")), 
-            DrawerListItems(Icon(Icons.cancel), 
-            Text("Logout")), 
-            ]; 
-            DrawerHeaderParameters user1= new DrawerHeaderParameters(
-            subtitle: 'abc@xyz.com',
-            title: 'Account Name',
-            imageType: "Network",
-            imagepath:'https://lunawood.com/wp-content/uploads/2018/02/placeholder-image.png' ,
-            headerColor:Colors.white
-            ); 
-            onclickDrawer(int nIndex) 
-            { 
-            print(nIndex); 
-            }
-        
-
-        TextParameters textparam0 = new TextParameters(
-          text: 'Thank You!',
-          fontSize: 26,
-          textColor:Color(0xff000000),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.bold,
-          textAlign: TextAlign.center
-        );
-         
-
-            AlertDialogContents alertObj11 = new AlertDialogContents(
-              <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(left:30.0, right: 30, top: 25, bottom: 20),
-                  child: Container(
-                    height: 41,
-                    width: 220,
-                    child: FlatButton(
-                      child: Text('Ok',
-                        style: TextStyle(color: Colors.white),),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(21.0),
-                      ),
-                      color: Color(0xff000000),
-                      onPressed: (){},
-                    ),
-                  ),
-                ),
-              ],"",
-              Text('Have a nice day!', textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
-            );
-            AlertDialogParameters alertobj21 = new AlertDialogParameters(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xffffebeb),
-              elevation: 30,
-              contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
-              height: 254,
-              width: 380,
-              titleTextStyle: TextStyle( fontSize: 18.0, color: Colors.white),
-            );
-            onAlertButtonTap1(String s){
-              print(s);
-            }
-          
-return MaterialApp(
-debugShowCheckedModeBanner: false,
+Widget build(BuildContext context) { 
+return MaterialApp(home: BoilerPlate(i, endpoint)); 
+} 
+} 
+ 
+class BoilerPlate extends StatefulWidget { 
+final int rec; 
+final String url; 
+const BoilerPlate(this.rec, this.url); 
+@override 
+_BoilerPlate createState() => _BoilerPlate(this.rec, this.url); 
+} 
+ 
+class _BoilerPlate extends State<BoilerPlate> { 
+int rec; 
+String url; 
+_BoilerPlate(int rec, String url) { 
+this.rec = rec; 
+this.url = url; 
+} 
+ 
+var jsonresponse; 
+ 
+@override 
+void initState() { 
+ 
+ super.initState(); 
+getData(url).then((value) { 
+print('Async done'); 
+}); 
+ 
+} 
+ 
+Future getData(String endPoint) async { 
+final response = await http.get(endPoint); 
+ 
+ if (response.statusCode == 200) { 
+jsonresponse = json.decode(response.body); 
+print(jsonresponse[rec]); 
+return jsonresponse; 
+} else { 
+throw Exception('Failed to load Data'); 
+} 
+} 
+ 
+@override 
+Widget build(BuildContext context) { 
+AppBarParameters paramobject = new AppBarParameters( 
+ backgroundColor: Colors.white, 
+elevation: 0, 
+bottomOpacity: 1.0, 
+toolbarOpacity: 1.0, 
+titleSpacing: 1.0, 
+centerTitle: false, 
+automaticallyImplyLeading: true, 
+leading: Icon( 
+Icons.arrow_back, 
+color: Color(0xff707070), 
+), 
+title: Text( 
+'Details Page', 
+style: TextStyle(fontSize: 26, color: Color(0xff707070)), 
+)); 
+List<Widget> appBarIcons = [ 
+IconButton( 
+icon: Image.network( 
+'http://104.40.75.137:9003/assets/cms/cart.png', 
+width: 20, 
+height: 14, 
+), 
+onPressed: () {}, 
+), 
+Padding( 
+padding: const EdgeInsets.only(right: 30.0), 
+child: IconButton( 
+icon: Image.network( 
+'http://104.40.75.137:9003/assets/cms/drawer_icon.png', 
+width: 20, 
+height: 14, 
+), 
+onPressed: () {}, 
+), 
+) 
+]; 
+ 
+List<DrawerListItems> drawerList = [ 
+DrawerListItems(Icon(Icons.account_circle), Text("Account details")), 
+DrawerListItems(Icon(Icons.history), Text("Order History")), 
+DrawerListItems(Icon(Icons.account_balance_wallet), Text("Wallet")), 
+DrawerListItems(Icon(Icons.cancel), Text("Logout")), 
+]; 
+DrawerHeaderParameters user1 = new DrawerHeaderParameters( 
+subtitle: 'abc@xyz.com', 
+title: 'Account Name', 
+imageType: "Network", 
+imagepath: 
+ 'https://lunawood.com/wp-content/uploads/2018/02/placeholder-image.png', 
+headerColor: Colors.white); 
+onclickDrawer(int nIndex) { 
+print(nIndex); 
+} 
+ 
+onclick0(String sText) { 
+print(sText); 
+} 
+ 
+ var desc = FutureBuilder( 
+future: getData(url), 
+builder: (context, AsyncSnapshot<dynamic> snapshot) { 
+if (snapshot.hasData) { 
+for (int i = 0; i < jsonresponse.length; i++) { 
+if (int.parse(jsonresponse[i]['id'])== rec) { 
+CustomImageContents ImageObj10 = new CustomImageContents( 
+ src: jsonresponse[i]['image'], 
+semanticLabel: 'Random Network', 
+imageType: 'Network', 
+height: 250, 
+width: 250); 
+ 
+ TextParameters textparam1 = new TextParameters( 
+ text: jsonresponse[i]['name'], 
+ fontSize: 16, 
+ textColor: Color(0xffff0000), 
+ fontStyle: FontStyle.normal, 
+ fontFamily: 'Tulpen One', 
+fontWeight: FontWeight.normal, 
+textAlign: TextAlign.center); 
+ 
+ TextParameters textparam2 = new TextParameters( 
+ text: jsonresponse[i]['description'], 
+ fontSize: 16, 
+ textColor: Color(0xffff0000), 
+ fontStyle: FontStyle.normal, 
+ fontFamily: 'Roboto', 
+fontWeight: FontWeight.normal, 
+textAlign: TextAlign.center); 
+ 
+ onFlatButtonPress3(bool b) { 
+ print(b); 
+ Navigator.pushReplacement( 
+ context, MaterialPageRoute(builder: (context) => Page11())); 
+} 
+onFlatButtonLongPress3(bool b) { 
+print(b); 
+} 
+ 
+ FlatButtonParameters buttonFlatObject3 = FlatButtonParameters( 
+ child: Text('Okay'), 
+ color: Color(0xffffb3b3), 
+ textColor: Color(0xff3a0000), 
+ hoverColor: Color(0xffff0000), 
+ width: 200, 
+focusColor: Color(0xffff0000), 
+height: 50, 
+highlightColor: Color(0xffff0000), 
+splashColor: Color(0xffff0000)); 
+ 
+ return Column( 
+ children: <Widget>[ 
+ Padding( 
+ padding: const EdgeInsets.all(25.0), 
+ child: Row( 
+ children: [ 
+ Expanded( 
+ flex: 1, 
+child: CustomImage(data: ImageObj10), 
+), 
+], 
+), 
+), 
+Padding( 
+padding: const EdgeInsets.only(top: 30, bottom: 30), 
+child: Row( 
+children: [ 
+Expanded(flex: 1, child: customText(textparam1)), 
+], 
+), 
+), 
+Padding( 
+padding: const EdgeInsets.only(bottom: 30), 
+child: Row( 
+children: [ 
+Expanded(flex: 1, child: customText(textparam2)), 
+], 
+), 
+), 
+Padding( 
+padding: const EdgeInsets.only(bottom: 30), 
+child: Row( 
+children: [], 
+), 
+), 
+Padding( 
+padding: const EdgeInsets.only(bottom: 30), 
+child: Row( 
+children: [ 
+Expanded( 
+flex: 1, 
+child: customFlatButton(buttonFlatObject3, 
+onFlatButtonPress3, onFlatButtonLongPress3), 
+), 
+], 
+), 
+), 
+], 
+); 
+} 
+} 
+} else { 
+return Container( 
+ child: Center( 
+ child: CircularProgressIndicator( 
+ valueColor: new AlwaysStoppedAnimation<Color>( 
+ Color(0xff0079c2))))); 
+} 
+}, 
+);
+return MaterialApp( 
+debugShowCheckedModeBanner: false, 
 home: Scaffold( 
-appBar:customAppBar(appBarIcons,paramobject),
-backgroundColor: Color(0xffffffff),
-body: Padding(
-padding: const EdgeInsets.all(0.0),
-child: Padding(
-padding: const EdgeInsets.all(30.0),
-child: SingleChildScrollView(
-child: Column(
-children: <Widget>[
-Padding(
-padding: const EdgeInsets.all(25.0),
-child: 
-Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),customText(textparam0)
-],),),
-Padding(
-padding: const EdgeInsets.only(top:30,bottom:30),
-child:CustomAlertDialog(dialogContent: alertObj11, param: alertobj21, callbackAlert: onAlertButtonTap1),
-  ),
-],
-),
-),
-),
-),
-),
-); } }
+ appBar: customAppBar(appBarIcons, paramobject), 
+backgroundColor: Color(0xffffd1d1), 
+body: Padding( 
+ padding: const EdgeInsets.all(0.0), 
+child: Padding( 
+ padding: const EdgeInsets.all(30.0), 
+child: SingleChildScrollView(child: desc))))); 
+} 
+}

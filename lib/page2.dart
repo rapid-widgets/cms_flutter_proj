@@ -1,15 +1,13 @@
+import 'dart:async';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
-import 'package:rapid_widgets_library/widget-classesUsed.dart';
+import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
+import 'page8.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
-import 'package:rapid_widgets_library/custom-image.dart';
-import 'dart:ui'; 
-import 'package:rapid_widgets_library/custom-textField.dart';
-import 'dart:ui'; 
-import 'package:rapid_widgets_library/custom-textField.dart';
-import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page4.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
+import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
+import 'package:rapid_widgets_library/custom-borderless-card.dart';
 void main() => runApp(Page2());
 class Page2 extends StatelessWidget {
 @override
@@ -23,193 +21,158 @@ class BoilerPlate extends StatefulWidget
 _BoilerPlate createState() => _BoilerPlate();
 }
 class _BoilerPlate extends State<BoilerPlate> {
+var jsonresponse2; 
+
+ var endpoint = 'https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'; 
+
+@override 
+void initState() { 
+super.initState();
+getData1('https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'); 
+} 
+Future getData1(String endpoint) async { 
+final response = await http.get(endpoint); 
+if (response.statusCode == 200) { 
+jsonresponse2 = json.decode(response.body); 
+return jsonresponse2; 
+} else { 
+throw Exception('Failed to load Data'); 
+} 
+}
  @override
   Widget build(BuildContext context) { 
-
-        AppBarParameters paramobject = new AppBarParameters(
-        elevation: 5.0,
-        bottomOpacity: 1.0,
-        toolbarOpacity: 1.0,
-        titleSpacing: 1.0,
-        centerTitle: true,
-        automaticallyImplyLeading: true,
-        title: Text('Appbar'));
-        List<Widget> appBarIcons = [
-        IconButton(
-        icon:
-        Icon(Icons.search),
-        onPressed: () {},
-        ),
-        IconButton(
-        icon:  Icon(Icons.help),
-        onPressed: () {},
-        )];
- 
-
-            List<DrawerListItems> drawerList = [ 
-            DrawerListItems(Icon(Icons.account_circle), 
-            Text("Account details")), 
-            DrawerListItems(Icon(Icons.history), 
-            Text("Order History")), 
-            DrawerListItems(Icon(Icons.account_balance_wallet), 
-            Text("Wallet")), 
-            DrawerListItems(Icon(Icons.cancel), 
-            Text("Logout")), 
-            ]; 
-            DrawerHeaderParameters user1= new DrawerHeaderParameters(
-            subtitle: 'abc@xyz.com',
-            title: 'Account Name',
-            imageType: "Network",
-            imagepath:'https://lunawood.com/wp-content/uploads/2018/02/placeholder-image.png' ,
-            headerColor:Colors.white
-            ); 
-            onclickDrawer(int nIndex) 
-            { 
-            print(nIndex); 
-            }
-        
-onclick0(String sText) { print(sText); }
-        CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image3.png',
-         semanticLabel: 'Random Network', 
-         imageType: 'Network', 
-         height: 260, width: 350);
-         
-
-            onTextSubmit1 (String sText) { 
-            print(sText); 
-            }
-            TextFieldParameters finalTextObj1 = new TextFieldParameters( 
-            maxLength: 15, 
-            obsecureText: false,
-            maxLengthEnforced: false, 
-            decoration: InputDecoration(
-            hintText: 'Username',
-            labelText: 'Username', 
-  
-            filled: false, 
-            fillColor: Color(0xffff0000), 
-            counterText: "", 
-            border: OutlineInputBorder( 
-            borderRadius: BorderRadius.circular(10), 
-            borderSide: BorderSide( color: Color(0xff030000))), 
-            ), 
-            cursorColor: Color(0xff110000), 
-            cursorWidth: 1, 
-            expands: false, 
-            maxLines: 1, 
-            readOnly: false, 
-            showCursor: true, 
-            style: TextStyle(color: Color(0xff000000)),
-            );
-        
-
-            onTextSubmit2 (String sText) { 
-            print(sText); 
-            }
-            TextFieldParameters finalTextObj2 = new TextFieldParameters( 
-            maxLength: 15, 
-            obsecureText: true,
-            maxLengthEnforced: false, 
-            decoration: InputDecoration(
-            hintText: 'Password',
-            labelText: 'Password', 
-  
-            filled: false, 
-            fillColor: Color(0xffff3a3a), 
-            counterText: "", 
-            border: OutlineInputBorder( 
-            borderRadius: BorderRadius.circular(10), 
-            borderSide: BorderSide( color: Color(0xff0d0600))), 
-            ), 
-            cursorColor: Color(0xff190a00), 
-            cursorWidth: 1, 
-            expands: false, 
-            maxLines: 1, 
-            readOnly: false, 
-            showCursor: true, 
-            style: TextStyle(color: Color(0xff0b0600)),
-            );
-        
-
-          onFlatButtonPress3 (bool b){ 
-          print(b); 
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-                builder: (context) => Page4()));
-
-          } 
-          onFlatButtonLongPress3 (bool b){ 
-          print(b); 
-          } 
-          FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Login'),
-          color:Color(0xffef8dff),
-          textColor:Color(0xff000000),
-          hoverColor: Color(0xffff0000),
-          width: 250,
-          focusColor: Color(0xffff0000),
-          height: 40,
-          highlightColor: Color(0xffff0000),
-          splashColor: Color(0xff0d0600)
-
-          );
-      
-
-        TextParameters textparam4 = new TextParameters(
-          text: 'Forgot Password?',
-          fontSize: 16,
-          textColor:Color(0xff070000),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.normal,
-          textAlign: TextAlign.right
-        );
-         
-return MaterialApp(
-debugShowCheckedModeBanner: false,
-home: Scaffold(
-backgroundColor: Color(0xffffffff),
-body: Padding(
-padding: const EdgeInsets.all(0.0),
-child: Padding(
-padding: const EdgeInsets.all(0.0),
-child: SingleChildScrollView(
-child: Column(
-children: <Widget>[
-Padding(
-padding: const EdgeInsets.all(0.0),
-child: Row(children: [
-Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
-],),
-),
-Padding(
-padding: const EdgeInsets.only(right:60.0,left:60,top:66),
-child: Row(children: [
-Expanded(flex: 1,child:CustomTextField(params: finalTextObj1, callbackTextfield: onTextSubmit1),),
-],),
-),
-Padding(
-padding: const EdgeInsets.only(right:60.0,left:60,top:25),
-child: Row(children: [
-Expanded(flex: 1,child:CustomTextField(params: finalTextObj2, callbackTextfield: onTextSubmit2),),
-],),
-),
-Padding(
-padding: const EdgeInsets.only(right:60.0,left:60,top:35,bottom:35),
-child: Row(children: [
-Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),
-],),
-),
-Padding(
-padding: const EdgeInsets.only(right:60,left:60),
-child: Row(children: [
-Expanded(flex: 1,child:customText(textparam4)),
- ],),
-),
+var listCard = FutureBuilder( 
+future: getData1(endpoint), 
+builder: (context, AsyncSnapshot<dynamic> snapshot) { 
+if (snapshot.hasData) { 
+List<Widget> cards2 = []; 
+for (int i = 0; i < snapshot.data.length; i++) { 
+print(snapshot.data[i]['name']); 
+cards2.add(Container( 
+decoration: BoxDecoration( 
+border: Border( 
+bottom: BorderSide(width: 0.4, color: Color(0xff707070)), 
+), 
+color: Color(0xff300000), 
+), 
+height: 200, 
+width: 300, 
+child: Column( 
+children: <Widget>[ 
+Row( 
+crossAxisAlignment: CrossAxisAlignment.start, 
+children: <Widget>[ 
+Image.network( 
+snapshot.data[i]['image'], 
+height: 160, 
+width: 115, 
+), 
+Padding( 
+padding: const EdgeInsets.only(left: 5.0), 
+child: Container( 
+width: 193, 
+child: Align( 
+alignment: Alignment.centerLeft, 
+child: Column( 
+children: <Widget>[ 
+Text( 
+snapshot.data[i]['name'], 
+style: TextStyle( 
+fontSize: 16, 
+color: Color(0xff707070), 
+fontFamily: 'Segoe UI'), 
+), 
+SizedBox( 
+height: 11, 
+), 
+Text( 
+snapshot.data[i]['price'], 
+textAlign: TextAlign.left, 
+style: TextStyle( 
+fontSize: 12, 
+color: Color(0xff707070), 
+fontFamily: 'Segoe UI'), 
+), 
 ], 
-)  
-))))); 
+), 
+), 
+), 
+), 
+SizedBox( 
+width: 50.0, 
+), 
+Align( 
+alignment: Alignment.topRight, 
+child: Icon(Icons.delete_outline)) 
+], 
+), 
+Row( 
+children: <Widget>[ 
+Spacer( 
+flex: 1, 
+), 
+Container( 
+height: 30, 
+width: 75, 
+child: FlatButton( 
+child: Text( 
+'View', 
+style: TextStyle(fontSize: 11, color: Colors.white), 
+), 
+color: Colors.black, 
+onPressed: () { 
+print(i); 
+Navigator.push( 
+context, 
+MaterialPageRoute( 
+builder: (context) => Page8(i, 'https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'))); 
+}, 
+shape: new RoundedRectangleBorder( 
+borderRadius: new BorderRadius.circular(30.0)), 
+), 
+), 
+SizedBox( 
+width: 10, 
+), 
+Text( 
+snapshot.data[i]['price'], 
+style: TextStyle(color: Colors.black, fontSize: 12), 
+) 
+], 
+) 
+], 
+), 
+)); 
+} 
+return Column( 
+children: cards2, 
+); 
+} else { 
+return Container( 
+child: Center( 
+ child: CircularProgressIndicator( 
+ valueColor: new AlwaysStoppedAnimation<Color>( 
+ Color(0xff0079c2))))); 
+} 
+}, 
+);
+
+return MaterialApp( 
+debugShowCheckedModeBanner: false, 
+home: Scaffold( 
+backgroundColor: Color(0xffffcfcf), 
+body: Container( 
+decoration: new BoxDecoration( 
+ color: Colors.white, 
+borderRadius: new BorderRadius.only( 
+topLeft: Radius.circular(20.0), 
+topRight: Radius.circular(20.0), 
+)), 
+width: MediaQuery.of(context).size.width, 
+child: SingleChildScrollView( 
+child: listCard, 
+), 
+), 
+)); 
 } 
 }

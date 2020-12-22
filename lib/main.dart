@@ -1,3 +1,6 @@
+import 'dart:async';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
@@ -6,11 +9,11 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page2.dart';
+import 'page1.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page2.dart';
-void main() => runApp(MyApp());
-class MyApp extends StatelessWidget {
+import 'page3.dart';
+void main() => runApp(Page1());
+class Page11 extends StatelessWidget {
 @override
 Widget build(BuildContext context) {
 return MaterialApp(
@@ -22,8 +25,49 @@ class BoilerPlate extends StatefulWidget
 _BoilerPlate createState() => _BoilerPlate();
 }
 class _BoilerPlate extends State<BoilerPlate> {
+var jsonresponse1; 
+var var1 = 'dynamic'; 
+var var2 = 'dynamic'; 
+var var3 = 'dynamic'; 
+
+@override 
+void initState() { 
+super.initState();
+getData1('https://run.mocky.io/v3/e2794ba4-3495-4d0c-bd20-74451ec83b25'); 
+} 
+Future getData1(String endpoint) async { 
+final response = await http.get(endpoint); 
+if (response.statusCode == 200) { 
+jsonresponse1 = json.decode(response.body);  
+} else { 
+throw Exception('Failed to load Data'); 
+} 
+}
  @override
   Widget build(BuildContext context) { 
+
+CustomImageContents dynamicImageObj10 = new CustomImageContents( 
+src: jsonresponse1[1]['image'], 
+semanticLabel: 'Random Network', 
+imageType: 'Network', 
+height: 200, 
+width: 230); 
+TextParameters dynamicTextparam1 = new TextParameters( 
+text: jsonresponse1[1]['name'], 
+fontSize: 16, 
+textColor: Color(0xffff0000), 
+fontStyle: FontStyle.normal, 
+fontFamily: 'Roboto', 
+fontWeight: FontWeight.normal, 
+textAlign: TextAlign.center);
+TextParameters dynamicTextparam2 = new TextParameters( 
+text:jsonresponse1[1]['price'], 
+fontSize: 16, 
+textColor: Color(0xffff0000), 
+fontStyle: FontStyle.normal, 
+fontFamily: 'Roboto', 
+fontWeight: FontWeight.normal, 
+textAlign: TextAlign.center);
 
         AppBarParameters paramobject = new AppBarParameters(
         elevation: 5.0,
@@ -69,27 +113,27 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image1.png',
+        src:'image',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 220, width: 300);
+         height: 200, width: 230);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Web content',
-          fontSize: 26,
-          textColor:Color(0xff000000),
+          text: 'name',
+          fontSize: 16,
+          textColor:Color(0xffff0000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.normal,
           textAlign: TextAlign.center
         );
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'Web content is the textual, visual, or aural  content that is encountered as part of  the user experience on websites',
+          text: 'price',
           fontSize: 16,
-          textColor:Color(0xff000000),
+          textColor:Color(0xffff0000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -102,22 +146,22 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page2()));
+                builder: (context) => Page1()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Continue'),
-          color:Color(0xfffc93ff),
-          textColor:Color(0xff000000),
-          hoverColor: Color(0xffff5252),
-          width: 140,
+          child:Text('OK'),
+          color:Color(0xffff0000),
+          textColor:Color(0xffff0000),
+          hoverColor: Color(0xffff0000),
+          width: 100,
           focusColor: Color(0xffff0000),
-          height: 40,
-          highlightColor: Color(0xffff0000),
-          splashColor: Color(0xffff0000)
+          height: 50,
+          highlightColor: Color(0xffffcfcf),
+          splashColor: Color(0xffffeded)
 
           );
       
@@ -127,22 +171,22 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page2()));
+                builder: (context) => Page3()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('SKIP'),
-          color:Color(0xfffc93ff),
-          textColor:Color(0xff130700),
-          hoverColor: Color(0xffff5252),
-          width: 140,
+          child:Text('Cancel'),
+          color:Color(0xffff0000),
+          textColor:Color(0xffff0000),
+          hoverColor: Color(0xffff0000),
+          width: 100,
           focusColor: Color(0xffff0000),
-          height: 40,
-          highlightColor: Color(0xffff0000),
-          splashColor: Color(0xffff0000)
+          height: 50,
+          highlightColor: Color(0xffffcfcf),
+          splashColor: Color(0xffffeded)
 
           );
       
@@ -160,19 +204,36 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.only(top:65.0,left: 25.0,right: 25.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:80),Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
+SizedBox(height:80), 
+(var1 != "dynamic")? 
+Expanded(flex: 1,child: CustomImage(data: ImageObj10),)
+: Expanded(
+flex: 1,
+child:
+CustomImage(data: dynamicImageObj10),
+),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(top:50.0,left:25.0,right:25.0,bottom:5.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:65),Expanded(flex: 1,child:customText(textparam1)),
+SizedBox(height:65),
+(var2 != "dynamic")? 
+Expanded(flex: 1,child: customText(textparam1))
+ : Expanded(
+flex: 1,
+child: customText(dynamicTextparam1)), 
 ],),
 ),
 Padding(
 padding: const EdgeInsets.all(15.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:0),Expanded(flex: 1,child:customText(textparam2)),
+SizedBox(height:0), 
+(var3 != "dynamic")? 
+Expanded(flex: 1,child: customText(textparam2))
+ : Expanded(
+flex: 1,
+child: customText(dynamicTextparam2)),
 ],),
 ),
 Padding(
