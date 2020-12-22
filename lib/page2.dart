@@ -53,10 +53,10 @@ decoration: BoxDecoration(
 border: Border( 
 bottom: BorderSide(width: 0.4, color: Color(0xff707070)), 
 ), 
-color: Color(0xff300000), 
+color: Color(0xfffff8f8), 
 ), 
 height: 200, 
-width: 300, 
+width: 400, 
 child: Column( 
 children: <Widget>[ 
 Row( 
@@ -116,7 +116,7 @@ height: 30,
 width: 75, 
 child: FlatButton( 
 child: Text( 
-'View', 
+'Details', 
 style: TextStyle(fontSize: 11, color: Colors.white), 
 ), 
 color: Colors.black, 
@@ -135,7 +135,7 @@ SizedBox(
 width: 10, 
 ), 
 Text( 
-snapshot.data[i]['price'], 
+snapshot.data[i]['availability'], 
 style: TextStyle(color: Colors.black, fontSize: 12), 
 ) 
 ], 
@@ -160,7 +160,7 @@ child: Center(
 return MaterialApp( 
 debugShowCheckedModeBanner: false, 
 home: Scaffold( 
-backgroundColor: Color(0xffffcfcf), 
+backgroundColor: Color(0xffffffff), 
 body: Container( 
 decoration: new BoxDecoration( 
  color: Colors.white, 

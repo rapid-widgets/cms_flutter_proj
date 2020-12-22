@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart';
-import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
 import 'package:rapid_widgets_library/custom-appBar.dart';
-import 'package:rapid_widgets_library/custom-bottomnavbar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
+import 'dart:ui'; 
+import 'package:rapid_widgets_library/custom-textField.dart';
+import 'dart:ui'; 
+import 'package:rapid_widgets_library/custom-textField.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page6.dart';
+import 'page2.dart';
+import 'package:rapid_widgets_library/custom-text.dart';
 void main() => runApp(Page5());
 class Page5 extends StatelessWidget {
 @override
@@ -25,61 +26,25 @@ class _BoilerPlate extends State<BoilerPlate> {
  @override
   Widget build(BuildContext context) { 
 
-                                          AppBarParameters paramobject = new AppBarParameters(
-                                            backgroundColor: Colors.white,
-                                            elevation: 0,
-                                            bottomOpacity: 1.0,
-                                            toolbarOpacity: 1.0,
-                                            titleSpacing: 1.0,
-                                            centerTitle: false,
-                                            automaticallyImplyLeading: true,
-                                            leading: Icon(Icons.arrow_back, color: Color(0xff707070),),
-                                            title: Text('Payment Option',
-                                              style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
-                                        List<Widget> appBarIcons = [
-                                          IconButton(
-                                            icon: Image.network('http://104.40.75.137:9003/assets/cms/cart.png',width: 20,height: 14,),
-                                            onPressed: () {},
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(right: 30.0),
-                                            child: IconButton(
-                                              icon: Image.network('http://104.40.75.137:9003/assets/cms/drawer_icon.png',width: 20,height: 14,),
-                                              onPressed: () {},
-                                            ),
-                                          )];
-                                 
-
-                  List<BottomNavigationBarItem> bottomnavitems = [];
-                  BottomNavigationBarItem bottomnavitem1= new BottomNavigationBarItem(
-                    icon: Image.network('http://104.40.75.137:9003/assets/cms/bottomnav_home.png',height: 20,width: 20,),
-                    title: Text('Home',style: TextStyle(fontSize: 14)),
-                  );
-                  BottomNavigationBarItem bottomnavitem2= new BottomNavigationBarItem(
-                    icon: Image.network('http://104.40.75.137:9003/assets/cms/bottomnav_bookmark.png',height: 20,width: 20,),
-                    title: Text('Bookmark',style: TextStyle(fontSize: 14)),
-                  );
-                  BottomNavigationBarItem bottomnavitem3= new BottomNavigationBarItem(
-                    icon: Icon(Icons.search,color: Colors.black,size: 20,),
-                    title: Text('Search',style: TextStyle(fontSize: 14),),
-                  );
-                  BottomNavigationBarItem bottomnavitem4= new BottomNavigationBarItem(
-                    icon: Image.network('http://104.40.75.137:9003/assets/cms/bottomnav_profile.png',height: 20,width: 20,),
-                    title: Text('Profile',style: TextStyle(fontSize: 14),),
-                  );
-                  bottomnavitems.add(bottomnavitem1);
-                  bottomnavitems.add(bottomnavitem2);
-                  bottomnavitems.add(bottomnavitem3);
-                  bottomnavitems.add(bottomnavitem4);
-                  BottomNavBarParameters param = new BottomNavBarParameters(
-                      items: bottomnavitems,
-                      selectedItemColor: Colors.black,
-                      unselectedItemColor: Colors.black,
-                      backgroundColor: Color(0xffF9F9F9),
-                      showUnselectedLabels: true,
-                      showSelectedLabels: true,
-                  );
-            
+        AppBarParameters paramobject = new AppBarParameters(
+        elevation: 5.0,
+        bottomOpacity: 1.0,
+        toolbarOpacity: 1.0,
+        titleSpacing: 1.0,
+        centerTitle: true,
+        automaticallyImplyLeading: true,
+        title: Text('Appbar'));
+        List<Widget> appBarIcons = [
+        IconButton(
+        icon:
+        Icon(Icons.search),
+        onPressed: () {},
+        ),
+        IconButton(
+        icon:  Icon(Icons.help),
+        onPressed: () {},
+        )];
+ 
 
             List<DrawerListItems> drawerList = [ 
             DrawerListItems(Icon(Icons.account_circle), 
@@ -105,97 +70,142 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image4.png',
+        src:'http://104.40.75.137:9003/assets/cms/image2.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 158, width: 235);
+         height: 200, width: 200);
          
 
-        TextParameters textparam1 = new TextParameters(
-          text: 'My Course',
-          fontSize: 26,
-          textColor:Color(0xff000000),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.bold,
-          textAlign: TextAlign.left
-        );
-         
+            onTextSubmit1 (String sText) { 
+            print(sText); 
+            }
+            TextFieldParameters finalTextObj1 = new TextFieldParameters( 
+            maxLength: 10, 
+            obsecureText: false,
+            maxLengthEnforced: false, 
+            decoration: InputDecoration(
+            hintText: 'Username',
+            labelText: 'Usernmae', 
+  
+            filled: false, 
+            fillColor: Color(0xffffe8e8), 
+            counterText: "", 
+            border: OutlineInputBorder( 
+            borderRadius: BorderRadius.circular(5), 
+            borderSide: BorderSide( color: Color(0xff0c0000))), 
+            ), 
+            cursorColor: Color(0xff2e0000), 
+            cursorWidth: 1, 
+            expands: false, 
+            maxLines: 1, 
+            readOnly: false, 
+            showCursor: true, 
+            style: TextStyle(color: Color(0xff1a0000)),
+            );
+        
 
-        TextParameters textparam2 = new TextParameters(
-          text: 'Programming with JavaScript Chapter 3 - The Period',
-          fontSize: 18,
-          textColor:Color(0xff000000),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.normal,
-          textAlign: TextAlign.center
-        );
-         
+            onTextSubmit2 (String sText) { 
+            print(sText); 
+            }
+            TextFieldParameters finalTextObj2 = new TextFieldParameters( 
+            maxLength: 10, 
+            obsecureText: true,
+            maxLengthEnforced: false, 
+            decoration: InputDecoration(
+            hintText: 'Password',
+            labelText: 'Password', 
+  
+            filled: false, 
+            fillColor: Color(0xffffe8e8), 
+            counterText: "", 
+            border: OutlineInputBorder( 
+            borderRadius: BorderRadius.circular(5), 
+            borderSide: BorderSide( color: Color(0xff0c0000))), 
+            ), 
+            cursorColor: Color(0xff2e0000), 
+            cursorWidth: 1, 
+            expands: false, 
+            maxLines: 1, 
+            readOnly: false, 
+            showCursor: true, 
+            style: TextStyle(color: Color(0xff1a0000)),
+            );
+        
 
           onFlatButtonPress3 (bool b){ 
           print(b); 
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page6()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Continue Course'),
-          color:Color(0xffff89e0),
-          textColor:Color(0xff000000),
-          hoverColor: Color(0xff000000),
-          width: 140,
+          child:Text('Login'),
+          color:Color(0xff120000),
+          textColor:Color(0xfffff4f4),
+          hoverColor: Color(0xffffb9b9),
+          width: 250,
           focusColor: Color(0xffff0000),
-          height: 40,
+          height: 50,
           highlightColor: Color(0xffff0000),
-          splashColor: Color(0xffff0000)
+          splashColor: Color(0xff0c0000)
 
           );
       
+
+        TextParameters textparam4 = new TextParameters(
+          text: 'Forgot Password?',
+          fontSize: 16,
+          textColor:Color(0xffffb9b9),
+          fontStyle: FontStyle.normal,
+          fontFamily: 'Roboto',
+          fontWeight: FontWeight.normal,
+          textAlign: TextAlign.left
+        );
+         
 return MaterialApp(
 debugShowCheckedModeBanner: false,
-home: Scaffold( 
-appBar:customAppBar(appBarIcons,paramobject),bottomNavigationBar: BottomNavBar(param),
-backgroundColor: Color(0xffffffff),
+home: Scaffold(
+backgroundColor: Color(0xfff5edff),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
-padding: const EdgeInsets.all(30.0),
+padding: const EdgeInsets.all(0.0),
 child: SingleChildScrollView(
 child: Column(
 children: <Widget>[
 Padding(
-padding: const EdgeInsets.all(25.0),
+padding: const EdgeInsets.all(0.0),
 child: Row(children: [
 Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
 ],),
 ),
 Padding(
-padding: const EdgeInsets.only(top:30,bottom:30),
+padding: const EdgeInsets.only(right:60.0,left:60,top:66),
 child: Row(children: [
-Expanded(flex: 1,child:customText(textparam1)),
+Expanded(flex: 1,child:CustomTextField(params: finalTextObj1, callbackTextfield: onTextSubmit1),),
 ],),
 ),
 Padding(
-padding: const EdgeInsets.only(bottom:30),
+padding: const EdgeInsets.only(right:60.0,left:60,top:25),
 child: Row(children: [
-Expanded(flex: 1,child:customText(textparam2)),
+Expanded(flex: 1,child:CustomTextField(params: finalTextObj2, callbackTextfield: onTextSubmit2),),
 ],),
 ),
 Padding(
-padding: const EdgeInsets.only(bottom:30),
-child: Row(children: [
-],),
-),
-Padding(
-padding: const EdgeInsets.only(bottom:30),
+padding: const EdgeInsets.only(right:60.0,left:60,top:35,bottom:35),
 child: Row(children: [
 Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),
+],),
+),
+Padding(
+padding: const EdgeInsets.only(right:60,left:60),
+child: Row(children: [
+Expanded(flex: 1,child:customText(textparam4)),
  ],),
 ),
 ], 

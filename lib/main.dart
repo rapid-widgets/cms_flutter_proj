@@ -9,11 +9,11 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page1.dart';
+import 'page2.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page3.dart';
-void main() => runApp(Page1());
-class Page11 extends StatelessWidget {
+import 'page5.dart';
+void main() => runApp(Page0());
+class Page0 extends StatelessWidget {
 @override
 Widget build(BuildContext context) {
 return MaterialApp(
@@ -27,18 +27,19 @@ _BoilerPlate createState() => _BoilerPlate();
 class _BoilerPlate extends State<BoilerPlate> {
 var jsonresponse1; 
 var var1 = 'dynamic'; 
-var var2 = 'dynamic'; 
-var var3 = 'dynamic'; 
+var var2 = 'Static'; 
+var var3 = 'static'; 
 
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/e2794ba4-3495-4d0c-bd20-74451ec83b25'); 
+getData1('https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
 if (response.statusCode == 200) { 
-jsonresponse1 = json.decode(response.body);  
+jsonresponse1 = json.decode(response.body); 
+return jsonresponse1;  
 } else { 
 throw Exception('Failed to load Data'); 
 } 
@@ -46,24 +47,30 @@ throw Exception('Failed to load Data');
  @override
   Widget build(BuildContext context) { 
 
+var content = FutureBuilder( 
+future: getData1( 
+'https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'), 
+builder: (context, AsyncSnapshot<dynamic> snapshot) { 
+if (snapshot.hasData) {
+
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[1]['image'], 
+src: jsonresponse1[2]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
 height: 200, 
-width: 230); 
+width: 200); 
 TextParameters dynamicTextparam1 = new TextParameters( 
-text: jsonresponse1[1]['name'], 
-fontSize: 16, 
-textColor: Color(0xffff0000), 
+text: 'Default', 
+fontSize: 26, 
+textColor: Color(0xff2c0000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
-text:jsonresponse1[1]['price'], 
+text:'Default', 
 fontSize: 16, 
-textColor: Color(0xffff0000), 
+textColor: Color(0xff2c0000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
@@ -116,13 +123,13 @@ onclick0(String sText) { print(sText); }
         src:'image',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 200, width: 230);
+         height: 200, width: 200);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'name',
-          fontSize: 16,
-          textColor:Color(0xffff0000),
+          text: 'Car Shop',
+          fontSize: 26,
+          textColor:Color(0xff2c0000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -131,9 +138,9 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'price',
+          text: 'Shop for Cars Online',
           fontSize: 16,
-          textColor:Color(0xffff0000),
+          textColor:Color(0xff2c0000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -146,22 +153,22 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page1()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('OK'),
-          color:Color(0xffff0000),
-          textColor:Color(0xffff0000),
-          hoverColor: Color(0xffff0000),
-          width: 100,
+          child:Text('View'),
+          color:Color(0xfffffafa),
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xffffd1d1),
+          width: 150,
           focusColor: Color(0xffff0000),
           height: 50,
-          highlightColor: Color(0xffffcfcf),
-          splashColor: Color(0xffffeded)
+          highlightColor: Color(0xffff0000),
+          splashColor: Color(0xffff0000)
 
           );
       
@@ -171,80 +178,121 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page3()));
+                builder: (context) => Page5()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('Cancel'),
-          color:Color(0xffff0000),
-          textColor:Color(0xffff0000),
-          hoverColor: Color(0xffff0000),
-          width: 100,
+          child:Text('Login'),
+          color:Color(0xfffffafa),
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xffffd1d1),
+          width: 150,
           focusColor: Color(0xffff0000),
           height: 50,
-          highlightColor: Color(0xffffcfcf),
-          splashColor: Color(0xffffeded)
+          highlightColor: Color(0xffff0000),
+          splashColor: Color(0xffff0000)
 
           );
       
-return MaterialApp(
-debugShowCheckedModeBanner: false,
-home: Scaffold(
-backgroundColor: Color(0xffffffff),
-body: Padding(
-padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
-child: Padding(
-padding: const EdgeInsets.only(top:10.0,left:5.0,right:5.0,bottom:5.0),
-child: SingleChildScrollView(
-child: Column(
-children: <Widget>[
-Padding(
-padding: const EdgeInsets.only(top:65.0,left: 25.0,right: 25.0),
-child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:80), 
-(var1 != "dynamic")? 
-Expanded(flex: 1,child: CustomImage(data: ImageObj10),)
-: Expanded(
-flex: 1,
-child:
-CustomImage(data: dynamicImageObj10),
-),
-],),
-),
-Padding(
-padding: const EdgeInsets.only(top:50.0,left:25.0,right:25.0,bottom:5.0),
-child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:65),
-(var2 != "dynamic")? 
-Expanded(flex: 1,child: customText(textparam1))
- : Expanded(
-flex: 1,
-child: customText(dynamicTextparam1)), 
-],),
-),
-Padding(
-padding: const EdgeInsets.all(15.0),
-child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:0), 
-(var3 != "dynamic")? 
-Expanded(flex: 1,child: customText(textparam2))
- : Expanded(
-flex: 1,
-child: customText(dynamicTextparam2)),
-],),
-),
-Padding(
-padding: const EdgeInsets.all(2.0),
-child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
-SizedBox(height:200),Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),SizedBox(width:30),
-Expanded(flex: 1,child:customFlatButton(buttonFlatObject4, onFlatButtonPress4, onFlatButtonLongPress4),),
- ],),
-),
-], 
-)  
-))))); 
-} 
-}
+ return Column( 
+ children: <Widget>[ 
+ Padding( 
+ padding: const EdgeInsets.only( 
+ top: 10.0, left: 5.0, right: 5.0, bottom: 5.0), 
+ child: SingleChildScrollView( 
+ child: Column( 
+ children: <Widget>[ 
+ Padding( 
+ padding: const EdgeInsets.only( 
+ top: 65.0, left: 25.0, right: 25.0), 
+ child: Row( 
+ mainAxisAlignment: MainAxisAlignment.center, 
+ children: [ 
+ SizedBox(height: 80), 
+ (var1 != "dynamic") 
+ ? Expanded( 
+ flex: 1, 
+ child: CustomImage(data: ImageObj10), 
+ ) 
+ : Expanded( 
+ flex: 1, 
+ child: 
+ CustomImage(data: dynamicImageObj10), 
+ ), 
+ ], 
+ ), 
+ ), 
+ Padding( 
+ padding: const EdgeInsets.only( 
+ top: 50.0, left: 25.0, right: 25.0, bottom: 5.0), 
+ child: Row( 
+ mainAxisAlignment: MainAxisAlignment.center, 
+ children: [ 
+ SizedBox(height: 65), 
+ (var2 != "dynamic") 
+ ? Expanded( 
+ flex: 1, child: customText(textparam1)) 
+ : Expanded( 
+ flex: 1, 
+ child: customText(dynamicTextparam1)), 
+ ], 
+ ), 
+ ), 
+ Padding( 
+ padding: const EdgeInsets.all(15.0), 
+ child: Row( 
+ mainAxisAlignment: MainAxisAlignment.center, 
+ children: [ 
+ SizedBox(height: 0), 
+ (var3 != "dynamic") 
+ ? Expanded( 
+ flex: 1, child: customText(textparam2)) 
+ : Expanded( 
+ flex: 1, 
+ child: customText(dynamicTextparam2)), 
+ ], 
+ ), 
+ ), 
+ Padding( 
+ padding: const EdgeInsets.all(2.0), 
+ child: Row( 
+ mainAxisAlignment: MainAxisAlignment.spaceBetween, 
+ children: [ 
+ SizedBox(height: 200), 
+ Expanded( 
+ flex: 1, 
+ child: customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3), 
+ ), 
+ SizedBox(width: 30), 
+ Expanded( 
+ flex: 1, 
+ child: customFlatButton(buttonFlatObject4, onFlatButtonPress4, onFlatButtonLongPress4), 
+ ), 
+ ], 
+ ), 
+ ), 
+ ], 
+ ))) 
+ ], 
+ ); 
+ } else { 
+ return Container( 
+ child: Center( 
+ child: CircularProgressIndicator( 
+ valueColor: new AlwaysStoppedAnimation<Color>( 
+ Color(0xff0079c2))))); 
+ } 
+ }); 
+ return MaterialApp( 
+ debugShowCheckedModeBanner: false, 
+ home: Scaffold( 
+ backgroundColor: Color(0xffffe1e1), 
+ body: Padding( 
+ padding: const EdgeInsets.only( 
+ top: 20.0, left: 5.0, right: 5.0, bottom: 5.0), 
+ child: SingleChildScrollView(child: content)))); 
+ } 
+ }

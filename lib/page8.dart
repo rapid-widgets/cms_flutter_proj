@@ -150,17 +150,17 @@ width: 250);
  
  TextParameters textparam1 = new TextParameters( 
  text: jsonresponse[i]['name'], 
- fontSize: 16, 
- textColor: Color(0xffff0000), 
+ fontSize: 26, 
+ textColor: Color(0xff050000), 
  fontStyle: FontStyle.normal, 
- fontFamily: 'Tulpen One', 
-fontWeight: FontWeight.normal, 
+ fontFamily: 'Roboto', 
+fontWeight: FontWeight.bold, 
 textAlign: TextAlign.center); 
  
  TextParameters textparam2 = new TextParameters( 
  text: jsonresponse[i]['description'], 
- fontSize: 16, 
- textColor: Color(0xffff0000), 
+ fontSize: 14, 
+ textColor: Color(0xff050000), 
  fontStyle: FontStyle.normal, 
  fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
@@ -176,11 +176,11 @@ print(b);
 } 
  
  FlatButtonParameters buttonFlatObject3 = FlatButtonParameters( 
- child: Text('Okay'), 
- color: Color(0xffffb3b3), 
- textColor: Color(0xff3a0000), 
- hoverColor: Color(0xffff0000), 
- width: 200, 
+ child: Text('Buy'), 
+ color: Color(0xff000000), 
+ textColor: Color(0xffffffff), 
+ hoverColor: Color(0xffffadad), 
+ width: 250, 
 focusColor: Color(0xffff0000), 
 height: 50, 
 highlightColor: Color(0xffff0000), 
@@ -250,7 +250,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false, 
 home: Scaffold( 
  appBar: customAppBar(appBarIcons, paramobject), 
-backgroundColor: Color(0xffffd1d1), 
+backgroundColor: Color(0xffffffff), 
 body: Padding( 
  padding: const EdgeInsets.all(0.0), 
 child: Padding( 
