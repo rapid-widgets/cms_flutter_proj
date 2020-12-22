@@ -150,7 +150,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/book1.png',height: 102,width: 65,)
+                                  child: Image.network('http://104.40.75.137:9003/assets/medical/image42.png ',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -175,21 +175,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('Programming with Javascript',textAlign: TextAlign.left,
+                              Text('dfjgbfbv',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('By Zak Ruvacaba',
+                                child: Text('asdgsdf',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('$4.00',
+                                  Text('vcxvsdf',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('5.00',
+                                  Text('dfdfsdf',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -213,7 +213,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/book2.png',height: 102,width: 65,)
+                                  child: Image.network('http://104.40.75.137:9003/assets/medical/image42.png ',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -238,21 +238,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('React Fullstack with node/express',textAlign: TextAlign.left,
+                              Text('dgsdgszdgsd',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('By Mohammad Iqbal',
+                                child: Text('sdgdsffdvdsgfsdgsgdszdgdxvxvxcvxcvxc',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('$4.00',
+                                  Text('sdfsfds',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('$4.00',
+                                  Text('sdfsdsdf',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -276,7 +276,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/book3.png',height: 102,width: 65,)
+                                  child: Image.network('http://104.40.75.137:9003/assets/medical/image42.png ',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -301,21 +301,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('React JS Frontend Web Development',textAlign: TextAlign.left,
+                              Text('asdfsafsdf',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('By Rhyan Dhungel',
+                                child: Text('sdgdfsgdfhghgchvchgbcfbgjbghjhhgh',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('$4.00',
+                                  Text('zdsfsd',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('$5.00',
+                                  Text('vzxfzd',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -339,7 +339,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/book3.png',height: 102,width: 65,)
+                                  child: Image.network('http://104.40.75.137:9003/assets/medical/image42.png ',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -364,21 +364,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('Book 4',textAlign: TextAlign.left,
+                              Text('dsadfdsafsdgdfbf',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('Author 4',
+                                child: Text('vrdhdhtdhtfhgfhgffhgbjb',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('$5.00',
+                                  Text('sad',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('$6.00',
+                                  Text('sd',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
