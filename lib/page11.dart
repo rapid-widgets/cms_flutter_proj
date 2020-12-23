@@ -103,9 +103,9 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparam0 = new TextParameters(
-          text: 'dsgsg',
+          text: 'Your Order is ready',
           fontSize: 16,
-          textColor:Color(0xffff0000),
+          textColor:Color(0xff120000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -121,24 +121,24 @@ class _BoilerPlate extends State<BoilerPlate> {
                     height: 41,
                     width: 220,
                     child: FlatButton(
-                      child: Text('sas',
+                      child: Text('Ok',
                         style: TextStyle(color: Colors.white),),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
                       ),
-                      color: Color(0xffff0000),
+                      color: Color(0xffdac7ff),
                       onPressed: (){},
                     ),
                   ),
                 ),
               ],"",
-              Text('aasfds', textAlign: TextAlign.center,
+              Text('Proceed to Payment', textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
             );
             AlertDialogParameters alertobj21 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xffff0000),
+              backgroundColor: Color(0xffffdcdc),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
@@ -153,7 +153,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
 appBar:customAppBar(appBarIcons,paramobject),
-backgroundColor: Color(0xfffff5f5),
+backgroundColor: Color(0xfffff3f3),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(

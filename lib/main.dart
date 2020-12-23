@@ -28,7 +28,7 @@ class _BoilerPlate extends State<BoilerPlate> {
 var jsonresponse1; 
 var var1 = 'dynamic'; 
 var var2 = 'static'; 
-var var3 = 'Static'; 
+var var3 = 'static'; 
 
 @override 
 void initState() { 
@@ -57,12 +57,12 @@ CustomImageContents dynamicImageObj10 = new CustomImageContents(
 src: jsonresponse1[3]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 200, 
+height: 300, 
 width: 300); 
 TextParameters dynamicTextparam1 = new TextParameters( 
 text: 'Default', 
 fontSize: 26, 
-textColor: Color(0xff120000), 
+textColor: Color(0xff010000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
@@ -70,7 +70,7 @@ textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
 text:'Default', 
 fontSize: 16, 
-textColor: Color(0xff120000), 
+textColor: Color(0xff010000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
@@ -123,24 +123,24 @@ onclick0(String sText) { print(sText); }
         src:'image',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 200, width: 300);
+         height: 300, width: 300);
          
 
         TextParameters textparam1 = new TextParameters(
           text: 'Car Shop',
           fontSize: 26,
-          textColor:Color(0xff120000),
+          textColor:Color(0xff010000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.normal,
+          fontWeight: FontWeight.bold,
           textAlign: TextAlign.center
         );
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'Shop for cars',
+          text: 'Buy and Sell Used Cars in India at right price. Find New Cars, car prices, upcoming cars and images. Read latest auto news, reviews and car ',
           fontSize: 16,
-          textColor:Color(0xff120000),
+          textColor:Color(0xff010000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -160,10 +160,10 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Skip'),
-          color:Color(0xffff0000),
-          textColor:Color(0xffff0000),
-          hoverColor: Color(0xff120000),
+          child:Text('Get Started'),
+          color:Color(0xff0e0000),
+          textColor:Color(0xffffffff),
+          hoverColor: Color(0xffffd8d8),
           width: 150,
           focusColor: Color(0xffff0000),
           height: 50,
@@ -186,9 +186,9 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
           child:Text('Login'),
-          color:Color(0xffff0000),
-          textColor:Color(0xffff0000),
-          hoverColor: Color(0xff120000),
+          color:Color(0xff0e0000),
+          textColor:Color(0xffffffff),
+          hoverColor: Color(0xffffd8d8),
           width: 150,
           focusColor: Color(0xffff0000),
           height: 50,
