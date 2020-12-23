@@ -103,9 +103,9 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparam0 = new TextParameters(
-          text: 'Thanks!',
-          fontSize: 20,
-          textColor:Color(0xff320000),
+          text: 'dsgsg',
+          fontSize: 16,
+          textColor:Color(0xffff0000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -121,24 +121,24 @@ class _BoilerPlate extends State<BoilerPlate> {
                     height: 41,
                     width: 220,
                     child: FlatButton(
-                      child: Text('Ok',
+                      child: Text('sas',
                         style: TextStyle(color: Colors.white),),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
                       ),
-                      color: Color(0xffc7ffd4),
+                      color: Color(0xffff0000),
                       onPressed: (){},
                     ),
                   ),
                 ),
               ],"",
-              Text('Thanks for visting!', textAlign: TextAlign.center,
+              Text('aasfds', textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
             );
             AlertDialogParameters alertobj21 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xffffeaea),
+              backgroundColor: Color(0xffff0000),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
@@ -153,7 +153,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
 appBar:customAppBar(appBarIcons,paramobject),
-backgroundColor: Color(0xffffe9e9),
+backgroundColor: Color(0xfffff5f5),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(

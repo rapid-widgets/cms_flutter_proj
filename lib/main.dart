@@ -27,8 +27,8 @@ _BoilerPlate createState() => _BoilerPlate();
 class _BoilerPlate extends State<BoilerPlate> {
 var jsonresponse1; 
 var var1 = 'dynamic'; 
-var var2 = 'Static'; 
-var var3 = 'static'; 
+var var2 = 'static'; 
+var var3 = 'Static'; 
 
 @override 
 void initState() { 
@@ -54,15 +54,15 @@ builder: (context, AsyncSnapshot<dynamic> snapshot) {
 if (snapshot.hasData) {
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[2]['image'], 
+src: jsonresponse1[3]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
 height: 200, 
-width: 200); 
+width: 300); 
 TextParameters dynamicTextparam1 = new TextParameters( 
 text: 'Default', 
 fontSize: 26, 
-textColor: Color(0xff2c0000), 
+textColor: Color(0xff120000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
@@ -70,7 +70,7 @@ textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
 text:'Default', 
 fontSize: 16, 
-textColor: Color(0xff2c0000), 
+textColor: Color(0xff120000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
@@ -123,13 +123,13 @@ onclick0(String sText) { print(sText); }
         src:'image',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 200, width: 200);
+         height: 200, width: 300);
          
 
         TextParameters textparam1 = new TextParameters(
           text: 'Car Shop',
           fontSize: 26,
-          textColor:Color(0xff2c0000),
+          textColor:Color(0xff120000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -138,9 +138,9 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'Shop for Cars Online',
+          text: 'Shop for cars',
           fontSize: 16,
-          textColor:Color(0xff2c0000),
+          textColor:Color(0xff120000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -160,10 +160,10 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('View'),
-          color:Color(0xfffffafa),
-          textColor:Color(0xff000000),
-          hoverColor: Color(0xffffd1d1),
+          child:Text('Skip'),
+          color:Color(0xffff0000),
+          textColor:Color(0xffff0000),
+          hoverColor: Color(0xff120000),
           width: 150,
           focusColor: Color(0xffff0000),
           height: 50,
@@ -186,9 +186,9 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
           child:Text('Login'),
-          color:Color(0xfffffafa),
-          textColor:Color(0xff000000),
-          hoverColor: Color(0xffffd1d1),
+          color:Color(0xffff0000),
+          textColor:Color(0xffff0000),
+          hoverColor: Color(0xff120000),
           width: 150,
           focusColor: Color(0xffff0000),
           height: 50,
