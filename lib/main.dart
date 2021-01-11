@@ -11,7 +11,7 @@ import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page4.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page2.dart';
+import 'page5.dart';
 void main() => runApp(Page0());
 class Page0 extends StatelessWidget {
 @override
