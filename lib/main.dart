@@ -11,7 +11,7 @@ import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page4.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page5.dart';
+import 'page2.dart';
 void main() => runApp(Page0());
 class Page0 extends StatelessWidget {
 @override
@@ -33,7 +33,7 @@ var var3 = 'dynamic';
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'); 
+getData1('https://run.mocky.io/v3/17d1d0c8-f743-45dd-a4ed-36629f372b30'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -49,26 +49,26 @@ throw Exception('Failed to load Data');
 
 var content = FutureBuilder( 
 future: getData1( 
-'https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'), 
+'https://run.mocky.io/v3/17d1d0c8-f743-45dd-a4ed-36629f372b30'), 
 builder: (context, AsyncSnapshot<dynamic> snapshot) { 
 if (snapshot.hasData) {
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[2]['image'], 
+src: jsonresponse1[0]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 200, 
-width: 300); 
+height: 150, 
+width: 150); 
 TextParameters dynamicTextparam1 = new TextParameters( 
-text: jsonresponse1[2]['name'], 
-fontSize: 26, 
+text: jsonresponse1[0]['name'], 
+fontSize: 24, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
-text:jsonresponse1[2]['price'], 
+text:jsonresponse1[0]['description'], 
 fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -123,12 +123,12 @@ onclick0(String sText) { print(sText); }
         src:'image',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 200, width: 300);
+         height: 150, width: 150);
          
 
         TextParameters textparam1 = new TextParameters(
           text: 'name',
-          fontSize: 26,
+          fontSize: 24,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
@@ -138,7 +138,7 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'price',
+          text: 'description',
           fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
@@ -160,9 +160,9 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('OKay'),
-          color:Color(0xfff3f1f1),
-          textColor:Color(0xff000000),
+          child:Text('Login'),
+          color:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
@@ -178,16 +178,16 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page5()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('Login'),
-          color:Color(0xfff3f1f1),
-          textColor:Color(0xff000000),
+          child:Text('Get Started '),
+          color:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),

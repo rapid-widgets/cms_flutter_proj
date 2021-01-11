@@ -5,9 +5,9 @@ import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page4.dart';
-import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page5.dart';
+import 'package:rapid_widgets_library/custom-flatButton.dart';
+import 'page2.dart';
 void main() => runApp(Page1());
 class Page1 extends StatelessWidget {
 @override
@@ -71,16 +71,16 @@ onclick0(String sText) { print(sText); }
         src:'http://104.40.75.137:9003/assets/cms/image1.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 200, width: 300);
+         height: 150, width: 150);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Web content',
-          fontSize: 26,
+          text: 'Book Store',
+          fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.normal,
           textAlign: TextAlign.center
         );
          
@@ -90,18 +90,18 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page4()));
+                builder: (context) => Page5()));
 
           } 
           onFlatButtonLongPress2 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject2 = FlatButtonParameters(
-          child:Text('Get Started'),
-          color:Color(0xfff2f1f1),
-          textColor:Color(0xff000000),
+          child:Text('Login'),
+          color:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
-          width: 200,
+          width: 150,
           focusColor: Color(0xff000000),
           height: 50,
           highlightColor: Color(0xff000000),
@@ -115,18 +115,18 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page5()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Login'),
-          color:Color(0xfff2f1f1),
-          textColor:Color(0xff000000),
+          child:Text('Login as Guest'),
+          color:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
-          width: 200,
+          width: 150,
           focusColor: Color(0xff000000),
           height: 50,
           highlightColor: Color(0xff000000),

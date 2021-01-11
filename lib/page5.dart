@@ -3,12 +3,13 @@ import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
+import 'package:rapid_widgets_library/custom-image.dart';
 import 'dart:ui'; 
 import 'package:rapid_widgets_library/custom-textField.dart';
 import 'dart:ui'; 
 import 'package:rapid_widgets_library/custom-textField.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page2.dart';
+import 'page4.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 void main() => runApp(Page5());
 class Page5 extends StatelessWidget {
@@ -73,22 +74,29 @@ onclick0(String sText) { print(sText); }
         src:'http://104.40.75.137:9003/assets/cms/image3.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 200, width: 300);
+         height: 150, width: 150);
+         
+onclick1(String sText) { print(sText); }
+        CustomImageContents ImageObj11 = new CustomImageContents(
+        src:'http://104.40.75.137:9003/assets/cms/image3.png',
+         semanticLabel: 'Random Network', 
+         imageType: 'Network', 
+         height: 150, width: 150);
          
 
-            onTextSubmit1 (String sText) { 
+            onTextSubmit2 (String sText) { 
             print(sText); 
             }
-            TextFieldParameters finalTextObj1 = new TextFieldParameters( 
-            maxLength: 15, 
+            TextFieldParameters finalTextObj2 = new TextFieldParameters( 
+            maxLength: 20, 
             obsecureText: false,
             maxLengthEnforced: false, 
             decoration: InputDecoration(
-            hintText: 'Usename',
+            hintText: 'Username',
             labelText: 'Username', 
   
             filled: false, 
-            fillColor: Color(0xfff0eeee), 
+            fillColor: Color(0xff000000), 
             counterText: "", 
             border: OutlineInputBorder( 
             borderRadius: BorderRadius.circular(5), 
@@ -104,11 +112,11 @@ onclick0(String sText) { print(sText); }
             );
         
 
-            onTextSubmit2 (String sText) { 
+            onTextSubmit3 (String sText) { 
             print(sText); 
             }
-            TextFieldParameters finalTextObj2 = new TextFieldParameters( 
-            maxLength: 15, 
+            TextFieldParameters finalTextObj3 = new TextFieldParameters( 
+            maxLength: 20, 
             obsecureText: true,
             maxLengthEnforced: false, 
             decoration: InputDecoration(
@@ -116,7 +124,7 @@ onclick0(String sText) { print(sText); }
             labelText: 'Password', 
   
             filled: false, 
-            fillColor: Color(0xfff0eeee), 
+            fillColor: Color(0xff000000), 
             counterText: "", 
             border: OutlineInputBorder( 
             borderRadius: BorderRadius.circular(5), 
@@ -132,23 +140,23 @@ onclick0(String sText) { print(sText); }
             );
         
 
-          onFlatButtonPress3 (bool b){ 
+          onFlatButtonPress4 (bool b){ 
           print(b); 
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page2()));
+                builder: (context) => Page4()));
 
           } 
-          onFlatButtonLongPress3 (bool b){ 
+          onFlatButtonLongPress4 (bool b){ 
           print(b); 
           } 
-          FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
+          FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
           child:Text('Login'),
-          color:Color(0xfff4f2f2),
-          textColor:Color(0xff000000),
+          color:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
-          width: 200,
+          width: 150,
           focusColor: Color(0xff000000),
           height: 50,
           highlightColor: Color(0xff000000),
@@ -157,14 +165,14 @@ onclick0(String sText) { print(sText); }
           );
       
 
-        TextParameters textparam4 = new TextParameters(
-          text: 'Forgot Password?',
+        TextParameters textparam5 = new TextParameters(
+          text: 'Forgot Password',
           fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
-          textAlign: TextAlign.center
+          textAlign: TextAlign.right
         );
          
 return MaterialApp(
@@ -181,31 +189,31 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.all(0.0),
 child: Row(children: [
-Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
+Expanded(flex: 1,child:CustomImage(data: ImageObj11),),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(right:60.0,left:60,top:66),
 child: Row(children: [
-Expanded(flex: 1,child:CustomTextField(params: finalTextObj1, callbackTextfield: onTextSubmit1),),
+Expanded(flex: 1,child:CustomTextField(params: finalTextObj2, callbackTextfield: onTextSubmit2),),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(right:60.0,left:60,top:25),
 child: Row(children: [
-Expanded(flex: 1,child:CustomTextField(params: finalTextObj2, callbackTextfield: onTextSubmit2),),
+Expanded(flex: 1,child:CustomTextField(params: finalTextObj3, callbackTextfield: onTextSubmit3),),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(right:60.0,left:60,top:35,bottom:35),
 child: Row(children: [
-Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),
+Expanded(flex: 1,child:customFlatButton(buttonFlatObject4, onFlatButtonPress4, onFlatButtonLongPress4),),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(right:60,left:60),
 child: Row(children: [
-Expanded(flex: 1,child:customText(textparam4)),
+Expanded(flex: 1,child:customText(textparam5)),
  ],),
 ),
 ], 
