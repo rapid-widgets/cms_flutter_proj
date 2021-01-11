@@ -145,7 +145,7 @@ onclick1(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page4()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
