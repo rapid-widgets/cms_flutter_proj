@@ -283,7 +283,7 @@ onclick0(String sText) { print(sText); }
  child: Center( 
  child: CircularProgressIndicator( 
  valueColor: new AlwaysStoppedAnimation<Color>( 
- Color(0xff0079c2))))); 
+ Color(0xffffffff))))); 
  } 
  }); 
  return MaterialApp( 
