@@ -55,8 +55,8 @@ bottom: BorderSide(width: 0.4, color: Color(0xff707070)),
 ), 
 color: Color(0xffe0cece), 
 ), 
-height: 300, 
-width: 150, 
+height: 250, 
+width: 400, 
 child: Column( 
 children: <Widget>[ 
 Row( 
