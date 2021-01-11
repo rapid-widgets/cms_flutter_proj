@@ -10,8 +10,8 @@ import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page2.dart';
-void main() => runApp(Page2());
-class Page2 extends StatelessWidget {
+void main() => runApp(Page4());
+class Page4 extends StatelessWidget {
 @override
 Widget build(BuildContext context) {
 return MaterialApp(
