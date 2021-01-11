@@ -103,8 +103,8 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparam0 = new TextParameters(
-          text: 'Thankyou for your purchase!',
-          fontSize: 16,
+          text: 'Order Ready!',
+          fontSize: 14,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
