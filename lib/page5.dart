@@ -70,37 +70,37 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image2.png',
+        src:'http://104.40.75.137:9003/assets/cms/image3.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 300, width: 300);
+         height: 200, width: 300);
          
 
             onTextSubmit1 (String sText) { 
             print(sText); 
             }
             TextFieldParameters finalTextObj1 = new TextFieldParameters( 
-            maxLength: 10, 
-            obsecureText: true,
+            maxLength: 15, 
+            obsecureText: false,
             maxLengthEnforced: false, 
             decoration: InputDecoration(
-            hintText: 'Username',
+            hintText: 'Usename',
             labelText: 'Username', 
   
             filled: false, 
-            fillColor: Color(0xffffd8d8), 
+            fillColor: Color(0xfff0eeee), 
             counterText: "", 
             border: OutlineInputBorder( 
             borderRadius: BorderRadius.circular(5), 
-            borderSide: BorderSide( color: Color(0xff2c0000))), 
+            borderSide: BorderSide( color: Color(0xff000000))), 
             ), 
-            cursorColor: Color(0xff2a0000), 
+            cursorColor: Color(0xff000000), 
             cursorWidth: 1, 
             expands: false, 
             maxLines: 1, 
             readOnly: false, 
             showCursor: true, 
-            style: TextStyle(color: Color(0xff0e0000)),
+            style: TextStyle(color: Color(0xff000000)),
             );
         
 
@@ -108,7 +108,7 @@ onclick0(String sText) { print(sText); }
             print(sText); 
             }
             TextFieldParameters finalTextObj2 = new TextFieldParameters( 
-            maxLength: 10, 
+            maxLength: 15, 
             obsecureText: true,
             maxLengthEnforced: false, 
             decoration: InputDecoration(
@@ -116,19 +116,19 @@ onclick0(String sText) { print(sText); }
             labelText: 'Password', 
   
             filled: false, 
-            fillColor: Color(0xffffd8d8), 
+            fillColor: Color(0xfff0eeee), 
             counterText: "", 
             border: OutlineInputBorder( 
             borderRadius: BorderRadius.circular(5), 
-            borderSide: BorderSide( color: Color(0xff2c0000))), 
+            borderSide: BorderSide( color: Color(0xff000000))), 
             ), 
-            cursorColor: Color(0xff2a0000), 
+            cursorColor: Color(0xff000000), 
             cursorWidth: 1, 
             expands: false, 
             maxLines: 1, 
             readOnly: false, 
             showCursor: true, 
-            style: TextStyle(color: Color(0xff0e0000)),
+            style: TextStyle(color: Color(0xff000000)),
             );
         
 
@@ -145,32 +145,32 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Login'),
-          color:Color(0xff140000),
-          textColor:Color(0xffffffff),
-          hoverColor: Color(0xffff8c8c),
-          width: 150,
-          focusColor: Color(0xffff0000),
+          color:Color(0xfff4f2f2),
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xff000000),
+          width: 200,
+          focusColor: Color(0xff000000),
           height: 50,
-          highlightColor: Color(0xffff0000),
-          splashColor: Color(0xff2c0000)
+          highlightColor: Color(0xff000000),
+          splashColor: Color(0xff000000)
 
           );
       
 
         TextParameters textparam4 = new TextParameters(
           text: 'Forgot Password?',
-          fontSize: 12,
-          textColor:Color(0xff070000),
+          fontSize: 16,
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
-          textAlign: TextAlign.left
+          textAlign: TextAlign.center
         );
          
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Color(0xffffefef),
+backgroundColor: Color(0xffffffff),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(

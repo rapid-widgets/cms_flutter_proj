@@ -145,13 +145,13 @@ CustomImageContents ImageObj10 = new CustomImageContents(
  src: jsonresponse[i]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 300, 
+height: 200, 
 width: 300); 
  
  TextParameters textparam1 = new TextParameters( 
  text: jsonresponse[i]['name'], 
  fontSize: 26, 
- textColor: Color(0xff070000), 
+ textColor: Color(0xff000000), 
  fontStyle: FontStyle.normal, 
  fontFamily: 'Roboto', 
 fontWeight: FontWeight.bold, 
@@ -160,7 +160,7 @@ textAlign: TextAlign.center);
  TextParameters textparam2 = new TextParameters( 
  text: jsonresponse[i]['description'], 
  fontSize: 16, 
- textColor: Color(0xff070000), 
+ textColor: Color(0xff000000), 
  fontStyle: FontStyle.normal, 
  fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
@@ -177,14 +177,14 @@ print(b);
  
  FlatButtonParameters buttonFlatObject3 = FlatButtonParameters( 
  child: Text('Buy'), 
- color: Color(0xff050000), 
- textColor: Color(0xffffffff), 
- hoverColor: Color(0xffff9494), 
- width: 150, 
-focusColor: Color(0xffff0000), 
+ color: Color(0xfff3eeee), 
+ textColor: Color(0xff000000), 
+ hoverColor: Color(0xff000000), 
+ width: 200, 
+focusColor: Color(0xff000000), 
 height: 50, 
-highlightColor: Color(0xffff0000), 
-splashColor: Color(0xffff0000)); 
+highlightColor: Color(0xff000000), 
+splashColor: Color(0xff000000)); 
  
  return Column( 
  children: <Widget>[ 
@@ -250,7 +250,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false, 
 home: Scaffold( 
  appBar: customAppBar(appBarIcons, paramobject), 
-backgroundColor: Color(0xfffff9f9), 
+backgroundColor: Color(0xffffffff), 
 body: Padding( 
  padding: const EdgeInsets.all(0.0), 
 child: Padding( 

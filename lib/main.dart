@@ -9,7 +9,7 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page2.dart';
+import 'page4.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page5.dart';
 void main() => runApp(Page0());
@@ -27,8 +27,8 @@ _BoilerPlate createState() => _BoilerPlate();
 class _BoilerPlate extends State<BoilerPlate> {
 var jsonresponse1; 
 var var1 = 'dynamic'; 
-var var2 = 'static'; 
-var var3 = 'static'; 
+var var2 = 'dynamic'; 
+var var3 = 'dynamic'; 
 
 @override 
 void initState() { 
@@ -54,23 +54,23 @@ builder: (context, AsyncSnapshot<dynamic> snapshot) {
 if (snapshot.hasData) {
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[3]['image'], 
+src: jsonresponse1[2]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 300, 
+height: 200, 
 width: 300); 
 TextParameters dynamicTextparam1 = new TextParameters( 
-text: 'Default', 
+text: jsonresponse1[2]['name'], 
 fontSize: 26, 
-textColor: Color(0xff010000), 
+textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
-text:'Default', 
+text:jsonresponse1[2]['price'], 
 fontSize: 16, 
-textColor: Color(0xff010000), 
+textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
@@ -123,13 +123,13 @@ onclick0(String sText) { print(sText); }
         src:'image',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 300, width: 300);
+         height: 200, width: 300);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Car Shop',
+          text: 'name',
           fontSize: 26,
-          textColor:Color(0xff010000),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.bold,
@@ -138,9 +138,9 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'Buy and Sell Used Cars in India at right price. Find New Cars, car prices, upcoming cars and images. Read latest auto news, reviews and car ',
+          text: 'price',
           fontSize: 16,
-          textColor:Color(0xff010000),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -153,22 +153,22 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page2()));
+                builder: (context) => Page4()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Get Started'),
-          color:Color(0xff0e0000),
-          textColor:Color(0xffffffff),
-          hoverColor: Color(0xffffd8d8),
+          child:Text('OKay'),
+          color:Color(0xfff3f1f1),
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xff000000),
           width: 150,
-          focusColor: Color(0xffff0000),
+          focusColor: Color(0xff000000),
           height: 50,
-          highlightColor: Color(0xffff0000),
-          splashColor: Color(0xffff0000)
+          highlightColor: Color(0xff000000),
+          splashColor: Color(0xff000000)
 
           );
       
@@ -186,14 +186,14 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
           child:Text('Login'),
-          color:Color(0xff0e0000),
-          textColor:Color(0xffffffff),
-          hoverColor: Color(0xffffd8d8),
+          color:Color(0xfff3f1f1),
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xff000000),
           width: 150,
-          focusColor: Color(0xffff0000),
+          focusColor: Color(0xff000000),
           height: 50,
-          highlightColor: Color(0xffff0000),
-          splashColor: Color(0xffff0000)
+          highlightColor: Color(0xff000000),
+          splashColor: Color(0xff000000)
 
           );
       

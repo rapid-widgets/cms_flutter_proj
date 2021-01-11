@@ -103,12 +103,12 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparam0 = new TextParameters(
-          text: 'Your Order is ready',
-          fontSize: 16,
-          textColor:Color(0xff120000),
+          text: 'Thank you for buying',
+          fontSize: 20,
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.normal,
+          fontWeight: FontWeight.bold,
           textAlign: TextAlign.center
         );
          
@@ -126,19 +126,19 @@ class _BoilerPlate extends State<BoilerPlate> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
                       ),
-                      color: Color(0xffdac7ff),
+                      color: Color(0xffbf9a9a),
                       onPressed: (){},
                     ),
                   ),
                 ),
               ],"",
-              Text('Proceed to Payment', textAlign: TextAlign.center,
+              Text('Visit Again!', textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
             );
             AlertDialogParameters alertobj21 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xffffdcdc),
+              backgroundColor: Color(0xfff8f4f4),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
@@ -153,7 +153,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
 appBar:customAppBar(appBarIcons,paramobject),
-backgroundColor: Color(0xfffff3f3),
+backgroundColor: Color(0xffffffff),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(

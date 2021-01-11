@@ -4,9 +4,10 @@ import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page3.dart';
+import 'page4.dart';
+import 'package:rapid_widgets_library/custom-flatButton.dart';
+import 'page5.dart';
 void main() => runApp(Page1());
 class Page1 extends StatelessWidget {
 @override
@@ -67,16 +68,16 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image2.png',
+        src:'http://104.40.75.137:9003/assets/cms/image1.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 240, width: 350);
+         height: 200, width: 300);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Teacher learning education',
+          text: 'Web content',
           fontSize: 26,
-          textColor:Color(0xff090000),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.bold,
@@ -84,38 +85,52 @@ onclick0(String sText) { print(sText); }
         );
          
 
-        TextParameters textparam2 = new TextParameters(
-          text: 'Training teacher for the lesson for online student interaction',
-          fontSize: 18,
-          textColor:Color(0xff090000),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.normal,
-          textAlign: TextAlign.center
-        );
-         
+          onFlatButtonPress2 (bool b){ 
+          print(b); 
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+                builder: (context) => Page4()));
+
+          } 
+          onFlatButtonLongPress2 (bool b){ 
+          print(b); 
+          } 
+          FlatButtonParameters buttonFlatObject2 = FlatButtonParameters(
+          child:Text('Get Started'),
+          color:Color(0xfff2f1f1),
+          textColor:Color(0xff000000),
+          hoverColor: Color(0xff000000),
+          width: 200,
+          focusColor: Color(0xff000000),
+          height: 50,
+          highlightColor: Color(0xff000000),
+          splashColor: Color(0xff000000)
+
+          );
+      
 
           onFlatButtonPress3 (bool b){ 
           print(b); 
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page3()));
+                builder: (context) => Page5()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Get Started'),
-          color:Color(0xffff81f3),
+          child:Text('Login'),
+          color:Color(0xfff2f1f1),
           textColor:Color(0xff000000),
-          hoverColor: Color(0xffff5c5c),
-          width: 146,
-          focusColor: Color(0xffff0000),
-          height: 41,
-          highlightColor: Color(0xffff0000),
-          splashColor: Color(0xffff0000)
+          hoverColor: Color(0xff000000),
+          width: 200,
+          focusColor: Color(0xff000000),
+          height: 50,
+          highlightColor: Color(0xff000000),
+          splashColor: Color(0xff000000)
 
           );
       
@@ -124,44 +139,40 @@ debugShowCheckedModeBanner: false,
 home: Scaffold(
 backgroundColor: Color(0xffffffff),
 body: Padding(
-padding: const EdgeInsets.only(top:40.0,left:20.0,right:20.0,bottom:0.0),
+padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
-padding: const EdgeInsets.all(0.0),
+padding: const EdgeInsets.only(top:10.0,left:5.0,right:5.0,bottom:5.0),
 child: SingleChildScrollView(
+child: Center(
 child: Column(
 children: <Widget>[
 Padding(
-padding: const EdgeInsets.all(25.0),
+padding: const EdgeInsets.only(top:65.0,left: 25.0,right: 25.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:0),Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
+SizedBox(height:300),Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
 ],),
 ),
 Padding(
-padding: const EdgeInsets.all(20.0),
+padding: const EdgeInsets.only(top:50.0,left:25.0,right:25.0,bottom:5.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:20),Expanded(flex: 1,child:customText(textparam1)),
+SizedBox(height:65),Expanded(flex: 1,child:customText(textparam1)),
 ],),
 ),
 Padding(
-padding: const EdgeInsets.all(20.0),
+padding: const EdgeInsets.all(5.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:0),Expanded(flex: 1,child:customText(textparam2)),
+SizedBox(height:100),Expanded(flex: 1,child:customFlatButton(buttonFlatObject2, onFlatButtonPress2, onFlatButtonLongPress2),),
 ],),
 ),
 Padding(
-padding: const EdgeInsets.all(25.0),
-child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:0),Expanded(flex: 1,child:Container()),
-],),
-),
-Padding(
-padding: const EdgeInsets.all(25.0),
-child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:60),Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),
+padding: const EdgeInsets.all(5.0),
+child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
+SizedBox(height:20),Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),
+
  ],),
 ),
 ], 
 )  
-))))); 
+)))))); 
 } 
 }
