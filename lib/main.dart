@@ -153,7 +153,7 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page4()));
+                builder: (context) => Page5()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
@@ -178,7 +178,7 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page2()));
+                builder: (context) => Page4()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
