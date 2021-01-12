@@ -8,8 +8,11 @@ import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
+import 'package:rapid_widgets_library/custom-image.dart';
+import 'package:rapid_widgets_library/custom-text.dart';
+import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page2.dart';
+import 'page4.dart';
 void main() => runApp(Page2());
 class Page2 extends StatelessWidget {
 @override
@@ -52,7 +55,7 @@ height: 150,
 width: 150); 
 TextParameters dynamicTextparam1 = new TextParameters( 
 text: jsonresponse1[1]['name'], 
-fontSize: 22, 
+fontSize: 24, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
@@ -119,7 +122,7 @@ onclick0(String sText) { print(sText); }
 
         TextParameters textparam1 = new TextParameters(
           text: 'name',
-          fontSize: 22,
+          fontSize: 24,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
@@ -138,19 +141,48 @@ onclick0(String sText) { print(sText); }
           textAlign: TextAlign.center
         );
          
+onclick3(String sText) { print(sText); }
+        CustomImageContents ImageObj13 = new CustomImageContents(
+        src:'dynamic-image',
+         semanticLabel: 'Random Network', 
+         imageType: 'Network', 
+         height: 150, width: 150);
+         
 
-          onFlatButtonPress3 (bool b){ 
+        TextParameters textparam4 = new TextParameters(
+          text: 'dynamic-name',
+          fontSize: 16,
+          textColor:Color(0xff000000),
+          fontStyle: FontStyle.normal,
+          fontFamily: 'Roboto',
+          fontWeight: FontWeight.bold,
+          textAlign: TextAlign.center
+        );
+         
+
+        TextParameters textparam5 = new TextParameters(
+          text: 'dynamic-description',
+          fontSize: 16,
+          textColor:Color(0xff000000),
+          fontStyle: FontStyle.normal,
+          fontFamily: 'Roboto',
+          fontWeight: FontWeight.normal,
+          textAlign: TextAlign.center
+        );
+         
+
+          onFlatButtonPress6 (bool b){ 
           print(b); 
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page2()));
+                builder: (context) => Page4()));
 
           } 
-          onFlatButtonLongPress3 (bool b){ 
+          onFlatButtonLongPress6 (bool b){ 
           print(b); 
           } 
-          FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
+          FlatButtonParameters buttonFlatObject6 = FlatButtonParameters(
           child:Text('Get Started'),
           color:Color(0xff000000),
           textColor:Color(0xffffffff),
@@ -179,7 +211,7 @@ padding: const EdgeInsets.only(top:65.0,left: 25.0,right: 25.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
 SizedBox(height:0),
 (var1 != "dynamic")? 
-Expanded(flex: 1,child: CustomImage(data: ImageObj10),)
+Expanded(flex: 1,child: CustomImage(data: ImageObj13),)
 : Expanded(
 flex: 1,
 child:
@@ -192,7 +224,7 @@ padding: const EdgeInsets.all(20.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
 SizedBox(height:20),
 (var2 != "dynamic")? 
-Expanded(flex: 1,child: customText(textparam1))
+Expanded(flex: 1,child: customText(textparam4))
  : Expanded(
 flex: 1,
 child: customText(dynamicTextparam1)),
@@ -203,7 +235,7 @@ padding: const EdgeInsets.all(20.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
 SizedBox(height:0),
 (var3 != "dynamic")? 
-Expanded(flex: 1,child: customText(textparam2))
+Expanded(flex: 1,child: customText(textparam5))
  : Expanded(
 flex: 1,
 child: customText(dynamicTextparam2)),
@@ -218,7 +250,7 @@ SizedBox(height:0),Expanded(flex: 1,child:Container()),
 Padding(
 padding: const EdgeInsets.all(25.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:60),Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),
+SizedBox(height:60),Expanded(flex: 1,child:customFlatButton(buttonFlatObject6, onFlatButtonPress6, onFlatButtonLongPress6),),
  ],),
 ),
 ], 
