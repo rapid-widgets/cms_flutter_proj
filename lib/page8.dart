@@ -145,7 +145,7 @@ CustomImageContents ImageObj10 = new CustomImageContents(
  src: jsonresponse[i]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 150, 
+height: 400, 
 width: 150); 
  
  TextParameters textparam1 = new TextParameters( 
