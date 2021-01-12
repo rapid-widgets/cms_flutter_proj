@@ -122,7 +122,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                     width: 220,
                     child: FlatButton(
                       child: Text('Ok',
-                        style: TextStyle(color: Colors.white),),
+                        style: TextStyle(color: Colors.black),),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
                       ),
