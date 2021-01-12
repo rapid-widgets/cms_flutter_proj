@@ -185,7 +185,7 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('Go to Store'),
+          child:Text('Get Started'),
           color:Color(0xff000000),
           textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
