@@ -32,7 +32,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                                             centerTitle: false,
                                             automaticallyImplyLeading: true,
                                             leading: Icon(Icons.arrow_back, color: Color(0xff707070),),
-                                            title: Text('Payment Option',
+                                            title: Text('Order Confirmed',
                                               style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
                                         List<Widget> appBarIcons = [
                                           IconButton(
