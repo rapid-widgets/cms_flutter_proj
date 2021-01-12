@@ -161,7 +161,8 @@ return MaterialApp(
 debugShowCheckedModeBanner: false, 
 home: Scaffold( 
 backgroundColor: Color(0xffffffff), 
-body: Container( 
+body: Container(
+padding: const EdgeInsets.only(top: 50.0),
 decoration: new BoxDecoration( 
  color: Colors.white, 
 borderRadius: new BorderRadius.only( 
