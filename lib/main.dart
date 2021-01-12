@@ -33,7 +33,7 @@ var var3 = 'dynamic';
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/17d1d0c8-f743-45dd-a4ed-36629f372b30'); 
+getData1('https://run.mocky.io/v3/b047a35a-e631-4b26-9fda-6f9e5ec38090'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
