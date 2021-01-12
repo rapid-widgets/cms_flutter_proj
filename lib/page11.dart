@@ -105,7 +105,7 @@ class _BoilerPlate extends State<BoilerPlate> {
         TextParameters textparam0 = new TextParameters(
           text: 'Order Recieved',
           fontSize: 16,
-          textColor:Color(0xffffffff),
+          textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.normal,
@@ -126,7 +126,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
                       ),
-                      color: Color(0xffffffff),
+                      color: Color(0xff000000),
                       onPressed: (){},
                     ),
                   ),
