@@ -56,7 +56,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                                       titleSpacing: 1.0,
                                       centerTitle: false,
                                       automaticallyImplyLeading: true,
-                                      leading: Icon(Icons.arrow_back, color: Color(0xff707070),),
+                                      leading: Icon(Icons.arrow_back, color: Colors.black,),
                                       title: Text('Featured',
                                       style: TextStyle(fontSize: 26, color: Color(0xff707070)),));
                                   List<Widget> appBarIcons = [
