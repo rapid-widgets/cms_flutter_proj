@@ -57,8 +57,8 @@ CustomImageContents dynamicImageObj10 = new CustomImageContents(
 src: jsonresponse1[0]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 150, 
-width: 150); 
+height: 200, 
+width: 200); 
 TextParameters dynamicTextparam1 = new TextParameters( 
 text: jsonresponse1[0]['name'], 
 fontSize: 24, 
@@ -207,7 +207,7 @@ onclick0(String sText) { print(sText); }
  children: <Widget>[ 
  Padding( 
  padding: const EdgeInsets.only( 
- top: 65.0, left: 25.0, right: 25.0), 
+ top: 30.0, left: 25.0, right: 25.0), 
  child: Row( 
  mainAxisAlignment: MainAxisAlignment.center, 
  children: [ 
