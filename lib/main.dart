@@ -9,7 +9,7 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page4.dart';
+import 'page2.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page5.dart';
 void main() => runApp(Page0());
@@ -178,14 +178,14 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page4()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('Get Started '),
+          child:Text('Go to Store'),
           color:Color(0xff000000),
           textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
