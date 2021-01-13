@@ -123,7 +123,7 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Login as Guest'),
-          color:Color(0xff000000),
+          color:Colors.grey,
           textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
           width: 150,
