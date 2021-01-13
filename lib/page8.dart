@@ -145,21 +145,21 @@ CustomImageContents ImageObj10 = new CustomImageContents(
  src: jsonresponse[i]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 200, 
-width: 200); 
+height: 250, 
+width: 250); 
  
  TextParameters textparam1 = new TextParameters( 
  text: jsonresponse[i]['name'], 
- fontSize: 16, 
+ fontSize: 22, 
  textColor: Color(0xff000000), 
  fontStyle: FontStyle.normal, 
  fontFamily: 'Roboto', 
-fontWeight: FontWeight.normal, 
+fontWeight: FontWeight.bold, 
 textAlign: TextAlign.center); 
  
  TextParameters textparam2 = new TextParameters( 
  text: jsonresponse[i]['description'], 
- fontSize: 16, 
+ fontSize: 14, 
  textColor: Color(0xff000000), 
  fontStyle: FontStyle.normal, 
  fontFamily: 'Roboto', 
@@ -176,11 +176,11 @@ print(b);
 } 
  
  FlatButtonParameters buttonFlatObject3 = FlatButtonParameters( 
- child: Text('Add to cart'), 
+ child: Text('Add to Cart'), 
  color: Color(0xff000000), 
- textColor: Color(0xffffffff), 
+ textColor: Color(0xfff5f1f1), 
  hoverColor: Color(0xff000000), 
- width: 150, 
+ width: 200, 
 focusColor: Color(0xff000000), 
 height: 50, 
 highlightColor: Color(0xff000000), 
