@@ -53,7 +53,7 @@ decoration: BoxDecoration(
 border: Border( 
 bottom: BorderSide(width: 0.4, color: Color(0xff707070)), 
 ), 
-color: Color(0xfff8f5f5), 
+color: Color(0xffffffff), 
 ), 
 height: 150, 
 width: 428, 
