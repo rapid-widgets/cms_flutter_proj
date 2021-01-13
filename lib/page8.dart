@@ -21,7 +21,7 @@ import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page11.dart';
 void main() => runApp( 
-Page8(3, 'https://run.mocky.io/v3/436b3bc0-e27c-4f0e-83df-ea66d14e59d6')); 
+Page8(3, 'https://run.mocky.io/v3/e2794ba4-3495-4d0c-bd20-74451ec83b25')); 
  
 class Page8 extends StatelessWidget { 
 Page8(this.i, this.endpoint); 
@@ -145,8 +145,8 @@ CustomImageContents ImageObj10 = new CustomImageContents(
  src: jsonresponse[i]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 450, 
-width: 150); 
+height: 200, 
+width: 200); 
  
  TextParameters textparam1 = new TextParameters( 
  text: jsonresponse[i]['name'], 
@@ -180,7 +180,7 @@ print(b);
  color: Color(0xff000000), 
  textColor: Color(0xffffffff), 
  hoverColor: Color(0xff000000), 
- width: 300, 
+ width: 150, 
 focusColor: Color(0xff000000), 
 height: 50, 
 highlightColor: Color(0xff000000), 
@@ -250,7 +250,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false, 
 home: Scaffold( 
  appBar: customAppBar(appBarIcons, paramobject), 
-backgroundColor: Color(0xffffffff), 
+backgroundColor: Colors.white, 
 body: Padding( 
  padding: const EdgeInsets.all(0.0), 
 child: Padding( 
