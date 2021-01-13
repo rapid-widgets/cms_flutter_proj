@@ -33,7 +33,7 @@ var var3 = 'dynamic';
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/9881728c-4d8c-4572-a8e7-d86febf940eb'); 
+getData1('https://run.mocky.io/v3/8a87d45a-9e9b-4f20-807f-22723e9c4ef9'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -49,26 +49,26 @@ throw Exception('Failed to load Data');
 
 var content = FutureBuilder( 
 future: getData1( 
-'https://run.mocky.io/v3/9881728c-4d8c-4572-a8e7-d86febf940eb'), 
+'https://run.mocky.io/v3/8a87d45a-9e9b-4f20-807f-22723e9c4ef9'), 
 builder: (context, AsyncSnapshot<dynamic> snapshot) { 
 if (snapshot.hasData) {
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[1]['image'], 
+src: jsonresponse1[2]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
 height: 150, 
 width: 150); 
 TextParameters dynamicTextparam1 = new TextParameters( 
-text: jsonresponse1[1]['name'], 
-fontSize: 24, 
+text: jsonresponse1[2]['name'], 
+fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
-text:jsonresponse1[1]['description'], 
+text:jsonresponse1[2]['description'], 
 fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -128,11 +128,11 @@ onclick0(String sText) { print(sText); }
 
         TextParameters textparam1 = new TextParameters(
           text: 'name',
-          fontSize: 24,
+          fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.normal,
           textAlign: TextAlign.center
         );
          
