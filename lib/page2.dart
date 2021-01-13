@@ -55,8 +55,8 @@ bottom: BorderSide(width: 0.4, color: Color(0xff707070)),
 ), 
 color: Color(0xff000000), 
 ), 
-height: 300, 
-width: 300, 
+height: 250, 
+width: 550, 
 child: Column( 
 children: <Widget>[ 
 Row( 
@@ -135,7 +135,7 @@ SizedBox(
 width: 10, 
 ), 
 Text( 
-snapshot.data[i]['price'], 
+snapshot.data[i]['Price'], 
 style: TextStyle(color: Colors.black, fontSize: 12), 
 ) 
 ], 
