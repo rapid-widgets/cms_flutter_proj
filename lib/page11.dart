@@ -126,7 +126,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
                       ),
-                      color: Color(0xffffb4b4),
+                      color: Color(0xffffffff),
                       onPressed: (){},
                     ),
                   ),
@@ -138,7 +138,7 @@ class _BoilerPlate extends State<BoilerPlate> {
             AlertDialogParameters alertobj21 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xfff7f5f5),
+              backgroundColor: Color(0xffffffff),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
