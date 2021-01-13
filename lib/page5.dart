@@ -3,13 +3,12 @@ import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
-import 'package:rapid_widgets_library/custom-image.dart';
 import 'dart:ui'; 
 import 'package:rapid_widgets_library/custom-textField.dart';
 import 'dart:ui'; 
 import 'package:rapid_widgets_library/custom-textField.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page4.dart';
+import 'page2.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 void main() => runApp(Page5());
 class Page5 extends StatelessWidget {
@@ -71,26 +70,19 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image3.png',
-         semanticLabel: 'Random Network', 
-         imageType: 'Network', 
-         height: 150, width: 150);
-         
-onclick1(String sText) { print(sText); }
-        CustomImageContents ImageObj11 = new CustomImageContents(
-        src:'http://104.40.75.137:9003/assets/cms/image3.png',
+        src:'dynamic-image',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
          height: 150, width: 150);
          
 
-            onTextSubmit2 (String sText) { 
+            onTextSubmit1 (String sText) { 
             print(sText); 
             }
-            TextFieldParameters finalTextObj2 = new TextFieldParameters( 
+            TextFieldParameters finalTextObj1 = new TextFieldParameters( 
             maxLength: 20, 
             obsecureText: false,
-            maxLengthEnforced: false, 
+            maxLengthEnforced: true, 
             decoration: InputDecoration(
             hintText: 'Username',
             labelText: 'Username', 
@@ -112,10 +104,10 @@ onclick1(String sText) { print(sText); }
             );
         
 
-            onTextSubmit3 (String sText) { 
+            onTextSubmit2 (String sText) { 
             print(sText); 
             }
-            TextFieldParameters finalTextObj3 = new TextFieldParameters( 
+            TextFieldParameters finalTextObj2 = new TextFieldParameters( 
             maxLength: 20, 
             obsecureText: true,
             maxLengthEnforced: false, 
@@ -140,38 +132,38 @@ onclick1(String sText) { print(sText); }
             );
         
 
-          onFlatButtonPress4 (bool b){ 
+          onFlatButtonPress3 (bool b){ 
           print(b); 
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page4()));
+                builder: (context) => Page2()));
 
           } 
-          onFlatButtonLongPress4 (bool b){ 
+          onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
-          FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
+          FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Login'),
           color:Color(0xff000000),
           textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
-          height: 50,
+          height: 150,
           highlightColor: Color(0xff000000),
           splashColor: Color(0xff000000)
 
           );
       
 
-        TextParameters textparam5 = new TextParameters(
+        TextParameters textparam4 = new TextParameters(
           text: 'Forgot Password',
           fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.normal,
+          fontWeight: FontWeight.bold,
           textAlign: TextAlign.right
         );
          
@@ -189,31 +181,31 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.all(0.0),
 child: Row(children: [
-Expanded(flex: 1,child:CustomImage(data: ImageObj11),),
+Expanded(flex: 1,child:CustomImage(data: ImageObj10),),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(right:60.0,left:60,top:66),
 child: Row(children: [
-Expanded(flex: 1,child:CustomTextField(params: finalTextObj2, callbackTextfield: onTextSubmit2),),
+Expanded(flex: 1,child:CustomTextField(params: finalTextObj1, callbackTextfield: onTextSubmit1),),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(right:60.0,left:60,top:25),
 child: Row(children: [
-Expanded(flex: 1,child:CustomTextField(params: finalTextObj3, callbackTextfield: onTextSubmit3),),
+Expanded(flex: 1,child:CustomTextField(params: finalTextObj2, callbackTextfield: onTextSubmit2),),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(right:60.0,left:60,top:35,bottom:35),
 child: Row(children: [
-Expanded(flex: 1,child:customFlatButton(buttonFlatObject4, onFlatButtonPress4, onFlatButtonLongPress4),),
+Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),
 ],),
 ),
 Padding(
 padding: const EdgeInsets.only(right:60,left:60),
 child: Row(children: [
-Expanded(flex: 1,child:customText(textparam5)),
+Expanded(flex: 1,child:customText(textparam4)),
  ],),
 ),
 ], 

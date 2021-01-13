@@ -26,7 +26,7 @@ _BoilerPlate createState() => _BoilerPlate();
 }
 class _BoilerPlate extends State<BoilerPlate> {
 var jsonresponse1; 
-var var1 = 'dynamic'; 
+var var1 = 'dyanmic'; 
 var var2 = 'dynamic'; 
 var var3 = 'dynamic'; 
 
@@ -54,7 +54,7 @@ builder: (context, AsyncSnapshot<dynamic> snapshot) {
 if (snapshot.hasData) {
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[1]['image'], 
+src: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png', 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
 height: 250, 
@@ -162,7 +162,7 @@ onclick0(String sText) { print(sText); }
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Login'),
           color:Color(0xff000000),
-          textColor:Color(0xfff2f0f0),
+          textColor:Color(0xfffcfafa),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
@@ -185,9 +185,9 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('Continue'),
+          child:Text('Get Started'),
           color:Color(0xff000000),
-          textColor:Color(0xfff2f0f0),
+          textColor:Color(0xfffcfafa),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
