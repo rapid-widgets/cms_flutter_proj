@@ -126,7 +126,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
                       ),
-                      color: Color(0xffffffff),
+                      color: Colors.black,
                       onPressed: (){},
                     ),
                   ),
