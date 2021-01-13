@@ -23,12 +23,12 @@ _BoilerPlate createState() => _BoilerPlate();
 class _BoilerPlate extends State<BoilerPlate> {
 var jsonresponse2; 
 
- var endpoint = 'https://run.mocky.io/v3/8a87d45a-9e9b-4f20-807f-22723e9c4ef9'; 
+ var endpoint = 'https://run.mocky.io/v3/8098ded7-576e-4d38-9e47-177cc8d2c16f'; 
 
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/8a87d45a-9e9b-4f20-807f-22723e9c4ef9'); 
+getData1('https://run.mocky.io/v3/8098ded7-576e-4d38-9e47-177cc8d2c16f'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -125,7 +125,7 @@ print(i);
 Navigator.push( 
 context, 
 MaterialPageRoute( 
-builder: (context) => Page8(i, 'https://run.mocky.io/v3/8a87d45a-9e9b-4f20-807f-22723e9c4ef9'))); 
+builder: (context) => Page8(i, 'https://run.mocky.io/v3/8098ded7-576e-4d38-9e47-177cc8d2c16f'))); 
 }, 
 shape: new RoundedRectangleBorder( 
 borderRadius: new BorderRadius.circular(30.0)), 
