@@ -150,7 +150,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/image1.png',height: 102,width: 65,)
+                                  child: Image.network('https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/63b74769-3445-4fa9-b7e9-b311b1b65030/cb4920ef-dd12-40a2-9370-4b9c8c916718/T1_All_Fruits_275x184_28thDec.jpg',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -175,21 +175,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('haef',textAlign: TextAlign.left,
+                              Text('Fresh Fruits',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('asfasf',
+                                child: Text('Mango',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('23',
+                                  Text('98',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('324',
+                                  Text('100',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -213,7 +213,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/image1.png',height: 102,width: 65,)
+                                  child: Image.network('https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/63b74769-3445-4fa9-b7e9-b311b1b65030/cb4920ef-dd12-40a2-9370-4b9c8c916718/T1_All_Fruits_275x184_28thDec.jpg',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -238,21 +238,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('sfsdgdfg',textAlign: TextAlign.left,
+                              Text('Veggies',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('sdfasdf',
+                                child: Text('Potato',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('111',
+                                  Text('29',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('11',
+                                  Text('40',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -276,7 +276,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/image1.png',height: 102,width: 65,)
+                                  child: Image.network('https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/63b74769-3445-4fa9-b7e9-b311b1b65030/cb4920ef-dd12-40a2-9370-4b9c8c916718/T1_All_Fruits_275x184_28thDec.jpg',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -301,21 +301,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('aserrgdfg',textAlign: TextAlign.left,
+                              Text('Foreign Foods',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('kufkf',
+                                child: Text('Taco',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('11',
+                                  Text('33',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('22',
+                                  Text('20',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -339,7 +339,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                             children: <Widget>[
                               Align(
                                   alignment: Alignment.centerRight,
-                                  child: Image.network('http://104.40.75.137:9003/assets/cms/image1.png',height: 102,width: 65,)
+                                  child: Image.network('https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/63b74769-3445-4fa9-b7e9-b311b1b65030/cb4920ef-dd12-40a2-9370-4b9c8c916718/T1_All_Exotcs_275x184_28thDec.jpg',height: 102,width: 65,)
                               ),
                               SizedBox(height: 19,),
                               Container(
@@ -364,21 +364,21 @@ class _BoilerPlate extends State<BoilerPlate> {
                           padding: const EdgeInsets.only(left: 13.0, bottom: 20.5),
                           child: Column(
                             children: <Widget>[
-                              Text('dsgag',textAlign: TextAlign.left,
+                              Text('Jam and Jelly',textAlign: TextAlign.left,
                               style: TextStyle(fontSize: 20,color: Color(0xff707070)),),
                               SizedBox(height: 4,),
                               Align(
                                 alignment: Alignment.centerLeft,
-                                child: Text('rjyj',
+                                child: Text('Orange Jam',
                                   style: TextStyle(fontSize: 14.0,color: Color(0xff707070)),),
                               ),
                               SizedBox(height: 46,),
                               Row(
                                 children: <Widget>[
-                                  Text('111',
+                                  Text('80',
                                   style: TextStyle(fontSize: 20.0, color: Color(0xff707070)),),
                                   SizedBox(width: 10,),
-                                  Text('111',
+                                  Text('88',
                                   style: TextStyle(color: Color(0xffD93954), decoration: TextDecoration.lineThrough,fontSize: 20.0),),
                                 ],
                               )
@@ -395,7 +395,7 @@ home: Scaffold(
 appBar:customAppBar(appBarIcons,paramobject),
 drawer: CustomDrawer(drawerList,onclickDrawer,user1),
 bottomNavigationBar: BottomNavBar(param),
-backgroundColor: Color(0xffffffff),
+backgroundColor: Color(0xffdfbebe),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
