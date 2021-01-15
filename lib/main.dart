@@ -33,7 +33,7 @@ var var3 = 'dynamic';
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/004e20df-d598-423f-b3d6-1cc44810a75b'); 
+getData1('https://run.mocky.io/v3/462477b6-ea1e-41cd-8f7e-ee6d4671e7e2'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -49,27 +49,27 @@ throw Exception('Failed to load Data');
 
 var content = FutureBuilder( 
 future: getData1( 
-'https://run.mocky.io/v3/004e20df-d598-423f-b3d6-1cc44810a75b'), 
+'https://run.mocky.io/v3/462477b6-ea1e-41cd-8f7e-ee6d4671e7e2'), 
 builder: (context, AsyncSnapshot<dynamic> snapshot) { 
 if (snapshot.hasData) {
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[0]['image'], 
+src: jsonresponse1[2]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 250, 
-width: 250); 
+height: 200, 
+width: 300); 
 TextParameters dynamicTextparam1 = new TextParameters( 
-text: jsonresponse1[0]['name'], 
-fontSize: 24, 
+text: jsonresponse1[2]['name'], 
+fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
-text:jsonresponse1[0]['description'], 
-fontSize: 16, 
+text:jsonresponse1[2]['description'], 
+fontSize: 8, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
@@ -123,23 +123,23 @@ onclick0(String sText) { print(sText); }
         src:'image',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 250, width: 250);
+         height: 200, width: 300);
          
 
         TextParameters textparam1 = new TextParameters(
           text: 'name',
-          fontSize: 24,
+          fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.normal,
           textAlign: TextAlign.center
         );
          
 
         TextParameters textparam2 = new TextParameters(
           text: 'description',
-          fontSize: 16,
+          fontSize: 8,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
@@ -160,13 +160,13 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Login'),
+          child:Text('login'),
           color:Color(0xff000000),
-          textColor:Color(0xfffcfcfc),
+          textColor:Color(0xff000000),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
-          height: 50,
+          height: 40,
           highlightColor: Color(0xff000000),
           splashColor: Color(0xff000000)
 
@@ -185,13 +185,13 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('Continue'),
+          child:Text('list'),
           color:Color(0xff000000),
-          textColor:Color(0xfffcfcfc),
+          textColor:Color(0xff000000),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
-          height: 50,
+          height: 40,
           highlightColor: Color(0xff000000),
           splashColor: Color(0xff000000)
 
