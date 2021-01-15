@@ -154,12 +154,12 @@ width: 250);
  textColor: Color(0xff000000), 
  fontStyle: FontStyle.normal, 
  fontFamily: 'Roboto', 
-fontWeight: FontWeight.bold, 
+fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center); 
  
  TextParameters textparam2 = new TextParameters( 
  text: jsonresponse[i]['description'], 
- fontSize: 14, 
+ fontSize: 16, 
  textColor: Color(0xff000000), 
  fontStyle: FontStyle.normal, 
  fontFamily: 'Roboto', 
@@ -176,11 +176,11 @@ print(b);
 } 
  
  FlatButtonParameters buttonFlatObject3 = FlatButtonParameters( 
- child: Text('Add to Cart'), 
+ child: Text('Add to cart'), 
  color: Color(0xff000000), 
- textColor: Color(0xfff5f1f1), 
+ textColor: Color(0xfff8f6f6), 
  hoverColor: Color(0xff000000), 
- width: 200, 
+ width: 150, 
 focusColor: Color(0xff000000), 
 height: 50, 
 highlightColor: Color(0xff000000), 

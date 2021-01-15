@@ -54,13 +54,13 @@ builder: (context, AsyncSnapshot<dynamic> snapshot) {
 if (snapshot.hasData) {
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[1]['image'], 
+src: jsonresponse1[0]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
 height: 250, 
 width: 250); 
 TextParameters dynamicTextparam1 = new TextParameters( 
-text: jsonresponse1[1]['name'], 
+text: jsonresponse1[0]['name'], 
 fontSize: 24, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -68,7 +68,7 @@ fontFamily: 'Roboto',
 fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
-text:jsonresponse1[1]['description'], 
+text:jsonresponse1[0]['description'], 
 fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -162,7 +162,7 @@ onclick0(String sText) { print(sText); }
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Login'),
           color:Color(0xff000000),
-          textColor:Color(0xfff4f2f2),
+          textColor:Color(0xfffcfcfc),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
@@ -185,9 +185,9 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('Get Started'),
+          child:Text('Continue'),
           color:Color(0xff000000),
-          textColor:Color(0xfff4f2f2),
+          textColor:Color(0xfffcfcfc),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
