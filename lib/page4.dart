@@ -8,11 +8,8 @@ import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
-import 'package:rapid_widgets_library/custom-image.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page2.dart';
+import 'page11.dart';
 void main() => runApp(Page4());
 class Page4 extends StatelessWidget {
 @override
@@ -34,7 +31,7 @@ var var3 = 'dynamic';
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/17d1d0c8-f743-45dd-a4ed-36629f372b30'); 
+getData1('https://run.mocky.io/v3/462477b6-ea1e-41cd-8f7e-ee6d4671e7e2'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -55,7 +52,7 @@ height: 150,
 width: 150); 
 TextParameters dynamicTextparam1 = new TextParameters( 
 text: jsonresponse1[1]['name'], 
-fontSize: 24, 
+fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
@@ -122,11 +119,11 @@ onclick0(String sText) { print(sText); }
 
         TextParameters textparam1 = new TextParameters(
           text: 'name',
-          fontSize: 24,
+          fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.normal,
           textAlign: TextAlign.center
         );
          
@@ -141,53 +138,24 @@ onclick0(String sText) { print(sText); }
           textAlign: TextAlign.center
         );
          
-onclick3(String sText) { print(sText); }
-        CustomImageContents ImageObj13 = new CustomImageContents(
-        src:'dynamic-image',
-         semanticLabel: 'Random Network', 
-         imageType: 'Network', 
-         height: 150, width: 150);
-         
 
-        TextParameters textparam4 = new TextParameters(
-          text: 'dynamic-name',
-          fontSize: 16,
-          textColor:Color(0xff000000),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.bold,
-          textAlign: TextAlign.center
-        );
-         
-
-        TextParameters textparam5 = new TextParameters(
-          text: 'dynamic-description',
-          fontSize: 16,
-          textColor:Color(0xff000000),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.normal,
-          textAlign: TextAlign.center
-        );
-         
-
-          onFlatButtonPress6 (bool b){ 
+          onFlatButtonPress3 (bool b){ 
           print(b); 
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page4()));
+                builder: (context) => Page11()));
 
           } 
-          onFlatButtonLongPress6 (bool b){ 
+          onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
-          FlatButtonParameters buttonFlatObject6 = FlatButtonParameters(
-          child:Text('Get Started'),
+          FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
+          child:Text('View Details'),
           color:Color(0xff000000),
-          textColor:Color(0xffffffff),
+          textColor:Color(0xff000000),
           hoverColor: Color(0xff000000),
-          width: 150,
+          width: 100,
           focusColor: Color(0xff000000),
           height: 50,
           highlightColor: Color(0xff000000),
@@ -198,7 +166,7 @@ onclick3(String sText) { print(sText); }
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Color(0xffffffff),
+backgroundColor: Color(0xff9faeee),
 body: Padding(
 padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
@@ -211,7 +179,7 @@ padding: const EdgeInsets.only(top:65.0,left: 25.0,right: 25.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
 SizedBox(height:0),
 (var1 != "dynamic")? 
-Expanded(flex: 1,child: CustomImage(data: ImageObj13),)
+Expanded(flex: 1,child: CustomImage(data: ImageObj10),)
 : Expanded(
 flex: 1,
 child:
@@ -224,7 +192,7 @@ padding: const EdgeInsets.all(20.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
 SizedBox(height:20),
 (var2 != "dynamic")? 
-Expanded(flex: 1,child: customText(textparam4))
+Expanded(flex: 1,child: customText(textparam1))
  : Expanded(
 flex: 1,
 child: customText(dynamicTextparam1)),
@@ -235,7 +203,7 @@ padding: const EdgeInsets.all(20.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
 SizedBox(height:0),
 (var3 != "dynamic")? 
-Expanded(flex: 1,child: customText(textparam5))
+Expanded(flex: 1,child: customText(textparam2))
  : Expanded(
 flex: 1,
 child: customText(dynamicTextparam2)),
@@ -250,7 +218,7 @@ SizedBox(height:0),Expanded(flex: 1,child:Container()),
 Padding(
 padding: const EdgeInsets.all(25.0),
 child: Row(mainAxisAlignment: MainAxisAlignment.center,children: [
-SizedBox(height:60),Expanded(flex: 1,child:customFlatButton(buttonFlatObject6, onFlatButtonPress6, onFlatButtonLongPress6),),
+SizedBox(height:60),Expanded(flex: 1,child:customFlatButton(buttonFlatObject3, onFlatButtonPress3, onFlatButtonLongPress3),),
  ],),
 ),
 ], 

@@ -55,15 +55,15 @@ bottom: BorderSide(width: 0.4, color: Color(0xff707070)),
 ), 
 color: Color(0xff000000), 
 ), 
-height: 300, 
-width: 350, 
+height: 200, 
+width: 200, 
 child: Column( 
 children: <Widget>[ 
 Row( 
 crossAxisAlignment: CrossAxisAlignment.start, 
 children: <Widget>[ 
 Image.network( 
-snapshot.data[i]['imagw'], 
+snapshot.data[i]['image'], 
 height: 160, 
 width: 115, 
 ), 
@@ -116,7 +116,7 @@ height: 30,
 width: 75, 
 child: FlatButton( 
 child: Text( 
-'dynamic-availability', 
+'View', 
 style: TextStyle(fontSize: 11, color: Colors.white), 
 ), 
 color: Colors.black, 
@@ -160,7 +160,7 @@ child: Center(
 return MaterialApp( 
 debugShowCheckedModeBanner: false, 
 home: Scaffold( 
-backgroundColor: Colors.white, 
+backgroundColor: Color(0xffeceda7), 
 body: Container( 
 padding: const EdgeInsets.only(top: 50.0), 
 decoration: new BoxDecoration( 

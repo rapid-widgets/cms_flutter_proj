@@ -4,8 +4,6 @@ import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-bottomnavbar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
-import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
-import 'package:rapid_widgets_library/custom_AlertDialogs.dart';
 void main() => runApp(Page11());
 class Page11 extends StatelessWidget {
 @override
@@ -100,43 +98,6 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
-
-            AlertDialogContents alertObj10 = new AlertDialogContents(
-              <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(left:30.0, right: 30, top: 25, bottom: 20),
-                  child: Container(
-                    height: 41,
-                    width: 220,
-                    child: FlatButton(
-                      child: Text('testing',
-                        style: TextStyle(color: Colors.white),),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(21.0),
-                      ),
-                      color: Color(0xff000000),
-                      onPressed: (){},
-                    ),
-                  ),
-                ),
-              ],"",
-              Text('testing', textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
-            );
-            AlertDialogParameters alertobj20 = new AlertDialogParameters(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xff000000),
-              elevation: 30,
-              contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
-              height: 254,
-              width: 380,
-              titleTextStyle: TextStyle( fontSize: 18.0, color: Colors.white),
-            );
-            onAlertButtonTap0(String s){
-              print(s);
-            }
-          
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
@@ -156,7 +117,7 @@ Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),Container()
 ],),),
 Padding(
 padding: const EdgeInsets.only(top:30,bottom:30),
-child:CustomAlertDialog(dialogContent: alertObj10, param: alertobj20, callbackAlert: onAlertButtonTap0),
+child:Container()
   ),
 ],
 ),
