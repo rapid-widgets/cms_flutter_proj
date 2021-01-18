@@ -9,9 +9,9 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page5.dart';
+import 'page4.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page2.dart';
+import 'page3.dart';
 void main() => runApp(Page0());
 class Page0 extends StatelessWidget {
 @override
@@ -33,7 +33,7 @@ var var3 = 'dynamic';
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/462477b6-ea1e-41cd-8f7e-ee6d4671e7e2'); 
+getData1('https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -49,7 +49,7 @@ throw Exception('Failed to load Data');
 
 var content = FutureBuilder( 
 future: getData1( 
-'https://run.mocky.io/v3/462477b6-ea1e-41cd-8f7e-ee6d4671e7e2'), 
+'https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'), 
 builder: (context, AsyncSnapshot<dynamic> snapshot) { 
 if (snapshot.hasData) {
 
@@ -57,8 +57,8 @@ CustomImageContents dynamicImageObj10 = new CustomImageContents(
 src: jsonresponse1[2]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 200, 
-width: 300); 
+height: 150, 
+width: 150); 
 TextParameters dynamicTextparam1 = new TextParameters( 
 text: jsonresponse1[2]['name'], 
 fontSize: 16, 
@@ -69,7 +69,7 @@ fontWeight: FontWeight.normal,
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
 text:jsonresponse1[2]['description'], 
-fontSize: 8, 
+fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
@@ -123,7 +123,7 @@ onclick0(String sText) { print(sText); }
         src:'image',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 200, width: 300);
+         height: 150, width: 150);
          
 
         TextParameters textparam1 = new TextParameters(
@@ -139,7 +139,7 @@ onclick0(String sText) { print(sText); }
 
         TextParameters textparam2 = new TextParameters(
           text: 'description',
-          fontSize: 8,
+          fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
@@ -153,20 +153,20 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page5()));
+                builder: (context) => Page4()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('login'),
+          child:Text('Login'),
           color:Color(0xff000000),
-          textColor:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
-          height: 40,
+          height: 50,
           highlightColor: Color(0xff000000),
           splashColor: Color(0xff000000)
 
@@ -178,20 +178,20 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page2()));
+                builder: (context) => Page3()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('list'),
+          child:Text('Get Started'),
           color:Color(0xff000000),
-          textColor:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
-          height: 40,
+          height: 50,
           highlightColor: Color(0xff000000),
           splashColor: Color(0xff000000)
 
