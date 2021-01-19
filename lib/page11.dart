@@ -153,7 +153,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
 appBar:customAppBar(appBarIcons,paramobject),
-backgroundColor: Color(0xffcbb9b9),
+backgroundColor: Color(0xffeee1e1),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
