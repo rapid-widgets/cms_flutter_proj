@@ -9,7 +9,7 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page11.dart';
+import 'page2.dart';
 void main() => runApp(Page4());
 class Page4 extends StatelessWidget {
 @override
@@ -26,12 +26,12 @@ class _BoilerPlate extends State<BoilerPlate> {
 var jsonresponse1; 
 var var1 = 'dynamic'; 
 var var2 = 'dynamic'; 
-var var3 = 'dynamic'; 
+var var3 = 'Model'; 
 
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/462477b6-ea1e-41cd-8f7e-ee6d4671e7e2'); 
+getData1('https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -45,13 +45,13 @@ throw Exception('Failed to load Data');
   Widget build(BuildContext context) { 
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[1]['image'], 
+src: jsonresponse1[2]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
 height: 150, 
 width: 150); 
 TextParameters dynamicTextparam1 = new TextParameters( 
-text: jsonresponse1[1]['name'], 
+text: jsonresponse1[2]['name'], 
 fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -59,7 +59,7 @@ fontFamily: 'Roboto',
 fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
-text:jsonresponse1[1]['description'], 
+text:'Default', 
 fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -129,7 +129,7 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'description',
+          text: 'undefined',
           fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
@@ -144,18 +144,18 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page11()));
+                builder: (context) => Page2()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('View Details'),
+          child:Text('Show Details'),
           color:Color(0xff000000),
-          textColor:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
-          width: 100,
+          width: 150,
           focusColor: Color(0xff000000),
           height: 50,
           highlightColor: Color(0xff000000),
@@ -166,7 +166,7 @@ onclick0(String sText) { print(sText); }
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold(
-backgroundColor: Color(0xff9faeee),
+backgroundColor: Color(0xffffffff),
 body: Padding(
 padding: const EdgeInsets.only(top:20.0,left:5.0,right:5.0,bottom:5.0),
 child: Padding(
