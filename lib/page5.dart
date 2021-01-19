@@ -150,7 +150,7 @@ onclick0(String sText) { print(sText); }
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
-          height: 150,
+          height: 50,
           highlightColor: Color(0xff000000),
           splashColor: Color(0xff000000)
 
