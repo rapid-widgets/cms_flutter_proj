@@ -9,9 +9,9 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page5.dart';
+import 'page1.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page2.dart';
+import 'page1.dart';
 void main() => runApp(Page0());
 class Page0 extends StatelessWidget {
 @override
@@ -33,7 +33,7 @@ var var3 = 'dynamic';
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/004e20df-d598-423f-b3d6-1cc44810a75b'); 
+getData1('https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -49,26 +49,26 @@ throw Exception('Failed to load Data');
 
 var content = FutureBuilder( 
 future: getData1( 
-'https://run.mocky.io/v3/004e20df-d598-423f-b3d6-1cc44810a75b'), 
+'https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'), 
 builder: (context, AsyncSnapshot<dynamic> snapshot) { 
 if (snapshot.hasData) {
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[1]['image'], 
+src: jsonresponse1[2]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
 height: 250, 
 width: 250); 
 TextParameters dynamicTextparam1 = new TextParameters( 
-text: jsonresponse1[1]['name'], 
-fontSize: 24, 
+text: jsonresponse1[2]['name'], 
+fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
-text:jsonresponse1[1]['description'], 
+text:jsonresponse1[2]['description'], 
 fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -128,11 +128,11 @@ onclick0(String sText) { print(sText); }
 
         TextParameters textparam1 = new TextParameters(
           text: 'name',
-          fontSize: 24,
+          fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.normal,
           textAlign: TextAlign.center
         );
          
@@ -153,20 +153,20 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page5()));
+                builder: (context) => Page1()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Login'),
+          child:Text('hello'),
           color:Color(0xff000000),
-          textColor:Color(0xfff4f2f2),
+          textColor:Color(0xffc9c1c1),
           hoverColor: Color(0xff000000),
-          width: 150,
+          width: 180,
           focusColor: Color(0xff000000),
-          height: 50,
+          height: 40,
           highlightColor: Color(0xff000000),
           splashColor: Color(0xff000000)
 
@@ -178,20 +178,20 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page2()));
+                builder: (context) => Page1()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('Get Started'),
+          child:Text('hi'),
           color:Color(0xff000000),
-          textColor:Color(0xfff4f2f2),
+          textColor:Color(0xffc9c1c1),
           hoverColor: Color(0xff000000),
-          width: 150,
+          width: 170,
           focusColor: Color(0xff000000),
-          height: 50,
+          height: 45,
           highlightColor: Color(0xff000000),
           splashColor: Color(0xff000000)
 
