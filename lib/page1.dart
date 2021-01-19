@@ -11,6 +11,7 @@ import 'page2.dart';
 void main() => runApp(Page1());
 class Page1 extends StatelessWidget {
 @override
+
 Widget build(BuildContext context) {
 return MaterialApp(
 home: BoilerPlate());
