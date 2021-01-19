@@ -103,7 +103,7 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparam0 = new TextParameters(
-          text: 'test1',
+          text: 'test',
           fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
@@ -153,7 +153,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
 appBar:customAppBar(appBarIcons,paramobject),
-backgroundColor: Color(0xffe3e0e0),
+backgroundColor: Color(0xffffffff),
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
