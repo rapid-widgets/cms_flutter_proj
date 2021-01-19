@@ -33,7 +33,7 @@ var var3 = 'dynamic';
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'); 
+getData1('https://run.mocky.io/v3/9881728c-4d8c-4572-a8e7-d86febf940eb'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -49,18 +49,18 @@ throw Exception('Failed to load Data');
 
 var content = FutureBuilder( 
 future: getData1( 
-'https://run.mocky.io/v3/4412cb33-7816-45c6-b8cc-5fe9dbfe5b00'), 
+'https://run.mocky.io/v3/9881728c-4d8c-4572-a8e7-d86febf940eb'), 
 builder: (context, AsyncSnapshot<dynamic> snapshot) { 
 if (snapshot.hasData) {
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[2]['image'], 
+src: jsonresponse1[1]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
 height: 150, 
 width: 150); 
 TextParameters dynamicTextparam1 = new TextParameters( 
-text: jsonresponse1[2]['name'], 
+text: jsonresponse1[1]['name'], 
 fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -68,7 +68,7 @@ fontFamily: 'Roboto',
 fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
-text:jsonresponse1[2]['description'], 
+text:jsonresponse1[1]['description'], 
 fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -162,7 +162,7 @@ onclick0(String sText) { print(sText); }
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Login'),
           color:Color(0xff000000),
-          textColor:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
@@ -187,7 +187,7 @@ onclick0(String sText) { print(sText); }
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
           child:Text('Get Started'),
           color:Color(0xff000000),
-          textColor:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
