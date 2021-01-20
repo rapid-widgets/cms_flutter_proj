@@ -53,9 +53,9 @@ decoration: BoxDecoration(
 border: Border( 
 bottom: BorderSide(width: 0.4, color: Color(0xff707070)), 
 ), 
-color: Color(0xff000000), 
+color: Color(0xffffffff), 
 ), 
-height: 350, 
+height: 300, 
 width: 500, 
 child: Column( 
 children: <Widget>[ 
@@ -116,7 +116,7 @@ height: 30,
 width: 75, 
 child: FlatButton( 
 child: Text( 
-'add to cart', 
+'details', 
 style: TextStyle(fontSize: 11, color: Colors.white), 
 ), 
 color: Colors.black, 
