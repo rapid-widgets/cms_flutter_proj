@@ -33,7 +33,7 @@ var var3 = 'dynamic';
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/9881728c-4d8c-4572-a8e7-d86febf940eb'); 
+getData1('https://run.mocky.io/v3/df52e531-bafa-4632-b535-c88aa967ca77'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -49,7 +49,7 @@ throw Exception('Failed to load Data');
 
 var content = FutureBuilder( 
 future: getData1( 
-'https://run.mocky.io/v3/9881728c-4d8c-4572-a8e7-d86febf940eb'), 
+'https://run.mocky.io/v3/df52e531-bafa-4632-b535-c88aa967ca77'), 
 builder: (context, AsyncSnapshot<dynamic> snapshot) { 
 if (snapshot.hasData) {
 
@@ -162,7 +162,7 @@ onclick0(String sText) { print(sText); }
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
           child:Text('Login'),
           color:Color(0xff000000),
-          textColor:Color(0xffffffff),
+          textColor:Color(0xff000000),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
@@ -187,7 +187,7 @@ onclick0(String sText) { print(sText); }
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
           child:Text('Get Started'),
           color:Color(0xff000000),
-          textColor:Color(0xffffffff),
+          textColor:Color(0xff000000),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),
