@@ -23,12 +23,12 @@ _BoilerPlate createState() => _BoilerPlate();
 class _BoilerPlate extends State<BoilerPlate> {
 var jsonresponse2; 
 
- var endpoint = 'https://run.mocky.io/v3/436b3bc0-e27c-4f0e-83df-ea66d14e59d6'; 
+ var endpoint = 'https://run.mocky.io/v3/130a054b-4967-456c-b3c7-057bc0702a0a'; 
 
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/436b3bc0-e27c-4f0e-83df-ea66d14e59d6'); 
+getData1('https://run.mocky.io/v3/130a054b-4967-456c-b3c7-057bc0702a0a'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -53,9 +53,9 @@ decoration: BoxDecoration(
 border: Border( 
 bottom: BorderSide(width: 0.4, color: Color(0xff707070)), 
 ), 
-color: Color(0xfffaf8f8), 
+color: Color(0xfffaf2f2), 
 ), 
-height: 180, 
+height: 200, 
 width: 400, 
 child: Column( 
 children: <Widget>[ 
@@ -86,7 +86,7 @@ SizedBox(
 height: 11, 
 ), 
 Text( 
-snapshot.data[i]['availability'], 
+snapshot.data[i]['description'], 
 textAlign: TextAlign.left, 
 style: TextStyle( 
 fontSize: 12, 
@@ -116,7 +116,7 @@ height: 30,
 width: 75, 
 child: FlatButton( 
 child: Text( 
-'View', 
+'Okay', 
 style: TextStyle(fontSize: 11, color: Colors.white), 
 ), 
 color: Colors.black, 
@@ -125,7 +125,7 @@ print(i);
 Navigator.push( 
 context, 
 MaterialPageRoute( 
-builder: (context) => Page8(i, 'https://run.mocky.io/v3/436b3bc0-e27c-4f0e-83df-ea66d14e59d6'))); 
+builder: (context) => Page8(i, 'https://run.mocky.io/v3/130a054b-4967-456c-b3c7-057bc0702a0a'))); 
 }, 
 shape: new RoundedRectangleBorder( 
 borderRadius: new BorderRadius.circular(30.0)), 

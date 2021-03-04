@@ -150,7 +150,7 @@ width: 200);
  
  TextParameters textparam1 = new TextParameters( 
  text: jsonresponse[i]['name'], 
- fontSize: 24, 
+ fontSize: 16, 
  textColor: Color(0xff000000), 
  fontStyle: FontStyle.normal, 
  fontFamily: 'Roboto', 
@@ -176,8 +176,8 @@ print(b);
 } 
  
  FlatButtonParameters buttonFlatObject3 = FlatButtonParameters( 
- child: Text('Add'), 
- color: Color(0xfff4f1f1), 
+ child: Text('Add to Cart'), 
+ color: Color(0xfff9f5f5), 
  textColor: Color(0xff000000), 
  hoverColor: Color(0xff000000), 
  width: 150, 
