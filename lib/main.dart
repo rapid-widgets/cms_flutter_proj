@@ -33,7 +33,7 @@ var var3 = 'dynamic';
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/130a054b-4967-456c-b3c7-057bc0702a0a'); 
+getData1('https://run.mocky.io/v3/004e20df-d598-423f-b3d6-1cc44810a75b'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -49,18 +49,18 @@ throw Exception('Failed to load Data');
 
 var content = FutureBuilder( 
 future: getData1( 
-'https://run.mocky.io/v3/130a054b-4967-456c-b3c7-057bc0702a0a'), 
+'https://run.mocky.io/v3/004e20df-d598-423f-b3d6-1cc44810a75b'), 
 builder: (context, AsyncSnapshot<dynamic> snapshot) { 
 if (snapshot.hasData) {
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[2]['image'], 
+src: jsonresponse1[1]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 300, 
-width: 300); 
+height: 200, 
+width: 200); 
 TextParameters dynamicTextparam1 = new TextParameters( 
-text: jsonresponse1[2]['name'], 
+text: jsonresponse1[1]['name'], 
 fontSize: 20, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -68,7 +68,7 @@ fontFamily: 'Roboto',
 fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
-text:jsonresponse1[2]['description'], 
+text:jsonresponse1[1]['description'], 
 fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -123,7 +123,7 @@ onclick0(String sText) { print(sText); }
         src:'image',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 300, width: 300);
+         height: 200, width: 200);
          
 
         TextParameters textparam1 = new TextParameters(
@@ -160,8 +160,8 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Continue'),
-          color:Color(0xfff9f5f5),
+          child:Text('okay'),
+          color:Color(0xfff7f3f3),
           textColor:Color(0xff000000),
           hoverColor: Color(0xff000000),
           width: 150,
@@ -186,7 +186,7 @@ onclick0(String sText) { print(sText); }
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
           child:Text('Skip'),
-          color:Color(0xfff9f5f5),
+          color:Color(0xfff7f3f3),
           textColor:Color(0xff000000),
           hoverColor: Color(0xff000000),
           width: 150,

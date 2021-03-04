@@ -19,7 +19,7 @@ import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page11.dart';
+import 'page2.dart';
 void main() => runApp( 
 Page8(3, 'https://run.mocky.io/v3/e2794ba4-3495-4d0c-bd20-74451ec83b25')); 
  
@@ -150,7 +150,7 @@ width: 200);
  
  TextParameters textparam1 = new TextParameters( 
  text: jsonresponse[i]['name'], 
- fontSize: 16, 
+ fontSize: 20, 
  textColor: Color(0xff000000), 
  fontStyle: FontStyle.normal, 
  fontFamily: 'Roboto', 
@@ -169,7 +169,7 @@ textAlign: TextAlign.center);
  onFlatButtonPress3(bool b) { 
  print(b); 
  Navigator.pushReplacement( 
- context, MaterialPageRoute(builder: (context) => Page11())); 
+ context, MaterialPageRoute(builder: (context) => Page2())); 
 } 
 onFlatButtonLongPress3(bool b) { 
 print(b); 
@@ -177,10 +177,10 @@ print(b);
  
  FlatButtonParameters buttonFlatObject3 = FlatButtonParameters( 
  child: Text('Add to Cart'), 
- color: Color(0xfff9f5f5), 
+ color: Color(0xfffaf4f4), 
  textColor: Color(0xff000000), 
  hoverColor: Color(0xff000000), 
- width: 150, 
+ width: 200, 
 focusColor: Color(0xff000000), 
 height: 50, 
 highlightColor: Color(0xff000000), 
