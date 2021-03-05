@@ -11,7 +11,7 @@ import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page2.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page2.dart';
+import 'page5.dart';
 void main() => runApp(Page0());
 class Page0 extends StatelessWidget {
 @override
@@ -26,14 +26,14 @@ _BoilerPlate createState() => _BoilerPlate();
 }
 class _BoilerPlate extends State<BoilerPlate> {
 var jsonresponse1; 
-var var1 = 'dynamic'; 
-var var2 = 'dynamic'; 
-var var3 = 'dynamic'; 
+var var1 = 'http://104.40.75.137:9003/assets/cms/image1.png'; 
+var var2 = 'Book Store'; 
+var var3 = 'Book Store is Now Available'; 
 
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/004e20df-d598-423f-b3d6-1cc44810a75b'); 
+getData1('https://run.mocky.io/v3/436b3bc0-e27c-4f0e-83df-ea66d14e59d6'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -49,26 +49,26 @@ throw Exception('Failed to load Data');
 
 var content = FutureBuilder( 
 future: getData1( 
-'https://run.mocky.io/v3/004e20df-d598-423f-b3d6-1cc44810a75b'), 
+'https://run.mocky.io/v3/436b3bc0-e27c-4f0e-83df-ea66d14e59d6'), 
 builder: (context, AsyncSnapshot<dynamic> snapshot) { 
 if (snapshot.hasData) {
 
 CustomImageContents dynamicImageObj10 = new CustomImageContents( 
-src: jsonresponse1[1]['image'], 
+src: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png', 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 200, 
-width: 200); 
+height: 150, 
+width: 150); 
 TextParameters dynamicTextparam1 = new TextParameters( 
-text: jsonresponse1[1]['name'], 
-fontSize: 20, 
+text: 'Default', 
+fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
 fontFamily: 'Roboto', 
 fontWeight: FontWeight.normal, 
 textAlign: TextAlign.center);
 TextParameters dynamicTextparam2 = new TextParameters( 
-text:jsonresponse1[1]['description'], 
+text:'Default', 
 fontSize: 16, 
 textColor: Color(0xff000000), 
 fontStyle: FontStyle.normal, 
@@ -120,15 +120,15 @@ textAlign: TextAlign.center);
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'image',
+        src:'undefined',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
-         height: 200, width: 200);
+         height: 150, width: 150);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'name',
-          fontSize: 20,
+          text: 'undefined',
+          fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
           fontFamily: 'Roboto',
@@ -138,7 +138,7 @@ onclick0(String sText) { print(sText); }
          
 
         TextParameters textparam2 = new TextParameters(
-          text: 'description',
+          text: 'undefined',
           fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
@@ -160,11 +160,11 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('okay'),
-          color:Color(0xfff7f3f3),
-          textColor:Color(0xff000000),
+          child:Text('Okay'),
+          color:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
-          width: 150,
+          width: 100,
           focusColor: Color(0xff000000),
           height: 50,
           highlightColor: Color(0xff000000),
@@ -178,16 +178,16 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page2()));
+                builder: (context) => Page5()));
 
           } 
           onFlatButtonLongPress4 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject4 = FlatButtonParameters(
-          child:Text('Skip'),
-          color:Color(0xfff7f3f3),
-          textColor:Color(0xff000000),
+          child:Text('Cancel'),
+          color:Color(0xff000000),
+          textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
           width: 150,
           focusColor: Color(0xff000000),

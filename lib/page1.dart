@@ -7,7 +7,7 @@ import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page4.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page6.dart';
+import 'page5.dart';
 void main() => runApp(Page1());
 class Page1 extends StatelessWidget {
 @override
@@ -68,14 +68,14 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 onclick0(String sText) { print(sText); }
         CustomImageContents ImageObj10 = new CustomImageContents(
-        src:'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png',
+        src:'http://104.40.75.137:9003/assets/cms/image1.png',
          semanticLabel: 'Random Network', 
          imageType: 'Network', 
          height: 150, width: 150);
          
 
         TextParameters textparam1 = new TextParameters(
-          text: 'Google',
+          text: 'Book Store',
           fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
@@ -115,14 +115,14 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page6()));
+                builder: (context) => Page5()));
 
           } 
           onFlatButtonLongPress3 (bool b){ 
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('Sign up'),
+          child:Text('cancel'),
           color:Color(0xff000000),
           textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
