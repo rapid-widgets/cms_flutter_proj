@@ -5,7 +5,7 @@ import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-image.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
-import 'page4.dart';
+import 'page5.dart';
 import 'package:rapid_widgets_library/custom-flatButton.dart';
 import 'page5.dart';
 void main() => runApp(Page1());
@@ -90,7 +90,7 @@ onclick0(String sText) { print(sText); }
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-                builder: (context) => Page4()));
+                builder: (context) => Page5()));
 
           } 
           onFlatButtonLongPress2 (bool b){ 
@@ -122,7 +122,7 @@ onclick0(String sText) { print(sText); }
           print(b); 
           } 
           FlatButtonParameters buttonFlatObject3 = FlatButtonParameters(
-          child:Text('cancel'),
+          child:Text('Login as Guest'),
           color:Color(0xff000000),
           textColor:Color(0xffffffff),
           hoverColor: Color(0xff000000),
