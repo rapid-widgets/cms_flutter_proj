@@ -4,9 +4,6 @@ import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-bottomnavbar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
-import 'package:rapid_widgets_library/custom-text.dart';
-import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
-import 'package:rapid_widgets_library/custom_AlertDialogs.dart';
 void main() => runApp(Page11());
 class Page11 extends StatelessWidget {
 @override
@@ -101,59 +98,11 @@ class _BoilerPlate extends State<BoilerPlate> {
             print(nIndex); 
             }
         
-
-        TextParameters textparam0 = new TextParameters(
-          text: 'Thankyou',
-          fontSize: 16,
-          textColor:Color(0xff000000),
-          fontStyle: FontStyle.normal,
-          fontFamily: 'Roboto',
-          fontWeight: FontWeight.normal,
-          textAlign: TextAlign.center
-        );
-         
-
-            AlertDialogContents alertObj11 = new AlertDialogContents(
-              <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(left:30.0, right: 30, top: 25, bottom: 20),
-                  child: Container(
-                    height: 41,
-                    width: 220,
-                    child: FlatButton(
-                      child: Text('Okay',
-                        style: TextStyle(color: Colors.white),),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(21.0),
-                      ),
-                      color: Color(0xff000000),
-                      onPressed: (){},
-                    ),
-                  ),
-                ),
-              ],"",
-              Text('Thankyou for your purchase', textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
-            );
-            AlertDialogParameters alertobj21 = new AlertDialogParameters(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xffffffff),
-              elevation: 30,
-              contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
-              height: 254,
-              width: 380,
-              titleTextStyle: TextStyle( fontSize: 18.0, color: Colors.white),
-            );
-            onAlertButtonTap1(String s){
-              print(s);
-            }
-          
 return MaterialApp(
 debugShowCheckedModeBanner: false,
 home: Scaffold( 
 appBar:customAppBar(appBarIcons,paramobject),
-backgroundColor: Color(0xffffffff),
+backgroundColor: Colors.white,
 body: Padding(
 padding: const EdgeInsets.all(0.0),
 child: Padding(
@@ -164,11 +113,11 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.all(25.0),
 child: 
-Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),customText(textparam0)
+Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),Container()
 ],),),
 Padding(
 padding: const EdgeInsets.only(top:30,bottom:30),
-child:CustomAlertDialog(dialogContent: alertObj11, param: alertobj21, callbackAlert: onAlertButtonTap1),
+child:Container()
   ),
 ],
 ),

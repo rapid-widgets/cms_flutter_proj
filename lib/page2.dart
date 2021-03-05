@@ -23,12 +23,12 @@ _BoilerPlate createState() => _BoilerPlate();
 class _BoilerPlate extends State<BoilerPlate> {
 var jsonresponse2; 
 
- var endpoint = 'https://run.mocky.io/v3/df52e531-bafa-4632-b535-c88aa967ca77'; 
+ var endpoint = 'https://run.mocky.io/v3/58f6a8d7-6afa-4c25-96b0-072f54a715ae'; 
 
 @override 
 void initState() { 
 super.initState();
-getData1('https://run.mocky.io/v3/df52e531-bafa-4632-b535-c88aa967ca77'); 
+getData1('https://run.mocky.io/v3/58f6a8d7-6afa-4c25-96b0-072f54a715ae'); 
 } 
 Future getData1(String endpoint) async { 
 final response = await http.get(endpoint); 
@@ -86,7 +86,7 @@ SizedBox(
 height: 11, 
 ), 
 Text( 
-snapshot.data[i]['price'], 
+snapshot.data[i]['address'], 
 textAlign: TextAlign.left, 
 style: TextStyle( 
 fontSize: 12, 
@@ -116,7 +116,7 @@ height: 30,
 width: 75, 
 child: FlatButton( 
 child: Text( 
-'Ok', 
+'View', 
 style: TextStyle(fontSize: 11, color: Colors.white), 
 ), 
 color: Colors.black, 
@@ -125,7 +125,7 @@ print(i);
 Navigator.push( 
 context, 
 MaterialPageRoute( 
-builder: (context) => Page8(i, 'https://run.mocky.io/v3/df52e531-bafa-4632-b535-c88aa967ca77'))); 
+builder: (context) => Page8(i, 'https://run.mocky.io/v3/58f6a8d7-6afa-4c25-96b0-072f54a715ae'))); 
 }, 
 shape: new RoundedRectangleBorder( 
 borderRadius: new BorderRadius.circular(30.0)), 
@@ -135,7 +135,7 @@ SizedBox(
 width: 10, 
 ), 
 Text( 
-snapshot.data[i]['price'], 
+snapshot.data[i]['address'], 
 style: TextStyle(color: Colors.black, fontSize: 12), 
 ) 
 ], 
