@@ -145,8 +145,8 @@ CustomImageContents ImageObj10 = new CustomImageContents(
  src: jsonresponse[i]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 200, 
-width: 200); 
+height: 100, 
+width: 100); 
  
  TextParameters textparam1 = new TextParameters( 
  text: jsonresponse[i]['name'], 
@@ -176,13 +176,13 @@ print(b);
 } 
  
  FlatButtonParameters buttonFlatObject3 = FlatButtonParameters( 
- child: Text('Buy Now'), 
- color: Color(0xff6e1d1d), 
+ child: Text('View'), 
+ color: Color(0xffe6f5f3), 
  textColor: Color(0xff000000), 
  hoverColor: Color(0xff000000), 
- width: 150, 
+ width: 50, 
 focusColor: Color(0xff000000), 
-height: 100, 
+height: 50, 
 highlightColor: Color(0xff000000), 
 splashColor: Color(0xff000000)); 
  
@@ -250,7 +250,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false, 
 home: Scaffold( 
  appBar: customAppBar(appBarIcons, paramobject), 
-backgroundColor: Color(0xfffaf4f4), 
+backgroundColor: , 
 body: Padding( 
  padding: const EdgeInsets.all(0.0), 
 child: Padding( 
