@@ -53,10 +53,10 @@ decoration: BoxDecoration(
 border: Border( 
 bottom: BorderSide(width: 0.4, color: Color(0xff707070)), 
 ), 
-color: Color(0xfff7f5f5), 
+color: Color(0xff000000), 
 ), 
 height: 200, 
-width: 400, 
+width: 200, 
 child: Column( 
 children: <Widget>[ 
 Row( 
@@ -86,7 +86,7 @@ SizedBox(
 height: 11, 
 ), 
 Text( 
-snapshot.data[i]['availability'], 
+snapshot.data[i]['description'], 
 textAlign: TextAlign.left, 
 style: TextStyle( 
 fontSize: 12, 
