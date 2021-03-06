@@ -145,8 +145,8 @@ CustomImageContents ImageObj10 = new CustomImageContents(
  src: jsonresponse[i]['image'], 
 semanticLabel: 'Random Network', 
 imageType: 'Network', 
-height: 100, 
-width: 100); 
+height: 200, 
+width: 200); 
  
  TextParameters textparam1 = new TextParameters( 
  text: jsonresponse[i]['name'], 
@@ -177,7 +177,7 @@ print(b);
  
  FlatButtonParameters buttonFlatObject3 = FlatButtonParameters( 
  child: Text('Buy'), 
- color: Color(0xffcf2323), 
+ color: Color(0xff70b9ec), 
  textColor: Color(0xff000000), 
  hoverColor: Color(0xff000000), 
  width: 100, 
