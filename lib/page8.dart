@@ -176,11 +176,11 @@ print(b);
 } 
  
  FlatButtonParameters buttonFlatObject3 = FlatButtonParameters( 
- child: Text('View'), 
- color: Color(0xffe6f5f3), 
+ child: Text('Buy'), 
+ color: Color(0xffcf2323), 
  textColor: Color(0xff000000), 
  hoverColor: Color(0xff000000), 
- width: 50, 
+ width: 100, 
 focusColor: Color(0xff000000), 
 height: 50, 
 highlightColor: Color(0xff000000), 
@@ -250,7 +250,7 @@ return MaterialApp(
 debugShowCheckedModeBanner: false, 
 home: Scaffold( 
  appBar: customAppBar(appBarIcons, paramobject), 
-backgroundColor: , 
+backgroundColor: Color(0xffffffff), 
 body: Padding( 
  padding: const EdgeInsets.all(0.0), 
 child: Padding( 

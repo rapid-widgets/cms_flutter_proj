@@ -4,6 +4,9 @@ import 'package:rapid_widgets_library/widget-classesUsed.dart';
 import 'package:rapid_widgets_library/custom-appBar.dart';
 import 'package:rapid_widgets_library/custom-bottomnavbar.dart';
 import 'package:rapid_widgets_library/custom-drawer.dart';
+import 'package:rapid_widgets_library/custom-text.dart';
+import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
+import 'package:rapid_widgets_library/custom_AlertDialogs.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
 import 'package:rapid_widgets_library/custom_AlertDialogs.dart';
 void main() => runApp(Page11());
@@ -101,7 +104,55 @@ class _BoilerPlate extends State<BoilerPlate> {
             }
         
 
-            AlertDialogContents alertObj10 = new AlertDialogContents(
+        TextParameters textparam0 = new TextParameters(
+          text: 'Thank You',
+          fontSize: 16,
+          textColor:Color(0xff000000),
+          fontStyle: FontStyle.normal,
+          fontFamily: 'Roboto',
+          fontWeight: FontWeight.normal,
+          textAlign: TextAlign.center
+        );
+         
+
+            AlertDialogContents alertObj11 = new AlertDialogContents(
+              <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(left:30.0, right: 30, top: 25, bottom: 20),
+                  child: Container(
+                    height: 41,
+                    width: 220,
+                    child: FlatButton(
+                      child: Text('Contact',
+                        style: TextStyle(color: Colors.white),),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(21.0),
+                      ),
+                      color: Color(0xff000000),
+                      onPressed: (){},
+                    ),
+                  ),
+                ),
+              ],"",
+              Text('Contact Us', textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
+            );
+            AlertDialogParameters alertobj21 = new AlertDialogParameters(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0)),
+              backgroundColor: Color(0xfff29c9c),
+              elevation: 30,
+              contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
+              height: 254,
+              width: 380,
+              titleTextStyle: TextStyle( fontSize: 18.0, color: Colors.white),
+            );
+            onAlertButtonTap1(String s){
+              print(s);
+            }
+          
+
+            AlertDialogContents alertObj12 = new AlertDialogContents(
               <Widget>[
                 Padding(
                   padding: const EdgeInsets.only(left:30.0, right: 30, top: 25, bottom: 20),
@@ -123,17 +174,17 @@ class _BoilerPlate extends State<BoilerPlate> {
               Text('', textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
             );
-            AlertDialogParameters alertobj20 = new AlertDialogParameters(
+            AlertDialogParameters alertobj22 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xffddafaf),
+              backgroundColor: Color(0xfff29c9c),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
               width: 380,
               titleTextStyle: TextStyle( fontSize: 18.0, color: Colors.white),
             );
-            onAlertButtonTap0(String s){
+            onAlertButtonTap2(String s){
               print(s);
             }
           
@@ -152,11 +203,11 @@ children: <Widget>[
 Padding(
 padding: const EdgeInsets.all(25.0),
 child: 
-Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),Container()
+Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),customText(textparam0)
 ],),),
 Padding(
 padding: const EdgeInsets.only(top:30,bottom:30),
-child:CustomAlertDialog(dialogContent: alertObj10, param: alertobj20, callbackAlert: onAlertButtonTap0),
+child:CustomAlertDialog(dialogContent: alertObj12, param: alertobj22, callbackAlert: onAlertButtonTap2),
   ),
 ],
 ),
