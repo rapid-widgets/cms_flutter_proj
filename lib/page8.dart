@@ -177,7 +177,7 @@ print(b);
  
  FlatButtonParameters buttonFlatObject3 = FlatButtonParameters( 
  child: Text('Buy'), 
- color: Color(0xff70b9ec), 
+ color: Color(0xff3898cb), 
  textColor: Color(0xff000000), 
  hoverColor: Color(0xff000000), 
  width: 100, 
