@@ -7,8 +7,6 @@ import 'package:rapid_widgets_library/custom-drawer.dart';
 import 'package:rapid_widgets_library/custom-text.dart';
 import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
 import 'package:rapid_widgets_library/custom_AlertDialogs.dart';
-import 'package:rapid_widgets_library/widget-classesUsed.dart'; 
-import 'package:rapid_widgets_library/custom_AlertDialogs.dart';
 void main() => runApp(Page11());
 class Page11 extends StatelessWidget {
 @override
@@ -123,7 +121,7 @@ class _BoilerPlate extends State<BoilerPlate> {
                     height: 41,
                     width: 220,
                     child: FlatButton(
-                      child: Text('Contact Us',
+                      child: Text('Contact',
                         style: TextStyle(color: Colors.white),),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(21.0),
@@ -140,7 +138,7 @@ class _BoilerPlate extends State<BoilerPlate> {
             AlertDialogParameters alertobj21 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xff90ebe4),
+              backgroundColor: Color(0xff61c1e8),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
@@ -148,43 +146,6 @@ class _BoilerPlate extends State<BoilerPlate> {
               titleTextStyle: TextStyle( fontSize: 18.0, color: Colors.white),
             );
             onAlertButtonTap1(String s){
-              print(s);
-            }
-          
-
-            AlertDialogContents alertObj12 = new AlertDialogContents(
-              <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(left:30.0, right: 30, top: 25, bottom: 20),
-                  child: Container(
-                    height: 41,
-                    width: 220,
-                    child: FlatButton(
-                      child: Text('',
-                        style: TextStyle(color: Colors.white),),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(21.0),
-                      ),
-                      color: Color(0xff000000),
-                      onPressed: (){},
-                    ),
-                  ),
-                ),
-              ],"",
-              Text('', textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16, color: Color(0xff707070)),),
-            );
-            AlertDialogParameters alertobj22 = new AlertDialogParameters(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xff90ebe4),
-              elevation: 30,
-              contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
-              height: 254,
-              width: 380,
-              titleTextStyle: TextStyle( fontSize: 18.0, color: Colors.white),
-            );
-            onAlertButtonTap2(String s){
               print(s);
             }
           
@@ -207,7 +168,7 @@ Row( children: <Widget>[Text('Payment Received'),Spacer(flex: 1,),customText(tex
 ],),),
 Padding(
 padding: const EdgeInsets.only(top:30,bottom:30),
-child:CustomAlertDialog(dialogContent: alertObj12, param: alertobj22, callbackAlert: onAlertButtonTap2),
+child:CustomAlertDialog(dialogContent: alertObj11, param: alertobj21, callbackAlert: onAlertButtonTap1),
   ),
 ],
 ),
