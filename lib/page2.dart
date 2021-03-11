@@ -116,7 +116,7 @@ height: 30,
 width: 75, 
 child: FlatButton( 
 child: Text( 
-'11', 
+'View', 
 style: TextStyle(fontSize: 11, color: Colors.white), 
 ), 
 color: Colors.black, 
