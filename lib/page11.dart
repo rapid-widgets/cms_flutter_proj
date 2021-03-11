@@ -105,7 +105,7 @@ class _BoilerPlate extends State<BoilerPlate> {
         
 
         TextParameters textparam0 = new TextParameters(
-          text: 'Contact Us',
+          text: 'Thank You',
           fontSize: 16,
           textColor:Color(0xff000000),
           fontStyle: FontStyle.normal,
@@ -140,7 +140,7 @@ class _BoilerPlate extends State<BoilerPlate> {
             AlertDialogParameters alertobj21 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xff000000),
+              backgroundColor: Color(0xff4297f0),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
@@ -177,7 +177,7 @@ class _BoilerPlate extends State<BoilerPlate> {
             AlertDialogParameters alertobj22 = new AlertDialogParameters(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
-              backgroundColor: Color(0xff000000),
+              backgroundColor: Color(0xff4297f0),
               elevation: 30,
               contentTextStyle: TextStyle( fontSize: 18.0, color: Colors.blueGrey),
               height: 254,
